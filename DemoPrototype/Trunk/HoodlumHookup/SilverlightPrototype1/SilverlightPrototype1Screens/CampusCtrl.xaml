@@ -1,0 +1,27 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.Campus" x:Name="userControl"
+	mc:Ignorable="d"
+	x:Class="SilverlightPrototype1Screens.Campus"
+	Width="253" Height="50">
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="ProjectDataSources.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Background="White" DataContext="{Binding Source={StaticResource Campus}}">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="95"/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<TextBlock Margin="0,11,8,5" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="{Binding Which, ElementName=userControl}" HorizontalAlignment="Right" Width="16" FontSize="{StaticResource SizeDouble-Sketch}"/>
+		<TextBlock Margin="0,11,33,5" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="Campus" FontSize="{StaticResource SizeDouble-Sketch}" HorizontalAlignment="Right" Width="54"/>
+		<ComboBox Grid.Column="1" Margin="8,8,8,0" Style="{StaticResource ComboBox-Sketch}" Height="30" VerticalAlignment="Top" DataContext="{Binding}" ItemsSource="{Binding Collection}" SelectionChanged="ComboBox_SelectionChanged" DisplayMemberPath="CampusName" />
+	</Grid>
+</UserControl>

@@ -1,0 +1,22 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:local="clr-namespace:SilverlightPrototype1Screens"
+	xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+	mc:Ignorable="d"
+	x:Class="SilverlightPrototype1Screens.Statistics"
+	Width="640" Height="480">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="0.5*"/>
+			<ColumnDefinition Width="0.5*"/>
+		</Grid.ColumnDefinitions>
+		<local:Filter VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="8,52,0,0" Width="Auto" Height="420"/>
+		<local:Campus VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="8,8,8,0" Width="Auto" Height="40"/>
+		<local:Navigate VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="8,8,8,0" Width="Auto" Grid.Column="1" Height="47"/>
+		<ed:Arc ArcThickness="1" ArcThicknessUnit="Percent" Grid.Column="1" EndAngle="360" Fill="#FFF4F4F5" Margin="113,190,107,190" Stretch="None" Stroke="Black" StartAngle="90" UseLayoutRounding="False"/>
+	</Grid>
+</UserControl>

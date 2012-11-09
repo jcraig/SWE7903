@@ -1,0 +1,27 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="SilverlightPrototype1Screens.byCrimeType" d:DesignHeight="116" d:DesignWidth="225">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto" MinWidth="105"/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<CheckBox Content="Murder" Height="13" Margin="8,8,0,0" Style="{StaticResource CheckBox-Sketch}" VerticalAlignment="Top"/>
+		<CheckBox Content="Rape" Height="13" Margin="8,25,0,0" Style="{StaticResource CheckBox-Sketch}" VerticalAlignment="Top"/>
+		<CheckBox Content="Kidnapping" Margin="8,42,0,0" Style="{StaticResource CheckBox-Sketch}" RenderTransformOrigin="0.57,0.5" Height="14" VerticalAlignment="Top"/>
+		<CheckBox Content="Suicide" Margin="0,42,0,0" Style="{StaticResource CheckBox-Sketch}" Grid.Column="1" Height="14" VerticalAlignment="Top"/>
+		<CheckBox Content="Arsen" Margin="8,0,0,43" Style="{StaticResource CheckBox-Sketch}" Height="13" VerticalAlignment="Bottom"/>
+		<CheckBox Content="Vandalism" Height="13" Margin="0,8,0,0" Style="{StaticResource CheckBox-Sketch}" VerticalAlignment="Top" Grid.Column="1"/>
+		<CheckBox Content="Robbery" Height="13" Margin="0,25,0,0" Style="{StaticResource CheckBox-Sketch}" VerticalAlignment="Top" Grid.Column="1"/>
+		<CheckBox Content="Theft" Margin="0,0,0,43" Style="{StaticResource CheckBox-Sketch}" Grid.Column="1" Height="13" VerticalAlignment="Bottom"/>
+		<CheckBox Content="Assault" Margin="8,0,22,25" Style="{StaticResource CheckBox-Sketch}" VerticalAlignment="Bottom" d:LayoutOverrides="Width"/>
+		<CheckBox Content="Disorderly " Grid.Column="1" Margin="0,0,0,25" Style="{StaticResource CheckBox-Sketch}" VerticalAlignment="Bottom"/>
+		<CheckBox Content="Shooting" HorizontalAlignment="Right" Margin="0,0,25,7" Style="{StaticResource CheckBox-Sketch}" VerticalAlignment="Bottom"/>
+		<CheckBox Content="Other" Grid.Column="1" Margin="0,0,33,7" Style="{StaticResource CheckBox-Sketch}" VerticalAlignment="Bottom"/>
+	</Grid>
+</UserControl>

@@ -1,0 +1,13 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="SilverlightPrototype1Screens.Description"
+	Width="200" Height="200">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<TextBlock Margin="8" TextWrapping="Wrap" FontFamily="/SilverlightPrototype1.Screens;component/Fonts/BuxtonSketch.ttf#Buxton Sketch" FontSize="{StaticResource SizeDouble-Sketch}" Foreground="#FF606060"><Run FontWeight="Bold" Text="Law Enforcement " TextDecorations="Underline"/><Run FontWeight="Bold" Text="Benefits" TextDecorations="Underline"/><LineBreak/><Run Text="Enhances Public Awareness"/></TextBlock>
+	</Grid>
+</UserControl>

@@ -1,0 +1,25 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="SilverlightPrototype1Screens.byLocation"
+	Width="260" Height="47" FontFamily="/SilverlightPrototype1.Screens;component/Fonts/BuxtonSketch.ttf#Buxton Sketch" FontSize="16">
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="ProjectDataSources.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Background="White" DataContext="{Binding Source={StaticResource CampusBldg}}">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="95"/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<ComboBox Margin="0,9,0,8" Background="#FF606060" FontFamily="/SilverlightPrototype1.Screens;component/Fonts/BuxtonSketch.ttf#Buxton Sketch" FontSize="{StaticResource SizeDouble-Sketch}" DataContext="{Binding}" ItemsSource="{Binding Collection}" DisplayMemberPath="BldgName" Height="30" Grid.Column="1"/>
+		<TextBlock Margin="8,12,8,4" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="Location:" TextAlignment="Right" FontSize="{StaticResource SizeDouble-Sketch}"/>
+	</Grid>
+</UserControl>

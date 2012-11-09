@@ -1,0 +1,9 @@
+﻿<UserControl 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:m="clr-namespace:Microsoft.Maps.MapControl;assembly=Microsoft.Maps.MapControl"
+    x:Class="SilverlightPrototype1Screens.MapCtrl" >
+	  <Grid x:Name="LayoutRoot" Background="White">
+        <m:Map x:Name="MyMap" CredentialsProvider="AodG4zDUOvpESBwmlmUv1_LP73zoLnUpefDyhm-Fe1wni04oFD2ceLQ6dX95odl5" />
+    </Grid>
+</UserControl>

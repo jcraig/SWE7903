@@ -1,0 +1,28 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:local="clr-namespace:SilverlightPrototype1Screens"
+	mc:Ignorable="d"
+	x:Class="SilverlightPrototype1Screens.Home"
+	Width="640" Height="480">
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="ProjectDataSources.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Background="White" DataContext="{Binding Source={StaticResource Campus}}">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="0.5*"/>
+			<ColumnDefinition Width="0.5*"/>
+		</Grid.ColumnDefinitions>
+		<local:Description d:IsPrototypingComposition="True" Margin="8,52,8,8" Width="Auto" Height="Auto"/>
+		<local:Navigate VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="8,8,8,0" Width="Auto" Grid.Column="1" Height="47"/>
+		<local:Campus Height="40" Margin="8,8,8,0" VerticalAlignment="Top" Width="Auto"/>
+		<Button Content="Contact" Grid.Column="1" Height="28" Margin="16,59,16,0" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top"/>
+	</Grid>
+</UserControl>

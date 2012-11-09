@@ -1,0 +1,46 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity" x:Name="NavControl"
+	mc:Ignorable="d"
+	x:Class="SilverlightPrototype1Screens.Navigate"
+	Width="284" Height="47">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="0.2*"/>
+			<ColumnDefinition Width="0.2*"/>
+			<ColumnDefinition Width="0.2*"/>
+			<ColumnDefinition Width="0.3*"/>
+		</Grid.ColumnDefinitions>
+		<Button x:Name="toHome" Content="Home" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Margin="8,8,8,0" BorderBrush="{StaticResource BaseBorder-Sketch}">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="SilverlightPrototype1Screens.Home"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button x:Name="toMap" Content="Map" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Margin="8,8,8,0" Grid.Column="1">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="SilverlightPrototype1Screens.Map"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button x:Name="toCompare" Content="Compare" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Margin="8,8,8,0" Grid.Column="3">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="SilverlightPrototype1Screens.Compare"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button x:Name="toStats" Content="Stats" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top" Margin="9,8,8,0" Grid.Column="2">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="SilverlightPrototype1Screens.Statistics"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+	</Grid>
+</UserControl>
