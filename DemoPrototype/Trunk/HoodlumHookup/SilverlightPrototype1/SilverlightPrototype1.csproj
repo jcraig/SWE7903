@@ -113,10 +113,6 @@
     <None Include="Properties\AppManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SilverlightDataAccessClassLibrary\SilverlightDataAccessClassLibrary.csproj">
-      <Project>{A983B72A-F0E8-4094-A710-67740EE49793}</Project>
-      <Name>SilverlightDataAccessClassLibrary</Name>
-    </ProjectReference>
     <ProjectReference Include="SilverlightPrototype1Screens\SilverlightPrototype1Screens.csproj">
       <Name>SilverlightPrototype1Screens</Name>
       <Project>{3e32a427-3b9a-4559-803a-ec14966a5030}</Project>

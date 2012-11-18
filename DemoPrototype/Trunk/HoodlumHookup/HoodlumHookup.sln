@@ -5,7 +5,26 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverlightPrototype1", "Si
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverlightPrototype1Screens", "SilverlightPrototype1\SilverlightPrototype1Screens\SilverlightPrototype1Screens.csproj", "{3E32A427-3B9A-4559-803A-EC14966A5030}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverlightDataAccessClassLibrary", "SilverlightDataAccessClassLibrary\SilverlightDataAccessClassLibrary.csproj", "{A983B72A-F0E8-4094-A710-67740EE49793}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CCSSSite", "CCSSSite\", "{DD078C5D-C147-4DF7-BFE2-454E7AF6B235}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/CCSSSite"
+		Debug.AspNetCompiler.PhysicalPath = "CCSSSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\CCSSSite\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/CCSSSite"
+		Release.AspNetCompiler.PhysicalPath = "CCSSSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\CCSSSite\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "3937"
+		ProjOutputReferences = ""
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +40,10 @@ Global
 		{3E32A427-3B9A-4559-803A-EC14966A5030}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E32A427-3B9A-4559-803A-EC14966A5030}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E32A427-3B9A-4559-803A-EC14966A5030}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A983B72A-F0E8-4094-A710-67740EE49793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A983B72A-F0E8-4094-A710-67740EE49793}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A983B72A-F0E8-4094-A710-67740EE49793}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A983B72A-F0E8-4094-A710-67740EE49793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD078C5D-C147-4DF7-BFE2-454E7AF6B235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD078C5D-C147-4DF7-BFE2-454E7AF6B235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD078C5D-C147-4DF7-BFE2-454E7AF6B235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD078C5D-C147-4DF7-BFE2-454E7AF6B235}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
