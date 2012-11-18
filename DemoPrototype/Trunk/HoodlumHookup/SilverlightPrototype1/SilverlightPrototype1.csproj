@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ExpressionBlendVersion>4.0.30816.0</ExpressionBlendVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{d10d2b48-8931-4d52-b6e3-7e469000aaa0}</ProjectGuid>
+    <ProjectGuid>{D10D2B48-8931-4D52-B6E3-7E469000AAA0}</ProjectGuid>
     <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -113,12 +113,23 @@
     <None Include="Properties\AppManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SilverlightDataAccessClassLibrary\SilverlightDataAccessClassLibrary.csproj">
+      <Project>{A983B72A-F0E8-4094-A710-67740EE49793}</Project>
+      <Name>SilverlightDataAccessClassLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="SilverlightPrototype1Screens\SilverlightPrototype1Screens.csproj">
       <Name>SilverlightPrototype1Screens</Name>
       <Project>{3e32a427-3b9a-4559-803a-ec14966a5030}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 	     Other similar extension points exist, see Microsoft.Common.targets.
 	<Target Name="BeforeBuild">
