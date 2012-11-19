@@ -1,0 +1,10 @@
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataTestConsoleApplication\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataTestConsoleApplication\bin\Debug\DataTestConsoleApplication.exe
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataTestConsoleApplication\bin\Debug\DataTestConsoleApplication.pdb
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataTestConsoleApplication\obj\x86\Debug\DataTestConsoleApplication.exe
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataTestConsoleApplication\obj\x86\Debug\DataTestConsoleApplication.pdb
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataTestConsoleApplication\obj\x86\Debug\DataTestConsoleApplication.exe
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataTestConsoleApplication\obj\x86\Debug\DataTestConsoleApplication.pdb
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataTestConsoleApplication\bin\Debug\DataTestConsoleApplication.exe
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataTestConsoleApplication\bin\Debug\DataTestConsoleApplication.pdb
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataTestConsoleApplication\obj\x86\Debug\ResolveAssemblyReference.cache
