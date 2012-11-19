@@ -18,9 +18,18 @@
 		<local:Campus d:IsPrototypingComposition="True" Margin="8,8,8,0" VerticalAlignment="Top" Width="Auto" Height="40" Which="2"/>
 		<local:Filter Margin="8,52,0,8" Width="Auto" Height="Auto"/>
 		<local:Navigate d:IsPrototypingComposition="True" Margin="8,8,8,0" Grid.Column="1" Width="Auto" Height="47" VerticalAlignment="Top" d:LayoutOverrides="Height"/>
-		<local:MapCtrl x:Name="mapCtrl" d:IsPrototypingComposition="True" Grid.Column="1" Margin="7,79,9,7" zoomLevel="14" latitude="33.935" longitude="-84.525"/>
-		<TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="19" Margin="8,55,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="{Binding latitude, ElementName=mapCtrl}" VerticalAlignment="Top" Width="43"/>
-		<TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="19" Margin="76,55,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="{Binding longitude, ElementName=mapCtrl}" VerticalAlignment="Top" Width="40"/>
-		<TextBlock Grid.Column="1" Height="15" Margin="138,55,138,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="{Binding zoomLevel, ElementName=mapCtrl}" VerticalAlignment="Top"/>
+		<local:MapCtrl x:Name="mapCtrl" d:IsPrototypingComposition="True" Grid.Column="1" Margin="7,131,9,7" zoomLevel="14" latitude="33.935" longitude="-84.525"/>
+		<TextBlock Margin="0,52,18,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="{Binding zoomLevel, ElementName=mapCtrl}" HorizontalAlignment="Right" Width="44" Height="20" VerticalAlignment="Top" Grid.Column="1"/>
+		<TextBlock Margin="86,71,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="{Binding latStart, ElementName=mapCtrl}" Grid.Column="1" Height="19" VerticalAlignment="Top" HorizontalAlignment="Left" Width="64" FontSize="13.333" FontFamily="Tahoma"/>
+		<TextBlock Margin="154,71,102,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="{Binding longStart, ElementName=mapCtrl}" Grid.Column="1" Height="19" VerticalAlignment="Top" Width="64" FontSize="13.333" FontFamily="Tahoma"/>
+		<TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="19" Margin="86,52,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="Lat" VerticalAlignment="Top" Width="64" FontSize="13.333" FontFamily="Tahoma"/>
+		<TextBlock Grid.Column="1" Height="19" Margin="154,52,102,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="Long" VerticalAlignment="Top" Width="64" FontSize="13.333" FontFamily="Tahoma"/>
+		<TextBlock Margin="86,90,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="{Binding latitude, ElementName=mapCtrl}" Grid.Column="1" Height="19" VerticalAlignment="Top" HorizontalAlignment="Left" Width="64" FontSize="13.333" FontFamily="Tahoma"/>
+		<TextBlock Margin="154,90,102,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="{Binding longitude, ElementName=mapCtrl}" Grid.Column="1" Height="19" VerticalAlignment="Top" Width="64" FontSize="13.333" FontFamily="Tahoma"/>
+		<TextBlock Margin="86,109,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="{Binding latEnd, ElementName=mapCtrl}" Grid.Column="1" Height="19" VerticalAlignment="Top" HorizontalAlignment="Left" Width="64" FontSize="13.333" FontFamily="Tahoma"/>
+		<TextBlock Margin="154,109,102,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="{Binding longEnd, ElementName=mapCtrl}" Grid.Column="1" Height="19" VerticalAlignment="Top" Width="64" FontSize="13.333" FontFamily="Tahoma"/>
+		<TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="19" Margin="22,71,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="Start" VerticalAlignment="Top" Width="64" FontSize="13.333" FontFamily="Tahoma"/>
+		<TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="19" Margin="22,90,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="Center" VerticalAlignment="Top" Width="64" FontSize="13.333" FontFamily="Tahoma"/>
+		<TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="19" Margin="22,108,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="End" VerticalAlignment="Top" Width="64" FontSize="13.333" FontFamily="Tahoma"/>
 	</Grid>
 </UserControl>

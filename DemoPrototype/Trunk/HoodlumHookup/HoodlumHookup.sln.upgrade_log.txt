@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------------------------------------------------------------------
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\DataSetInDataGrid.Silverlight.csproj
+-------------------------------------------------------------------------------------------------------------------------------------------
+Updating <TargetFrameworkVersion> value from 'v3.0' to 'v4.0'
+Setting <Utf8Output> value to 'true'
+Saving file
+
+
+------------------------------------------------------------------------------------------
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\HoodlumHookup.sln
+------------------------------------------------------------------------------------------
+Setting solution format header to 'Microsoft Visual Studio Solution File, Format Version 11.00'
+Saving file
+
+

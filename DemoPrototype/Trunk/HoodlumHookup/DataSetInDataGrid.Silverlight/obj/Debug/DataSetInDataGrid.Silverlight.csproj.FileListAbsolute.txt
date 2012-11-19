@@ -1,0 +1,275 @@
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\DataSetInDataGrid.Silverlight.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\DataSetInDataGrid.Silverlight.pdb
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\AppManifest.xaml
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\DataSetInDataGrid.Silverlight.xap
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\TestPage.html
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\System.Windows.Controls.Data.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\System.Windows.Controls.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\System.Xml.Linq.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\System.Windows.Data.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\System.Windows.Controls.Data.Input.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\System.ComponentModel.DataAnnotations.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\System.Windows.Controls.xml
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\System.Windows.Controls.Data.xml
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\System.Xml.Linq.xml
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\System.Windows.Data.xml
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\System.Windows.Controls.Data.Input.xml
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\System.ComponentModel.DataAnnotations.xml
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\de\System.Windows.Controls.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\es\System.Windows.Controls.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\fr\System.Windows.Controls.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\it\System.Windows.Controls.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\ja\System.Windows.Controls.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\ko\System.Windows.Controls.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\zh-Hans\System.Windows.Controls.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\zh-Hant\System.Windows.Controls.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\de\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\es\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\fr\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\it\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\ja\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\ko\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\zh-Hans\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\zh-Hant\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\de\System.Xml.Linq.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\es\System.Xml.Linq.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\fr\System.Xml.Linq.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\it\System.Xml.Linq.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\ja\System.Xml.Linq.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\ko\System.Xml.Linq.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\zh-Hans\System.Xml.Linq.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\zh-Hant\System.Xml.Linq.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\de\System.Windows.Data.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\es\System.Windows.Data.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\fr\System.Windows.Data.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\it\System.Windows.Data.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\ja\System.Windows.Data.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\ko\System.Windows.Data.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\zh-Hans\System.Windows.Data.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\zh-Hant\System.Windows.Data.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\de\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\es\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\fr\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\it\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\ja\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\ko\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\zh-Hans\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\zh-Hant\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\de\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\es\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\fr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\it\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\ja\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\ko\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\zh-Hans\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\ClientBin\zh-Hant\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\obj\Debug\App.g.cs
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\obj\Debug\Page.g.cs
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\obj\Debug\DataSetInDataGrid.Silverlight.g.resources
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\obj\Debug\DataSetInDataGrid.Silverlight.dll
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\obj\Debug\DataSetInDataGrid.Silverlight.pdb
+C:\Users\Rand\Google Drive\SWE7903 Capstone\ImplementationInvestigation\DataSetInDataGrid\DataSetInDataGrid\DataSetInDataGrid.Silverlight\obj\Debug\XapCacheFile.xml
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\DataSetInDataGrid.Silverlight.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\DataSetInDataGrid.Silverlight.pdb
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\AppManifest.xaml
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\DataSetInDataGrid.Silverlight.xap
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\TestPage.html
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\System.Windows.Controls.Data.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\System.Windows.Controls.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\System.Xml.Linq.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\System.Windows.Data.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\System.Windows.Controls.Data.Input.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\System.ComponentModel.DataAnnotations.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\System.Windows.Controls.xml
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\System.Windows.Controls.Data.xml
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\System.Xml.Linq.xml
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\System.Windows.Data.xml
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\System.Windows.Controls.Data.Input.xml
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\System.ComponentModel.DataAnnotations.xml
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\de\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\es\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\fr\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\it\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ja\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ko\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\zh-Hans\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\zh-Hant\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\de\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\es\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\fr\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\it\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ja\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ko\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\zh-Hans\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\zh-Hant\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\de\System.Xml.Linq.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\es\System.Xml.Linq.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\fr\System.Xml.Linq.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\it\System.Xml.Linq.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ja\System.Xml.Linq.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ko\System.Xml.Linq.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\zh-Hans\System.Xml.Linq.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\zh-Hant\System.Xml.Linq.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\de\System.Windows.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\es\System.Windows.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\fr\System.Windows.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\it\System.Windows.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ja\System.Windows.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ko\System.Windows.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\zh-Hans\System.Windows.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\zh-Hant\System.Windows.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\de\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\es\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\fr\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\it\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ja\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ko\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\zh-Hans\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\zh-Hant\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\de\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\es\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\fr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\it\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ja\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ko\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\zh-Hans\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\zh-Hant\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\obj\Debug\DataSetInDataGrid.Silverlight.g.resources
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\obj\Debug\DataSetInDataGrid.Silverlight.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\obj\Debug\DataSetInDataGrid.Silverlight.pdb
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ar\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\bg\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ca\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\cs\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\da\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\el\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\et\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\eu\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\fi\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\he\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\hr\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\hu\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\id\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\lt\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\lv\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ms\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\nl\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\no\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\pl\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\pt\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\pt-BR\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ro\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ru\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\sk\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\sl\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\sr-Cyrl-CS\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\sr-Latn-CS\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\sv\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\th\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\tr\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\uk\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\vi\System.Windows.Controls.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ar\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\bg\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ca\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\cs\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\da\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\el\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\et\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\eu\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\fi\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\he\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\hr\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\hu\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\id\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\lt\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\lv\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ms\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\nl\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\no\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\pl\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\pt\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\pt-BR\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ro\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ru\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\sk\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\sl\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\sr-Cyrl-CS\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\sr-Latn-CS\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\sv\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\th\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\tr\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\uk\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\vi\System.Windows.Controls.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ru\System.Xml.Linq.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ar\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\bg\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ca\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\cs\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\da\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\el\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\et\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\eu\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\fi\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\he\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\hr\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\hu\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\id\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\lt\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\lv\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ms\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\nl\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\no\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\pl\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\pt\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\pt-BR\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ro\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ru\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\sk\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\sl\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\sr-Cyrl-CS\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\sr-Latn-CS\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\sv\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\th\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\tr\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\uk\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\vi\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ar\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\bg\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ca\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\cs\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\da\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\el\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\et\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\eu\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\fi\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\he\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\hr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\hu\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\id\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\lt\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\lv\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ms\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\nl\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\no\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\pl\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\pt\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\pt-BR\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ro\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ru\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\sk\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\sl\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\sr-Cyrl-CS\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\sr-Latn-CS\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\sv\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\th\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\tr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\uk\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\vi\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\ClientBin\ru\System.Windows.Data.resources.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\Bin\Debug\DataSetInDataGrid.Silverlight.dll
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\Bin\Debug\DataSetInDataGrid.Silverlight.pdb
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\obj\Debug\App.g.cs
+C:\Users\Rand\Documents\GitHub\SWE7903\DemoPrototype\Trunk\HoodlumHookup\DataSetInDataGrid.Silverlight\obj\Debug\Page.g.cs

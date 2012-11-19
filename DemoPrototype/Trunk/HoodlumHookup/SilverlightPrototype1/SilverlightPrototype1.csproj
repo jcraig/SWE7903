@@ -72,6 +72,7 @@
     <Reference Include="system" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Controls.Data" />
     <Reference Include="System.Windows.Controls.Data.Input" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Windows.Browser" />
@@ -113,6 +114,10 @@
     <None Include="Properties\AppManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataSetInDataGrid.Silverlight\DataSetInDataGrid.Silverlight.csproj">
+      <Project>{5D0ACCAD-CEF0-41AE-9806-258B41CE5B28}</Project>
+      <Name>DataSetInDataGrid.Silverlight</Name>
+    </ProjectReference>
     <ProjectReference Include="SilverlightPrototype1Screens\SilverlightPrototype1Screens.csproj">
       <Name>SilverlightPrototype1Screens</Name>
       <Project>{3e32a427-3b9a-4559-803a-ec14966a5030}</Project>

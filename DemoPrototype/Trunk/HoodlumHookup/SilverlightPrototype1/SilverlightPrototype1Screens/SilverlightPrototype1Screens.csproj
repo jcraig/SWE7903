@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ExpressionBlendVersion>4.0.30816.0</ExpressionBlendVersion>
-    <ProjectGuid>{3e32a427-3b9a-4559-803a-ec14966a5030}</ProjectGuid>
+    <ProjectGuid>{3E32A427-3B9A-4559-803A-EC14966A5030}</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
@@ -51,13 +51,16 @@
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Windows" />
     <Reference Include="system" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Controls.Data" />
     <Reference Include="System.Windows.Controls.Data.Input" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Net" />
     <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <PropertyGroup>
     <ExpressionBlendPrototypingEnabled>true</ExpressionBlendPrototypingEnabled>
@@ -90,6 +93,9 @@
     <Compile Include="Contact.xaml.cs">
       <DependentUpon>Contact.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataSetGrid.xaml.cs">
+      <DependentUpon>DataSetGrid.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Description.xaml.cs">
       <DependentUpon>Description.xaml</DependentUpon>
     </Compile>
@@ -98,6 +104,9 @@
     </Compile>
     <Compile Include="Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LatLongViewCtrl.xaml.cs">
+      <DependentUpon>LatLongViewCtrl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Map.xaml.cs">
       <DependentUpon>Map.xaml</DependentUpon>
@@ -158,6 +167,10 @@
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="DataSetGrid.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Description.xaml">
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
@@ -167,6 +180,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Home.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LatLongViewCtrl.xaml">
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -238,7 +255,20 @@
     <None Include="SampleData\CampusBldg\CampusBldg.xsd" />
     <DesignTimeOnly Include="SampleData\Weather\Weather.xsd" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataSetInDataGrid.Silverlight\DataSetInDataGrid.Silverlight.csproj">
+      <Project>{5D0ACCAD-CEF0-41AE-9806-258B41CE5B28}</Project>
+      <Name>DataSetInDataGrid.Silverlight</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 	     Other similar extension points exist, see Microsoft.Common.targets.
 	<Target Name="BeforeBuild">

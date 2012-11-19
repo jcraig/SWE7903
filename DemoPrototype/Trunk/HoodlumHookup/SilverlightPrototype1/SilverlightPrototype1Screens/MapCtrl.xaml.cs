@@ -17,6 +17,52 @@ namespace SilverlightPrototype1Screens
 	{
 
 		
+		public double? latStart 
+  		{ 
+    		get { return base.GetValue(latStart_Property) as double?; } 
+    		set { base.SetValue(latStart_Property, value); } 
+  		}
+		
+  		public static readonly DependencyProperty latStart_Property = 
+    		DependencyProperty.Register("latStart", typeof(double?), typeof(MapCtrl),
+			null); 
+		
+		
+		
+		public double? latEnd
+  		{ 
+    		get { return base.GetValue(latEnd_Property) as double?; } 
+    		set { base.SetValue(latEnd_Property, value); } 
+  		}
+		
+  		public static readonly DependencyProperty latEnd_Property = 
+    		DependencyProperty.Register("latEnd", typeof(double?), typeof(MapCtrl),
+			null); 
+		
+		
+		
+		public double? longStart
+  		{ 
+    		get { return base.GetValue(longStart_Property) as double?; } 
+    		set { base.SetValue(longStart_Property, value); } 
+  		}
+		
+  		public static readonly DependencyProperty longStart_Property = 
+    		DependencyProperty.Register("longStart", typeof(double?), typeof(MapCtrl),
+			null); 
+		
+		
+		
+		public double? longEnd
+  		{ 
+    		get { return base.GetValue(longEnd_Property) as double?; } 
+    		set { base.SetValue(longEnd_Property, value); } 
+  		}
+		
+  		public static readonly DependencyProperty longEnd_Property = 
+    		DependencyProperty.Register("longEnd", typeof(double?), typeof(MapCtrl),
+			null); 
+		
 		
 		public double? zoomLevel 
   		{ 
@@ -96,16 +142,49 @@ namespace SilverlightPrototype1Screens
 			Map_SetView();
 		}
 
-		
+			
 		private void MyMap_ViewChangeEnd(object sender, Microsoft.Maps.MapControl.MapEventArgs e)
 		{
 			if (Map_IsSetting) return;
-			latitude = MyMap.Center.Latitude;
-			longitude = MyMap.Center.Longitude;
 			zoomLevel = MyMap.ZoomLevel;
+			
+			RetreivePoints(MyMap.ViewportSize);
+			RetreiveLatLongs(MyMap);
 		}
 		
-
+		
+		private Double MapViewWidth, MapViewHeight;
+		private Point topLeft_P = new Point(0,0);
+		private Point botRight_P = new Point(0,0);
+		private Point center_P = new Point(0,0);
+		
+		
+		private void RetreivePoints(Size size) {
+			MapViewWidth = size.Width;
+			MapViewHeight= size.Height;
+			topLeft_P.X = 0.0d;
+			topLeft_P.Y = 0.0d;
+			botRight_P.X = MapViewWidth;
+			botRight_P.Y = MapViewHeight;
+			center_P.X = MapViewWidth/2.0d;
+			center_P.Y = MapViewHeight/2.0d;
+		}
+			
+		
+		
+		private void RetreiveLatLongs(Microsoft.Maps.MapControl.Map map) {
+			Location topLeft_L = map.ViewportPointToLocation(topLeft_P);
+			Location botRight_L = map.ViewportPointToLocation(botRight_P);
+			Location center_L = map.ViewportPointToLocation(center_P);
+			
+			latStart  = topLeft_L.Latitude;
+			latitude  = center_L.Latitude;
+			latEnd    = botRight_L.Latitude;
+			
+			longStart = topLeft_L.Longitude;
+			longitude = center_L.Longitude;
+			longEnd   = botRight_L.Longitude;
+		}
 		
 	}
 }

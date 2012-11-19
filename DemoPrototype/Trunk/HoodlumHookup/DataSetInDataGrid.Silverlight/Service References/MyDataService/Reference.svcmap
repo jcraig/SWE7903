@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1134bf96-e110-42c1-874e-a77e673da050" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3317/DataSetInDataGrid.Silverlight_Web/GetData.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GetData1.wsdl" MetadataType="Wsdl" ID="80ac1035-5577-4382-96d5-67872e22794d" SourceId="1" SourceUrl="http://localhost:3317/DataSetInDataGrid.Silverlight_Web/GetData.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="GetData.disco" MetadataType="Disco" ID="c5c20099-87d2-4948-bbe9-4d239e84c99f" SourceId="1" SourceUrl="http://localhost:3317/DataSetInDataGrid.Silverlight_Web/GetData.svc?disco" />
+    <MetadataFile FileName="GetData4.xsd" MetadataType="Schema" ID="a03ad178-5c1a-4588-b17e-a1bc83ac73fb" SourceId="1" SourceUrl="http://localhost:3317/DataSetInDataGrid.Silverlight_Web/GetData.svc?xsd=xsd2" />
+    <MetadataFile FileName="GetData.wsdl" MetadataType="Wsdl" ID="1518a27a-0064-4c4f-841f-c2b3e2f4e51d" SourceId="1" SourceUrl="http://localhost:3317/DataSetInDataGrid.Silverlight_Web/GetData.svc?wsdl" />
+    <MetadataFile FileName="GetData3.xsd" MetadataType="Schema" ID="e8e23e88-613a-4edc-b586-772f00e265a5" SourceId="1" SourceUrl="http://localhost:3317/DataSetInDataGrid.Silverlight_Web/GetData.svc?xsd=xsd0" />
+    <MetadataFile FileName="GetData5.xsd" MetadataType="Schema" ID="9252303d-14f2-4bb6-99f9-e8e447140788" SourceId="1" SourceUrl="http://localhost:3317/DataSetInDataGrid.Silverlight_Web/GetData.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

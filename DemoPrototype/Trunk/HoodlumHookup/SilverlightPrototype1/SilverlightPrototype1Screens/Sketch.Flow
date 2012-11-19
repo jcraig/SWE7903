@@ -171,6 +171,30 @@
       </Position>
       <VisualTag>1</VisualTag>
     </Screen>
+    <Screen>
+      <Type>Composition</Type>
+      <ClassName>SilverlightPrototype1Screens.LatLongViewCtrl</ClassName>
+      <DisplayName>LatLongViewCtrl</DisplayName>
+      <FileName>LatLongViewCtrl.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>92</X>
+        <Y>93</Y>
+      </Position>
+      <VisualTag>1</VisualTag>
+    </Screen>
+    <Screen>
+      <Type>Composition</Type>
+      <ClassName>SilverlightPrototype1Screens.DataSetGrid</ClassName>
+      <DisplayName>DataSetGrid</DisplayName>
+      <FileName>DataSetGrid.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>486</X>
+        <Y>140</Y>
+      </Position>
+      <VisualTag>1</VisualTag>
+    </Screen>
   </Screens>
   <Connections>
     <Connection>
@@ -285,6 +309,13 @@
       <TransitionType>None</TransitionType>
       <VisualTag>1</VisualTag>
     </Connection>
+    <Connection>
+      <Source>SilverlightPrototype1Screens.Home</Source>
+      <Target>SilverlightPrototype1Screens.DataSetGrid</Target>
+      <Type>Composition</Type>
+      <TransitionType>None</TransitionType>
+      <VisualTag>1</VisualTag>
+    </Connection>
   </Connections>
   <PrototypeRevision>0</PrototypeRevision>
   <BrandingText>Microsoft SketchFlow Prototype</BrandingText>
@@ -330,10 +361,10 @@
     </VisualTag>
   </VisualTags>
   <ViewState>
-    <Zoom>1</Zoom>
+    <Zoom>0.8</Zoom>
     <Center>
-      <X>241.03814713896526</X>
-      <Y>211.77990430622009</Y>
+      <X>171.79768392370659</X>
+      <Y>60</Y>
     </Center>
   </ViewState>
 </Data>

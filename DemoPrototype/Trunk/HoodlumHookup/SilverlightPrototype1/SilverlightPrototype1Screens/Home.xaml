@@ -24,5 +24,6 @@
 		<local:Navigate VerticalAlignment="Top" d:IsPrototypingComposition="True" Margin="8,8,8,0" Width="Auto" Grid.Column="1" Height="47"/>
 		<local:Campus Height="40" Margin="8,8,8,0" VerticalAlignment="Top" Width="Auto"/>
 		<Button Content="Contact" Grid.Column="1" Height="28" Margin="16,59,16,0" Style="{StaticResource Button-Sketch}" VerticalAlignment="Top"/>
+		<local:DataSetGrid Margin="8,102,8,8" d:IsPrototypingComposition="True" Grid.ColumnSpan="2"/>
 	</Grid>
 </UserControl>

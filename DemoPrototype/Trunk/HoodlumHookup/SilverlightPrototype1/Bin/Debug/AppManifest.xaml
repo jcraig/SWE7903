@@ -1,6 +1,7 @@
 ﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="SilverlightPrototype1" EntryPointType="SilverlightPrototype1.App" RuntimeVersion="4.0.60310.0">
   <Deployment.Parts>
     <AssemblyPart x:Name="SilverlightPrototype1" Source="SilverlightPrototype1.dll" />
+    <AssemblyPart x:Name="DataSetInDataGrid.Silverlight" Source="DataSetInDataGrid.Silverlight.dll" />
     <AssemblyPart x:Name="Microsoft.Expression.Drawing" Source="Microsoft.Expression.Drawing.dll" />
     <AssemblyPart x:Name="Microsoft.Expression.Interactions" Source="Microsoft.Expression.Interactions.dll" />
     <AssemblyPart x:Name="Microsoft.Expression.Prototyping.Interactivity" Source="Microsoft.Expression.Prototyping.Interactivity.dll" />
@@ -10,12 +11,14 @@
     <AssemblyPart x:Name="Microsoft.Maps.MapControl" Source="Microsoft.Maps.MapControl.dll" />
     <AssemblyPart x:Name="SilverlightPrototype1.Screens" Source="SilverlightPrototype1.Screens.dll" />
     <AssemblyPart x:Name="System.ComponentModel.DataAnnotations" Source="System.ComponentModel.DataAnnotations.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data" Source="System.Windows.Controls.Data.dll" />
     <AssemblyPart x:Name="System.Windows.Controls.Data.Input" Source="System.Windows.Controls.Data.Input.dll" />
     <AssemblyPart x:Name="System.Windows.Controls" Source="System.Windows.Controls.dll" />
     <AssemblyPart x:Name="System.Windows.Interactivity" Source="System.Windows.Interactivity.dll" />
+    <AssemblyPart x:Name="System.Xml.Linq" Source="System.Xml.Linq.dll" />
+    <AssemblyPart x:Name="System.Windows.Data" Source="System.Windows.Data.dll" />
     <AssemblyPart x:Name="System.Windows.Controls.Navigation" Source="System.Windows.Controls.Navigation.dll" />
     <AssemblyPart x:Name="System.Xml.Serialization" Source="System.Xml.Serialization.dll" />
-    <AssemblyPart x:Name="System.Xml.Linq" Source="System.Xml.Linq.dll" />
     <AssemblyPart Source="de/System.ComponentModel.DataAnnotations.resources.dll" />
     <AssemblyPart Source="es/System.ComponentModel.DataAnnotations.resources.dll" />
     <AssemblyPart Source="fr/System.ComponentModel.DataAnnotations.resources.dll" />
@@ -24,6 +27,14 @@
     <AssemblyPart Source="ko/System.ComponentModel.DataAnnotations.resources.dll" />
     <AssemblyPart Source="zh-Hans/System.ComponentModel.DataAnnotations.resources.dll" />
     <AssemblyPart Source="zh-Hant/System.ComponentModel.DataAnnotations.resources.dll" />
+    <AssemblyPart Source="de/System.Windows.Controls.Data.resources.dll" />
+    <AssemblyPart Source="es/System.Windows.Controls.Data.resources.dll" />
+    <AssemblyPart Source="fr/System.Windows.Controls.Data.resources.dll" />
+    <AssemblyPart Source="it/System.Windows.Controls.Data.resources.dll" />
+    <AssemblyPart Source="ja/System.Windows.Controls.Data.resources.dll" />
+    <AssemblyPart Source="ko/System.Windows.Controls.Data.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Windows.Controls.Data.resources.dll" />
+    <AssemblyPart Source="zh-Hant/System.Windows.Controls.Data.resources.dll" />
     <AssemblyPart Source="de/System.Windows.Controls.Data.Input.resources.dll" />
     <AssemblyPart Source="es/System.Windows.Controls.Data.Input.resources.dll" />
     <AssemblyPart Source="fr/System.Windows.Controls.Data.Input.resources.dll" />
@@ -49,6 +60,22 @@
     <AssemblyPart Source="ko/Microsoft.Expression.Prototyping.Runtime.resources.dll" />
     <AssemblyPart Source="zh-Hans/Microsoft.Expression.Prototyping.Runtime.resources.dll" />
     <AssemblyPart Source="zh-Hant/Microsoft.Expression.Prototyping.Runtime.resources.dll" />
+    <AssemblyPart Source="de/System.Xml.Linq.resources.dll" />
+    <AssemblyPart Source="es/System.Xml.Linq.resources.dll" />
+    <AssemblyPart Source="fr/System.Xml.Linq.resources.dll" />
+    <AssemblyPart Source="it/System.Xml.Linq.resources.dll" />
+    <AssemblyPart Source="ja/System.Xml.Linq.resources.dll" />
+    <AssemblyPart Source="ko/System.Xml.Linq.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Xml.Linq.resources.dll" />
+    <AssemblyPart Source="zh-Hant/System.Xml.Linq.resources.dll" />
+    <AssemblyPart Source="de/System.Windows.Data.resources.dll" />
+    <AssemblyPart Source="es/System.Windows.Data.resources.dll" />
+    <AssemblyPart Source="fr/System.Windows.Data.resources.dll" />
+    <AssemblyPart Source="it/System.Windows.Data.resources.dll" />
+    <AssemblyPart Source="ja/System.Windows.Data.resources.dll" />
+    <AssemblyPart Source="ko/System.Windows.Data.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Windows.Data.resources.dll" />
+    <AssemblyPart Source="zh-Hant/System.Windows.Data.resources.dll" />
     <AssemblyPart Source="de/System.Windows.Controls.Navigation.resources.dll" />
     <AssemblyPart Source="es/System.Windows.Controls.Navigation.resources.dll" />
     <AssemblyPart Source="fr/System.Windows.Controls.Navigation.resources.dll" />
@@ -65,13 +92,5 @@
     <AssemblyPart Source="ko/System.Xml.Serialization.resources.dll" />
     <AssemblyPart Source="zh-Hans/System.Xml.Serialization.resources.dll" />
     <AssemblyPart Source="zh-Hant/System.Xml.Serialization.resources.dll" />
-    <AssemblyPart Source="de/System.Xml.Linq.resources.dll" />
-    <AssemblyPart Source="es/System.Xml.Linq.resources.dll" />
-    <AssemblyPart Source="fr/System.Xml.Linq.resources.dll" />
-    <AssemblyPart Source="it/System.Xml.Linq.resources.dll" />
-    <AssemblyPart Source="ja/System.Xml.Linq.resources.dll" />
-    <AssemblyPart Source="ko/System.Xml.Linq.resources.dll" />
-    <AssemblyPart Source="zh-Hans/System.Xml.Linq.resources.dll" />
-    <AssemblyPart Source="zh-Hant/System.Xml.Linq.resources.dll" />
   </Deployment.Parts>
 </Deployment>
