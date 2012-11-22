@@ -19,9 +19,6 @@ namespace SilverlightPrototype1Screens
 {
 	public partial class DataSetGrid : UserControl
 	{
-        IEnumerable _lookup;
-		ObservableCollection <DataSetInDataGrid.Silverlight.MyDataService.DataTableInfo> _tables;
-
 		public DataSetGrid()
 		{
 			// Required to initialize variables
@@ -29,8 +26,15 @@ namespace SilverlightPrototype1Screens
             TemplateManager.LoadTemplate("DataGrid/Content.zip");
 		}
 
+        IEnumerable _lookup;
+		ObservableCollection <DataSetInDataGrid.Silverlight.MyDataService.DataTableInfo> _tables;
         
-		
+		private void GetData_Click(object sender, RoutedEventArgs e)
+		{
+			GetData(this.SQL.Text, System.Convert.ToInt32(this.PageNumber.Text), System.Convert.ToInt32(this.PageSize.Text), "Data");
+			this.Progress.Start();
+		}
+
         private void GetData(string sql, int pagenumber, int pagesize, object userState)
         {
             var ws = WCF.GetService();
@@ -38,12 +42,6 @@ namespace SilverlightPrototype1Screens
             ws.GetDataSetDataAsync(sql, pagenumber, pagesize, userState);
         }
 		
-		private void GetData_Click(object sender, RoutedEventArgs e)
-		{
-			GetData(this.SQL.Text, System.Convert.ToInt32(this.PageNumber.Text), System.Convert.ToInt32(this.PageSize.Text), "Data");
-			this.Progress.Start();
-		}
-
 		void ws_GetDataSetDataCompleted(object sender, DataSetInDataGrid.Silverlight.MyDataService.GetDataSetDataCompletedEventArgs e)
 		{
             if (e.Error != null)

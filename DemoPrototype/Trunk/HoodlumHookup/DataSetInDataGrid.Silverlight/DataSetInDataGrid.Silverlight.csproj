@@ -119,14 +119,19 @@
     <None Include="Service References\MyDataService\DataSetInDataGrid.Silverlight.MyDataService.DataSetData.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\MyDataService\GetData.wsdl" />
-    <None Include="Service References\MyDataService\GetData1.wsdl" />
-    <None Include="Service References\MyDataService\GetData.disco" />
-    <None Include="Service References\MyDataService\GetData3.xsd" />
-    <None Include="Service References\MyDataService\GetData4.xsd" />
-    <None Include="Service References\MyDataService\GetData5.xsd" />
     <None Include="Service References\MyDataService\configuration91.svcinfo" />
     <None Include="Service References\MyDataService\configuration.svcinfo" />
+    <None Include="Service References\MyDataService\GetData.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MyDataService\GetData1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MyDataService\GetData2.wsdl" />
+    <None Include="Service References\MyDataService\GetData2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MyDataService\GetData21.wsdl" />
     <None Include="Service References\MyDataService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -138,6 +143,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Service References\MyDataService\GetData1.disco" />
     <Content Include="ServiceReferences.ClientConfig">
       <SubType>Designer</SubType>
     </Content>

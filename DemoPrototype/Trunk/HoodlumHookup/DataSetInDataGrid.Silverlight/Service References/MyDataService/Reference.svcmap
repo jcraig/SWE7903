@@ -13,21 +13,22 @@
     </CollectionMappings>
     <GenerateSerializableTypes>false</GenerateSerializableTypes>
     <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
     <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
     <ReferencedAssemblies />
     <ReferencedDataContractTypes />
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:3317/DataSetInDataGrid.Silverlight_Web/GetData.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:3937/CCSSSite/GetData.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="GetData1.wsdl" MetadataType="Wsdl" ID="80ac1035-5577-4382-96d5-67872e22794d" SourceId="1" SourceUrl="http://localhost:3317/DataSetInDataGrid.Silverlight_Web/GetData.svc?wsdl=wsdl0" />
-    <MetadataFile FileName="GetData.disco" MetadataType="Disco" ID="c5c20099-87d2-4948-bbe9-4d239e84c99f" SourceId="1" SourceUrl="http://localhost:3317/DataSetInDataGrid.Silverlight_Web/GetData.svc?disco" />
-    <MetadataFile FileName="GetData4.xsd" MetadataType="Schema" ID="a03ad178-5c1a-4588-b17e-a1bc83ac73fb" SourceId="1" SourceUrl="http://localhost:3317/DataSetInDataGrid.Silverlight_Web/GetData.svc?xsd=xsd2" />
-    <MetadataFile FileName="GetData.wsdl" MetadataType="Wsdl" ID="1518a27a-0064-4c4f-841f-c2b3e2f4e51d" SourceId="1" SourceUrl="http://localhost:3317/DataSetInDataGrid.Silverlight_Web/GetData.svc?wsdl" />
-    <MetadataFile FileName="GetData3.xsd" MetadataType="Schema" ID="e8e23e88-613a-4edc-b586-772f00e265a5" SourceId="1" SourceUrl="http://localhost:3317/DataSetInDataGrid.Silverlight_Web/GetData.svc?xsd=xsd0" />
-    <MetadataFile FileName="GetData5.xsd" MetadataType="Schema" ID="9252303d-14f2-4bb6-99f9-e8e447140788" SourceId="1" SourceUrl="http://localhost:3317/DataSetInDataGrid.Silverlight_Web/GetData.svc?xsd=xsd1" />
+    <MetadataFile FileName="GetData2.wsdl" MetadataType="Wsdl" ID="c479ff1e-2d99-4c9e-9553-34103e882100" SourceId="1" SourceUrl="http://localhost:3937/CCSSSite/GetData.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="GetData1.disco" MetadataType="Disco" ID="872a9ece-9edd-4e59-81db-3155f12614f0" SourceId="1" SourceUrl="http://localhost:3937/CCSSSite/GetData.svc?disco" />
+    <MetadataFile FileName="GetData.xsd" MetadataType="Schema" ID="80ad3a44-3dbf-478e-9d3a-bbed96de2121" SourceId="1" SourceUrl="http://localhost:3937/CCSSSite/GetData.svc?xsd=xsd2" />
+    <MetadataFile FileName="GetData21.wsdl" MetadataType="Wsdl" ID="7a990faf-4a7a-443f-858e-fd2a99c0c388" SourceId="1" SourceUrl="http://localhost:3937/CCSSSite/GetData.svc?wsdl" />
+    <MetadataFile FileName="GetData1.xsd" MetadataType="Schema" ID="ebee63ef-b446-4399-8586-81de0dec3c45" SourceId="1" SourceUrl="http://localhost:3937/CCSSSite/GetData.svc?xsd=xsd1" />
+    <MetadataFile FileName="GetData2.xsd" MetadataType="Schema" ID="adbf2a8e-ef8d-41d3-944a-4ffb33835b03" SourceId="1" SourceUrl="http://localhost:3937/CCSSSite/GetData.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

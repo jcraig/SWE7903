@@ -15,7 +15,69 @@ public class GetData
 	// Change this connection string your need.
     // private const string connectionString = @"Data Source=NONE/SQLEXPRESS;Initial Catalog=CCSS;Integrated Security=True;";
     private const string connectionString = @"Server=None\SQLEXPRESS;Database=ccss;User Id=ccss;Password=ccss;";
-    
+
+
+
+    [OperationContract]
+    public DataSetData GetSchoolBuildings(int school_id, out CustomException ServiceError)
+    {
+        try
+        {
+            string SQL = String.Format("select SCHOOL_BUILDINGS_ID, BUILDING_NAME from SCHOOL_BUILDINGS where (SCHOOL_ID = {0});", school_id);
+            int PageNumber = 1;
+            int PageSize = 10000;
+            DataSet ds = GetDataSet(SQL, PageNumber, PageSize);
+            ServiceError = null;
+            return DataSetData.FromDataSet(ds);
+        }
+        catch (Exception ex)
+        {
+            ServiceError = new CustomException(ex);
+        }
+        return null;
+    }
+
+
+    [OperationContract]
+    public DataSetData GetSchools(out CustomException ServiceError)
+    {
+        try
+        {
+            string SQL = "select SCHOOL_ID, SCHOOL_NAME from SCHOOLS;";
+            int PageNumber = 1;
+            int PageSize = 10000;
+            DataSet ds = GetDataSet(SQL, PageNumber, PageSize);
+            ServiceError = null;
+            return DataSetData.FromDataSet(ds);
+        }
+        catch (Exception ex)
+        {
+            ServiceError = new CustomException(ex);
+        }
+        return null;
+    }
+
+
+    [OperationContract]
+    public DataSetData GetEventTypes(out CustomException ServiceError)
+    {
+        try
+        {
+            string SQL = "select EVENT_TYPE_ID, EVENT_TYPE_NAME from EVENT_TYPES;";
+            int PageNumber = 1;
+            int PageSize = 10000;
+            DataSet ds = GetDataSet(SQL, PageNumber, PageSize);
+            ServiceError = null;
+            return DataSetData.FromDataSet(ds);
+        }
+        catch (Exception ex)
+        {
+            ServiceError = new CustomException(ex);
+        }
+        return null;
+    }
+
+
 	//private const string connectionString = @"Data Source=LOCALHOST;Initial Catalog=AdventureWorks;Integrated Security=True;";		
 	[OperationContract]
 	public DataSetData GetDataSetData(string SQL, int PageNumber, int PageSize, out CustomException ServiceError)
@@ -32,6 +94,7 @@ public class GetData
 		}
 		return null;
 	}
+
 
 	[OperationContract]
 	public bool Update(DataSetData d, out CustomException ServiceError)

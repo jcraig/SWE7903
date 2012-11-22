@@ -22,7 +22,9 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CCSSSite", "CCSSSite\", "{D
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "24279"
+		VWDPort = "3937"
+		VWDDynamicPort = "false"
+		StartServerOnDebug = "true"
 		ProjOutputReferences = "{D10D2B48-8931-4D52-B6E3-7E469000AAA0}|ClientBin|false;"
 	EndProjectSection
 EndProject

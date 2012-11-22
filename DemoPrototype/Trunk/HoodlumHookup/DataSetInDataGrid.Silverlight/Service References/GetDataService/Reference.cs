@@ -304,6 +304,21 @@ namespace DataSetInDataGrid.Silverlight.GetDataService {
     [System.ServiceModel.ServiceContractAttribute(Namespace="", ConfigurationName="GetDataService.GetData")]
     public interface GetData {
         
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="urn:GetData/GetSchoolBuildings", ReplyAction="urn:GetData/GetSchoolBuildingsResponse")]
+        System.IAsyncResult BeginGetSchoolBuildings(int school_id, System.AsyncCallback callback, object asyncState);
+        
+        DataSetInDataGrid.Silverlight.GetDataService.DataSetData EndGetSchoolBuildings(out DataSetInDataGrid.Silverlight.GetDataService.CustomException ServiceError, System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="urn:GetData/GetSchools", ReplyAction="urn:GetData/GetSchoolsResponse")]
+        System.IAsyncResult BeginGetSchools(System.AsyncCallback callback, object asyncState);
+        
+        DataSetInDataGrid.Silverlight.GetDataService.DataSetData EndGetSchools(out DataSetInDataGrid.Silverlight.GetDataService.CustomException ServiceError, System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="urn:GetData/GetEventTypes", ReplyAction="urn:GetData/GetEventTypesResponse")]
+        System.IAsyncResult BeginGetEventTypes(System.AsyncCallback callback, object asyncState);
+        
+        DataSetInDataGrid.Silverlight.GetDataService.DataSetData EndGetEventTypes(out DataSetInDataGrid.Silverlight.GetDataService.CustomException ServiceError, System.IAsyncResult result);
+        
         [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="urn:GetData/GetDataSetData", ReplyAction="urn:GetData/GetDataSetDataResponse")]
         System.IAsyncResult BeginGetDataSetData(string SQL, int PageNumber, int PageSize, System.AsyncCallback callback, object asyncState);
         
@@ -317,6 +332,84 @@ namespace DataSetInDataGrid.Silverlight.GetDataService {
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface GetDataChannel : DataSetInDataGrid.Silverlight.GetDataService.GetData, System.ServiceModel.IClientChannel {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class GetSchoolBuildingsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public GetSchoolBuildingsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public DataSetInDataGrid.Silverlight.GetDataService.CustomException ServiceError {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((DataSetInDataGrid.Silverlight.GetDataService.CustomException)(this.results[0]));
+            }
+        }
+        
+        public DataSetInDataGrid.Silverlight.GetDataService.DataSetData Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((DataSetInDataGrid.Silverlight.GetDataService.DataSetData)(this.results[1]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class GetSchoolsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public GetSchoolsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public DataSetInDataGrid.Silverlight.GetDataService.CustomException ServiceError {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((DataSetInDataGrid.Silverlight.GetDataService.CustomException)(this.results[0]));
+            }
+        }
+        
+        public DataSetInDataGrid.Silverlight.GetDataService.DataSetData Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((DataSetInDataGrid.Silverlight.GetDataService.DataSetData)(this.results[1]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class GetEventTypesCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public GetEventTypesCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public DataSetInDataGrid.Silverlight.GetDataService.CustomException ServiceError {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((DataSetInDataGrid.Silverlight.GetDataService.CustomException)(this.results[0]));
+            }
+        }
+        
+        public DataSetInDataGrid.Silverlight.GetDataService.DataSetData Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((DataSetInDataGrid.Silverlight.GetDataService.DataSetData)(this.results[1]));
+            }
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -374,6 +467,24 @@ namespace DataSetInDataGrid.Silverlight.GetDataService {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public partial class GetDataClient : System.ServiceModel.ClientBase<DataSetInDataGrid.Silverlight.GetDataService.GetData>, DataSetInDataGrid.Silverlight.GetDataService.GetData {
+        
+        private BeginOperationDelegate onBeginGetSchoolBuildingsDelegate;
+        
+        private EndOperationDelegate onEndGetSchoolBuildingsDelegate;
+        
+        private System.Threading.SendOrPostCallback onGetSchoolBuildingsCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginGetSchoolsDelegate;
+        
+        private EndOperationDelegate onEndGetSchoolsDelegate;
+        
+        private System.Threading.SendOrPostCallback onGetSchoolsCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginGetEventTypesDelegate;
+        
+        private EndOperationDelegate onEndGetEventTypesDelegate;
+        
+        private System.Threading.SendOrPostCallback onGetEventTypesCompletedDelegate;
         
         private BeginOperationDelegate onBeginGetDataSetDataDelegate;
         
@@ -440,6 +551,12 @@ namespace DataSetInDataGrid.Silverlight.GetDataService {
             }
         }
         
+        public event System.EventHandler<GetSchoolBuildingsCompletedEventArgs> GetSchoolBuildingsCompleted;
+        
+        public event System.EventHandler<GetSchoolsCompletedEventArgs> GetSchoolsCompleted;
+        
+        public event System.EventHandler<GetEventTypesCompletedEventArgs> GetEventTypesCompleted;
+        
         public event System.EventHandler<GetDataSetDataCompletedEventArgs> GetDataSetDataCompleted;
         
         public event System.EventHandler<UpdateCompletedEventArgs> UpdateCompleted;
@@ -447,6 +564,146 @@ namespace DataSetInDataGrid.Silverlight.GetDataService {
         public event System.EventHandler<System.ComponentModel.AsyncCompletedEventArgs> OpenCompleted;
         
         public event System.EventHandler<System.ComponentModel.AsyncCompletedEventArgs> CloseCompleted;
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult DataSetInDataGrid.Silverlight.GetDataService.GetData.BeginGetSchoolBuildings(int school_id, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginGetSchoolBuildings(school_id, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        DataSetInDataGrid.Silverlight.GetDataService.DataSetData DataSetInDataGrid.Silverlight.GetDataService.GetData.EndGetSchoolBuildings(out DataSetInDataGrid.Silverlight.GetDataService.CustomException ServiceError, System.IAsyncResult result) {
+            return base.Channel.EndGetSchoolBuildings(out ServiceError, result);
+        }
+        
+        private System.IAsyncResult OnBeginGetSchoolBuildings(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            int school_id = ((int)(inValues[0]));
+            return ((DataSetInDataGrid.Silverlight.GetDataService.GetData)(this)).BeginGetSchoolBuildings(school_id, callback, asyncState);
+        }
+        
+        private object[] OnEndGetSchoolBuildings(System.IAsyncResult result) {
+            DataSetInDataGrid.Silverlight.GetDataService.CustomException ServiceError = this.GetDefaultValueForInitialization<DataSetInDataGrid.Silverlight.GetDataService.CustomException>();
+            DataSetInDataGrid.Silverlight.GetDataService.DataSetData retVal = ((DataSetInDataGrid.Silverlight.GetDataService.GetData)(this)).EndGetSchoolBuildings(out ServiceError, result);
+            return new object[] {
+                    ServiceError,
+                    retVal};
+        }
+        
+        private void OnGetSchoolBuildingsCompleted(object state) {
+            if ((this.GetSchoolBuildingsCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.GetSchoolBuildingsCompleted(this, new GetSchoolBuildingsCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void GetSchoolBuildingsAsync(int school_id) {
+            this.GetSchoolBuildingsAsync(school_id, null);
+        }
+        
+        public void GetSchoolBuildingsAsync(int school_id, object userState) {
+            if ((this.onBeginGetSchoolBuildingsDelegate == null)) {
+                this.onBeginGetSchoolBuildingsDelegate = new BeginOperationDelegate(this.OnBeginGetSchoolBuildings);
+            }
+            if ((this.onEndGetSchoolBuildingsDelegate == null)) {
+                this.onEndGetSchoolBuildingsDelegate = new EndOperationDelegate(this.OnEndGetSchoolBuildings);
+            }
+            if ((this.onGetSchoolBuildingsCompletedDelegate == null)) {
+                this.onGetSchoolBuildingsCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetSchoolBuildingsCompleted);
+            }
+            base.InvokeAsync(this.onBeginGetSchoolBuildingsDelegate, new object[] {
+                        school_id}, this.onEndGetSchoolBuildingsDelegate, this.onGetSchoolBuildingsCompletedDelegate, userState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult DataSetInDataGrid.Silverlight.GetDataService.GetData.BeginGetSchools(System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginGetSchools(callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        DataSetInDataGrid.Silverlight.GetDataService.DataSetData DataSetInDataGrid.Silverlight.GetDataService.GetData.EndGetSchools(out DataSetInDataGrid.Silverlight.GetDataService.CustomException ServiceError, System.IAsyncResult result) {
+            return base.Channel.EndGetSchools(out ServiceError, result);
+        }
+        
+        private System.IAsyncResult OnBeginGetSchools(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            return ((DataSetInDataGrid.Silverlight.GetDataService.GetData)(this)).BeginGetSchools(callback, asyncState);
+        }
+        
+        private object[] OnEndGetSchools(System.IAsyncResult result) {
+            DataSetInDataGrid.Silverlight.GetDataService.CustomException ServiceError = this.GetDefaultValueForInitialization<DataSetInDataGrid.Silverlight.GetDataService.CustomException>();
+            DataSetInDataGrid.Silverlight.GetDataService.DataSetData retVal = ((DataSetInDataGrid.Silverlight.GetDataService.GetData)(this)).EndGetSchools(out ServiceError, result);
+            return new object[] {
+                    ServiceError,
+                    retVal};
+        }
+        
+        private void OnGetSchoolsCompleted(object state) {
+            if ((this.GetSchoolsCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.GetSchoolsCompleted(this, new GetSchoolsCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void GetSchoolsAsync() {
+            this.GetSchoolsAsync(null);
+        }
+        
+        public void GetSchoolsAsync(object userState) {
+            if ((this.onBeginGetSchoolsDelegate == null)) {
+                this.onBeginGetSchoolsDelegate = new BeginOperationDelegate(this.OnBeginGetSchools);
+            }
+            if ((this.onEndGetSchoolsDelegate == null)) {
+                this.onEndGetSchoolsDelegate = new EndOperationDelegate(this.OnEndGetSchools);
+            }
+            if ((this.onGetSchoolsCompletedDelegate == null)) {
+                this.onGetSchoolsCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetSchoolsCompleted);
+            }
+            base.InvokeAsync(this.onBeginGetSchoolsDelegate, null, this.onEndGetSchoolsDelegate, this.onGetSchoolsCompletedDelegate, userState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult DataSetInDataGrid.Silverlight.GetDataService.GetData.BeginGetEventTypes(System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginGetEventTypes(callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        DataSetInDataGrid.Silverlight.GetDataService.DataSetData DataSetInDataGrid.Silverlight.GetDataService.GetData.EndGetEventTypes(out DataSetInDataGrid.Silverlight.GetDataService.CustomException ServiceError, System.IAsyncResult result) {
+            return base.Channel.EndGetEventTypes(out ServiceError, result);
+        }
+        
+        private System.IAsyncResult OnBeginGetEventTypes(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            return ((DataSetInDataGrid.Silverlight.GetDataService.GetData)(this)).BeginGetEventTypes(callback, asyncState);
+        }
+        
+        private object[] OnEndGetEventTypes(System.IAsyncResult result) {
+            DataSetInDataGrid.Silverlight.GetDataService.CustomException ServiceError = this.GetDefaultValueForInitialization<DataSetInDataGrid.Silverlight.GetDataService.CustomException>();
+            DataSetInDataGrid.Silverlight.GetDataService.DataSetData retVal = ((DataSetInDataGrid.Silverlight.GetDataService.GetData)(this)).EndGetEventTypes(out ServiceError, result);
+            return new object[] {
+                    ServiceError,
+                    retVal};
+        }
+        
+        private void OnGetEventTypesCompleted(object state) {
+            if ((this.GetEventTypesCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.GetEventTypesCompleted(this, new GetEventTypesCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void GetEventTypesAsync() {
+            this.GetEventTypesAsync(null);
+        }
+        
+        public void GetEventTypesAsync(object userState) {
+            if ((this.onBeginGetEventTypesDelegate == null)) {
+                this.onBeginGetEventTypesDelegate = new BeginOperationDelegate(this.OnBeginGetEventTypes);
+            }
+            if ((this.onEndGetEventTypesDelegate == null)) {
+                this.onEndGetEventTypesDelegate = new EndOperationDelegate(this.OnEndGetEventTypes);
+            }
+            if ((this.onGetEventTypesCompletedDelegate == null)) {
+                this.onGetEventTypesCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetEventTypesCompleted);
+            }
+            base.InvokeAsync(this.onBeginGetEventTypesDelegate, null, this.onEndGetEventTypesDelegate, this.onGetEventTypesCompletedDelegate, userState);
+        }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.IAsyncResult DataSetInDataGrid.Silverlight.GetDataService.GetData.BeginGetDataSetData(string SQL, int PageNumber, int PageSize, System.AsyncCallback callback, object asyncState) {
@@ -622,6 +879,46 @@ namespace DataSetInDataGrid.Silverlight.GetDataService {
             
             public GetDataClientChannel(System.ServiceModel.ClientBase<DataSetInDataGrid.Silverlight.GetDataService.GetData> client) : 
                     base(client) {
+            }
+            
+            public System.IAsyncResult BeginGetSchoolBuildings(int school_id, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[1];
+                _args[0] = school_id;
+                System.IAsyncResult _result = base.BeginInvoke("GetSchoolBuildings", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public DataSetInDataGrid.Silverlight.GetDataService.DataSetData EndGetSchoolBuildings(out DataSetInDataGrid.Silverlight.GetDataService.CustomException ServiceError, System.IAsyncResult result) {
+                object[] _args = new object[1];
+                DataSetInDataGrid.Silverlight.GetDataService.DataSetData _result = ((DataSetInDataGrid.Silverlight.GetDataService.DataSetData)(base.EndInvoke("GetSchoolBuildings", _args, result)));
+                ServiceError = ((DataSetInDataGrid.Silverlight.GetDataService.CustomException)(_args[0]));
+                return _result;
+            }
+            
+            public System.IAsyncResult BeginGetSchools(System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[0];
+                System.IAsyncResult _result = base.BeginInvoke("GetSchools", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public DataSetInDataGrid.Silverlight.GetDataService.DataSetData EndGetSchools(out DataSetInDataGrid.Silverlight.GetDataService.CustomException ServiceError, System.IAsyncResult result) {
+                object[] _args = new object[1];
+                DataSetInDataGrid.Silverlight.GetDataService.DataSetData _result = ((DataSetInDataGrid.Silverlight.GetDataService.DataSetData)(base.EndInvoke("GetSchools", _args, result)));
+                ServiceError = ((DataSetInDataGrid.Silverlight.GetDataService.CustomException)(_args[0]));
+                return _result;
+            }
+            
+            public System.IAsyncResult BeginGetEventTypes(System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[0];
+                System.IAsyncResult _result = base.BeginInvoke("GetEventTypes", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public DataSetInDataGrid.Silverlight.GetDataService.DataSetData EndGetEventTypes(out DataSetInDataGrid.Silverlight.GetDataService.CustomException ServiceError, System.IAsyncResult result) {
+                object[] _args = new object[1];
+                DataSetInDataGrid.Silverlight.GetDataService.DataSetData _result = ((DataSetInDataGrid.Silverlight.GetDataService.DataSetData)(base.EndInvoke("GetEventTypes", _args, result)));
+                ServiceError = ((DataSetInDataGrid.Silverlight.GetDataService.CustomException)(_args[0]));
+                return _result;
             }
             
             public System.IAsyncResult BeginGetDataSetData(string SQL, int PageNumber, int PageSize, System.AsyncCallback callback, object asyncState) {
