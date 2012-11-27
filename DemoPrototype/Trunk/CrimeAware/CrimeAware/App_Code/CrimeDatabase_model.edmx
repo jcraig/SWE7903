@@ -1,0 +1,1093 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Somee_CrimeDatabaseModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="Somee_CrimeDatabaseModelStoreContainer">
+          <EntitySet Name="EVENT_DATA" EntityType="Somee_CrimeDatabaseModel.Store.EVENT_DATA" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EVENT_DATA_TYPES" EntityType="Somee_CrimeDatabaseModel.Store.EVENT_DATA_TYPES" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EVENT_TYPES" EntityType="Somee_CrimeDatabaseModel.Store.EVENT_TYPES" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SCHEDULE" EntityType="Somee_CrimeDatabaseModel.Store.SCHEDULE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SCHOOL_BUILDINGS" EntityType="Somee_CrimeDatabaseModel.Store.SCHOOL_BUILDINGS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SCHOOLS" EntityType="Somee_CrimeDatabaseModel.Store.SCHOOLS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="USERS" EntityType="Somee_CrimeDatabaseModel.Store.USERS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="WEATHER_INFO" EntityType="Somee_CrimeDatabaseModel.Store.WEATHER_INFO" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK__EVENT_DAT__CREAT__164452B1" Association="Somee_CrimeDatabaseModel.Store.FK__EVENT_DAT__CREAT__164452B1">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="EVENT_DATA" EntitySet="EVENT_DATA" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EVENT_DAT__CREAT__44FF419A" Association="Somee_CrimeDatabaseModel.Store.FK__EVENT_DAT__CREAT__44FF419A">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="EVENT_DATA_TYPES" EntitySet="EVENT_DATA_TYPES" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EVENT_DAT__EVENT__4316F928" Association="Somee_CrimeDatabaseModel.Store.FK__EVENT_DAT__EVENT__4316F928">
+            <End Role="EVENT_DATA" EntitySet="EVENT_DATA" />
+            <End Role="EVENT_DATA_TYPES" EntitySet="EVENT_DATA_TYPES" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EVENT_DAT__EVENT__440B1D61" Association="Somee_CrimeDatabaseModel.Store.FK__EVENT_DAT__EVENT__440B1D61">
+            <End Role="EVENT_TYPES" EntitySet="EVENT_TYPES" />
+            <End Role="EVENT_DATA_TYPES" EntitySet="EVENT_DATA_TYPES" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EVENT_DAT__MODIF__173876EA" Association="Somee_CrimeDatabaseModel.Store.FK__EVENT_DAT__MODIF__173876EA">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="EVENT_DATA" EntitySet="EVENT_DATA" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EVENT_DAT__MODIF__45F365D3" Association="Somee_CrimeDatabaseModel.Store.FK__EVENT_DAT__MODIF__45F365D3">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="EVENT_DATA_TYPES" EntitySet="EVENT_DATA_TYPES" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EVENT_DAT__SCHOO__15502E78" Association="Somee_CrimeDatabaseModel.Store.FK__EVENT_DAT__SCHOO__15502E78">
+            <End Role="SCHOOLS" EntitySet="SCHOOLS" />
+            <End Role="EVENT_DATA" EntitySet="EVENT_DATA" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EVENT_TYP__CREAT__08EA5793" Association="Somee_CrimeDatabaseModel.Store.FK__EVENT_TYP__CREAT__08EA5793">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="EVENT_TYPES" EntitySet="EVENT_TYPES" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EVENT_TYP__MODIF__09DE7BCC" Association="Somee_CrimeDatabaseModel.Store.FK__EVENT_TYP__MODIF__09DE7BCC">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="EVENT_TYPES" EntitySet="EVENT_TYPES" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SCHEDULE__CREATE__1CF15040" Association="Somee_CrimeDatabaseModel.Store.FK__SCHEDULE__CREATE__1CF15040">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="SCHEDULE" EntitySet="SCHEDULE" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SCHEDULE__MODIFI__1DE57479" Association="Somee_CrimeDatabaseModel.Store.FK__SCHEDULE__MODIFI__1DE57479">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="SCHEDULE" EntitySet="SCHEDULE" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SCHEDULE__SCHOOL__1BFD2C07" Association="Somee_CrimeDatabaseModel.Store.FK__SCHEDULE__SCHOOL__1BFD2C07">
+            <End Role="SCHOOLS" EntitySet="SCHOOLS" />
+            <End Role="SCHEDULE" EntitySet="SCHEDULE" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SCHOOL_BU__CREAT__3D5E1FD2" Association="Somee_CrimeDatabaseModel.Store.FK__SCHOOL_BU__CREAT__3D5E1FD2">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="SCHOOL_BUILDINGS" EntitySet="SCHOOL_BUILDINGS" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SCHOOL_BU__MODIF__3E52440B" Association="Somee_CrimeDatabaseModel.Store.FK__SCHOOL_BU__MODIF__3E52440B">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="SCHOOL_BUILDINGS" EntitySet="SCHOOL_BUILDINGS" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SCHOOL_BU__SCHOO__3C69FB99" Association="Somee_CrimeDatabaseModel.Store.FK__SCHOOL_BU__SCHOO__3C69FB99">
+            <End Role="SCHOOLS" EntitySet="SCHOOLS" />
+            <End Role="SCHOOL_BUILDINGS" EntitySet="SCHOOL_BUILDINGS" />
+          </AssociationSet>
+          <AssociationSet Name="FK__WEATHER_I__SCHOO__2B3F6F97" Association="Somee_CrimeDatabaseModel.Store.FK__WEATHER_I__SCHOO__2B3F6F97">
+            <End Role="SCHOOLS" EntitySet="SCHOOLS" />
+            <End Role="WEATHER_INFO" EntitySet="WEATHER_INFO" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="EVENT_DATA">
+          <Key>
+            <PropertyRef Name="EVENT_ID" />
+          </Key>
+          <Property Name="EVENT_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EVENT_DATE" Type="datetime" Nullable="false" />
+          <Property Name="EVENT_END_DATE" Type="datetime" />
+          <Property Name="LOCATION_LAT" Type="numeric" Nullable="false" Precision="9" Scale="6" />
+          <Property Name="LOCATION_LONG" Type="numeric" Nullable="false" Precision="9" Scale="6" />
+          <Property Name="LOCATION_END_LAT" Type="numeric" Precision="9" Scale="6" />
+          <Property Name="LOCATION_END_LONG" Type="numeric" Precision="9" Scale="6" />
+          <Property Name="SCHOOL_ID" Type="int" />
+          <Property Name="ARREST_IND" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="VICITIM_SEX" Type="char" MaxLength="1" />
+          <Property Name="VICTIM_AGE" Type="numeric" Precision="3" />
+          <Property Name="VICTIM_STUDENT_IND" Type="char" MaxLength="1" />
+          <Property Name="OFFENDER_SEX" Type="char" MaxLength="1" />
+          <Property Name="OFFENDER_AGE" Type="numeric" Precision="3" />
+          <Property Name="OFFENDER_STUDENT_IND" Type="char" MaxLength="1" />
+          <Property Name="CREATED_BY" Type="int" Nullable="false" />
+          <Property Name="CREATED_DATE" Type="datetime" Nullable="false" />
+          <Property Name="MODIFIED_BY" Type="int" />
+          <Property Name="MODIFIED_DATE" Type="datetime" />
+        </EntityType>
+        <EntityType Name="EVENT_DATA_TYPES">
+          <Key>
+            <PropertyRef Name="EVENT_ID" />
+            <PropertyRef Name="EVENT_TYPE_ID" />
+          </Key>
+          <Property Name="EVENT_ID" Type="int" Nullable="false" />
+          <Property Name="EVENT_TYPE_ID" Type="int" Nullable="false" />
+          <Property Name="CREATED_BY" Type="int" Nullable="false" />
+          <Property Name="CREATED_DATE" Type="datetime" Nullable="false" />
+          <Property Name="MODIFIED_BY" Type="int" />
+          <Property Name="MODIFIED_DATE" Type="datetime" />
+        </EntityType>
+        <EntityType Name="EVENT_TYPES">
+          <Key>
+            <PropertyRef Name="EVENT_TYPE_ID" />
+          </Key>
+          <Property Name="EVENT_TYPE_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EVENT_TYPE_NAME" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="ACTIVE_IND" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="CREATED_BY" Type="int" Nullable="false" />
+          <Property Name="CREATED_DATE" Type="datetime" Nullable="false" />
+          <Property Name="MODIFIED_BY" Type="int" />
+          <Property Name="MODIFIED_DATE" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SCHEDULE">
+          <Key>
+            <PropertyRef Name="SCHEDULE_ID" />
+          </Key>
+          <Property Name="SCHEDULE_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SCHOOL_ID" Type="int" Nullable="false" />
+          <Property Name="SCHEDULE_DATE" Type="date" Nullable="false" />
+          <Property Name="NAME" Type="varchar" MaxLength="40" />
+          <Property Name="HOLIDAY_IND" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="SCHOOL_INSESSION_IND" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="EXAM_IND" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="CREATED_BY" Type="int" Nullable="false" />
+          <Property Name="CREATED_DATE" Type="datetime" Nullable="false" />
+          <Property Name="MODIFIED_BY" Type="int" />
+          <Property Name="MODIFIED_DATE" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SCHOOL_BUILDINGS">
+          <Key>
+            <PropertyRef Name="SCHOOL_BUILDINGS_ID" />
+          </Key>
+          <Property Name="SCHOOL_BUILDINGS_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SCHOOL_ID" Type="int" Nullable="false" />
+          <Property Name="BUILDING_NAME" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="LAT_START" Type="numeric" Nullable="false" Precision="9" Scale="6" />
+          <Property Name="LAT_END" Type="numeric" Precision="9" Scale="6" />
+          <Property Name="LONG_START" Type="numeric" Nullable="false" Precision="9" Scale="6" />
+          <Property Name="LONG_END" Type="numeric" Precision="9" Scale="6" />
+          <Property Name="CREATED_BY" Type="int" Nullable="false" />
+          <Property Name="CREATED_DATE" Type="datetime" Nullable="false" />
+          <Property Name="MODIFIED_BY" Type="int" />
+          <Property Name="MODIFIED_DATE" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SCHOOLS">
+          <Key>
+            <PropertyRef Name="SCHOOL_ID" />
+          </Key>
+          <Property Name="SCHOOL_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SCHOOL_NAME" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="CITY" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="STATE" Type="char" Nullable="false" MaxLength="2" />
+          <Property Name="ABBREVIATION" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="USERS">
+          <Key>
+            <PropertyRef Name="USER_ID" />
+          </Key>
+          <Property Name="USER_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="USER_TYPE" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="NAME" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="PASSWORD_ENC" Type="varchar" MaxLength="40" />
+          <Property Name="ACTIVE_IND" Type="char" Nullable="false" MaxLength="1" />
+          <Property Name="CREATED_BY" Type="int" Nullable="false" />
+          <Property Name="CREATED_DATE" Type="datetime" Nullable="false" />
+          <Property Name="MODIFIED_BY" Type="int" />
+          <Property Name="MODIFIED_DATE" Type="datetime" />
+        </EntityType>
+        <EntityType Name="WEATHER_INFO">
+          <Key>
+            <PropertyRef Name="SCHOOL_ID" />
+            <PropertyRef Name="WEATHER_START_DATE" />
+            <PropertyRef Name="WEATHER_END_DATE" />
+          </Key>
+          <Property Name="SCHOOL_ID" Type="int" Nullable="false" />
+          <Property Name="WEATHER_START_DATE" Type="datetime" Nullable="false" />
+          <Property Name="WEATHER_END_DATE" Type="datetime" Nullable="false" />
+          <Property Name="TEMPERATURE" Type="numeric" Precision="3" />
+          <Property Name="SUNNY_IND" Type="char" MaxLength="1" />
+          <Property Name="RAINY_IND" Type="char" MaxLength="1" />
+        </EntityType>
+        <Association Name="FK__EVENT_DAT__CREAT__164452B1">
+          <End Role="USERS" Type="Somee_CrimeDatabaseModel.Store.USERS" Multiplicity="1" />
+          <End Role="EVENT_DATA" Type="Somee_CrimeDatabaseModel.Store.EVENT_DATA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="EVENT_DATA">
+              <PropertyRef Name="CREATED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EVENT_DAT__CREAT__44FF419A">
+          <End Role="USERS" Type="Somee_CrimeDatabaseModel.Store.USERS" Multiplicity="1" />
+          <End Role="EVENT_DATA_TYPES" Type="Somee_CrimeDatabaseModel.Store.EVENT_DATA_TYPES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="EVENT_DATA_TYPES">
+              <PropertyRef Name="CREATED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EVENT_DAT__EVENT__4316F928">
+          <End Role="EVENT_DATA" Type="Somee_CrimeDatabaseModel.Store.EVENT_DATA" Multiplicity="1" />
+          <End Role="EVENT_DATA_TYPES" Type="Somee_CrimeDatabaseModel.Store.EVENT_DATA_TYPES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EVENT_DATA">
+              <PropertyRef Name="EVENT_ID" />
+            </Principal>
+            <Dependent Role="EVENT_DATA_TYPES">
+              <PropertyRef Name="EVENT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EVENT_DAT__EVENT__440B1D61">
+          <End Role="EVENT_TYPES" Type="Somee_CrimeDatabaseModel.Store.EVENT_TYPES" Multiplicity="1" />
+          <End Role="EVENT_DATA_TYPES" Type="Somee_CrimeDatabaseModel.Store.EVENT_DATA_TYPES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EVENT_TYPES">
+              <PropertyRef Name="EVENT_TYPE_ID" />
+            </Principal>
+            <Dependent Role="EVENT_DATA_TYPES">
+              <PropertyRef Name="EVENT_TYPE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EVENT_DAT__MODIF__173876EA">
+          <End Role="USERS" Type="Somee_CrimeDatabaseModel.Store.USERS" Multiplicity="0..1" />
+          <End Role="EVENT_DATA" Type="Somee_CrimeDatabaseModel.Store.EVENT_DATA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="EVENT_DATA">
+              <PropertyRef Name="MODIFIED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EVENT_DAT__MODIF__45F365D3">
+          <End Role="USERS" Type="Somee_CrimeDatabaseModel.Store.USERS" Multiplicity="0..1" />
+          <End Role="EVENT_DATA_TYPES" Type="Somee_CrimeDatabaseModel.Store.EVENT_DATA_TYPES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="EVENT_DATA_TYPES">
+              <PropertyRef Name="MODIFIED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EVENT_DAT__SCHOO__15502E78">
+          <End Role="SCHOOLS" Type="Somee_CrimeDatabaseModel.Store.SCHOOLS" Multiplicity="0..1" />
+          <End Role="EVENT_DATA" Type="Somee_CrimeDatabaseModel.Store.EVENT_DATA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SCHOOLS">
+              <PropertyRef Name="SCHOOL_ID" />
+            </Principal>
+            <Dependent Role="EVENT_DATA">
+              <PropertyRef Name="SCHOOL_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EVENT_TYP__CREAT__08EA5793">
+          <End Role="USERS" Type="Somee_CrimeDatabaseModel.Store.USERS" Multiplicity="1" />
+          <End Role="EVENT_TYPES" Type="Somee_CrimeDatabaseModel.Store.EVENT_TYPES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="EVENT_TYPES">
+              <PropertyRef Name="CREATED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EVENT_TYP__MODIF__09DE7BCC">
+          <End Role="USERS" Type="Somee_CrimeDatabaseModel.Store.USERS" Multiplicity="0..1" />
+          <End Role="EVENT_TYPES" Type="Somee_CrimeDatabaseModel.Store.EVENT_TYPES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="EVENT_TYPES">
+              <PropertyRef Name="MODIFIED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SCHEDULE__CREATE__1CF15040">
+          <End Role="USERS" Type="Somee_CrimeDatabaseModel.Store.USERS" Multiplicity="1" />
+          <End Role="SCHEDULE" Type="Somee_CrimeDatabaseModel.Store.SCHEDULE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="SCHEDULE">
+              <PropertyRef Name="CREATED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SCHEDULE__MODIFI__1DE57479">
+          <End Role="USERS" Type="Somee_CrimeDatabaseModel.Store.USERS" Multiplicity="0..1" />
+          <End Role="SCHEDULE" Type="Somee_CrimeDatabaseModel.Store.SCHEDULE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="SCHEDULE">
+              <PropertyRef Name="MODIFIED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SCHEDULE__SCHOOL__1BFD2C07">
+          <End Role="SCHOOLS" Type="Somee_CrimeDatabaseModel.Store.SCHOOLS" Multiplicity="1" />
+          <End Role="SCHEDULE" Type="Somee_CrimeDatabaseModel.Store.SCHEDULE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SCHOOLS">
+              <PropertyRef Name="SCHOOL_ID" />
+            </Principal>
+            <Dependent Role="SCHEDULE">
+              <PropertyRef Name="SCHOOL_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SCHOOL_BU__CREAT__3D5E1FD2">
+          <End Role="USERS" Type="Somee_CrimeDatabaseModel.Store.USERS" Multiplicity="1" />
+          <End Role="SCHOOL_BUILDINGS" Type="Somee_CrimeDatabaseModel.Store.SCHOOL_BUILDINGS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="SCHOOL_BUILDINGS">
+              <PropertyRef Name="CREATED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SCHOOL_BU__MODIF__3E52440B">
+          <End Role="USERS" Type="Somee_CrimeDatabaseModel.Store.USERS" Multiplicity="0..1" />
+          <End Role="SCHOOL_BUILDINGS" Type="Somee_CrimeDatabaseModel.Store.SCHOOL_BUILDINGS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="SCHOOL_BUILDINGS">
+              <PropertyRef Name="MODIFIED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SCHOOL_BU__SCHOO__3C69FB99">
+          <End Role="SCHOOLS" Type="Somee_CrimeDatabaseModel.Store.SCHOOLS" Multiplicity="1" />
+          <End Role="SCHOOL_BUILDINGS" Type="Somee_CrimeDatabaseModel.Store.SCHOOL_BUILDINGS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SCHOOLS">
+              <PropertyRef Name="SCHOOL_ID" />
+            </Principal>
+            <Dependent Role="SCHOOL_BUILDINGS">
+              <PropertyRef Name="SCHOOL_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__WEATHER_I__SCHOO__2B3F6F97">
+          <End Role="SCHOOLS" Type="Somee_CrimeDatabaseModel.Store.SCHOOLS" Multiplicity="1" />
+          <End Role="WEATHER_INFO" Type="Somee_CrimeDatabaseModel.Store.WEATHER_INFO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SCHOOLS">
+              <PropertyRef Name="SCHOOL_ID" />
+            </Principal>
+            <Dependent Role="WEATHER_INFO">
+              <PropertyRef Name="SCHOOL_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Somee_CrimeDatabaseModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="Somee_CrimeDatabaseEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="EVENT_DATA" EntityType="Somee_CrimeDatabaseModel.EVENT_DATA" />
+          <EntitySet Name="EVENT_DATA_TYPES" EntityType="Somee_CrimeDatabaseModel.EVENT_DATA_TYPES" />
+          <EntitySet Name="EVENT_TYPES" EntityType="Somee_CrimeDatabaseModel.EVENT_TYPES" />
+          <EntitySet Name="SCHEDULE" EntityType="Somee_CrimeDatabaseModel.SCHEDULE" />
+          <EntitySet Name="SCHOOL_BUILDINGS" EntityType="Somee_CrimeDatabaseModel.SCHOOL_BUILDINGS" />
+          <EntitySet Name="SCHOOLS" EntityType="Somee_CrimeDatabaseModel.SCHOOLS" />
+          <EntitySet Name="USERS" EntityType="Somee_CrimeDatabaseModel.USERS" />
+          <EntitySet Name="WEATHER_INFO" EntityType="Somee_CrimeDatabaseModel.WEATHER_INFO" />
+          <AssociationSet Name="FK__EVENT_DAT__CREAT__164452B1" Association="Somee_CrimeDatabaseModel.FK__EVENT_DAT__CREAT__164452B1">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="EVENT_DATA" EntitySet="EVENT_DATA" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EVENT_DAT__EVENT__4316F928" Association="Somee_CrimeDatabaseModel.FK__EVENT_DAT__EVENT__4316F928">
+            <End Role="EVENT_DATA" EntitySet="EVENT_DATA" />
+            <End Role="EVENT_DATA_TYPES" EntitySet="EVENT_DATA_TYPES" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EVENT_DAT__MODIF__173876EA" Association="Somee_CrimeDatabaseModel.FK__EVENT_DAT__MODIF__173876EA">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="EVENT_DATA" EntitySet="EVENT_DATA" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EVENT_DAT__SCHOO__15502E78" Association="Somee_CrimeDatabaseModel.FK__EVENT_DAT__SCHOO__15502E78">
+            <End Role="SCHOOLS" EntitySet="SCHOOLS" />
+            <End Role="EVENT_DATA" EntitySet="EVENT_DATA" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EVENT_DAT__CREAT__44FF419A" Association="Somee_CrimeDatabaseModel.FK__EVENT_DAT__CREAT__44FF419A">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="EVENT_DATA_TYPES" EntitySet="EVENT_DATA_TYPES" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EVENT_DAT__EVENT__440B1D61" Association="Somee_CrimeDatabaseModel.FK__EVENT_DAT__EVENT__440B1D61">
+            <End Role="EVENT_TYPES" EntitySet="EVENT_TYPES" />
+            <End Role="EVENT_DATA_TYPES" EntitySet="EVENT_DATA_TYPES" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EVENT_DAT__MODIF__45F365D3" Association="Somee_CrimeDatabaseModel.FK__EVENT_DAT__MODIF__45F365D3">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="EVENT_DATA_TYPES" EntitySet="EVENT_DATA_TYPES" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EVENT_TYP__CREAT__08EA5793" Association="Somee_CrimeDatabaseModel.FK__EVENT_TYP__CREAT__08EA5793">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="EVENT_TYPES" EntitySet="EVENT_TYPES" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EVENT_TYP__MODIF__09DE7BCC" Association="Somee_CrimeDatabaseModel.FK__EVENT_TYP__MODIF__09DE7BCC">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="EVENT_TYPES" EntitySet="EVENT_TYPES" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SCHEDULE__CREATE__1CF15040" Association="Somee_CrimeDatabaseModel.FK__SCHEDULE__CREATE__1CF15040">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="SCHEDULE" EntitySet="SCHEDULE" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SCHEDULE__MODIFI__1DE57479" Association="Somee_CrimeDatabaseModel.FK__SCHEDULE__MODIFI__1DE57479">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="SCHEDULE" EntitySet="SCHEDULE" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SCHEDULE__SCHOOL__1BFD2C07" Association="Somee_CrimeDatabaseModel.FK__SCHEDULE__SCHOOL__1BFD2C07">
+            <End Role="SCHOOLS" EntitySet="SCHOOLS" />
+            <End Role="SCHEDULE" EntitySet="SCHEDULE" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SCHOOL_BU__CREAT__3D5E1FD2" Association="Somee_CrimeDatabaseModel.FK__SCHOOL_BU__CREAT__3D5E1FD2">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="SCHOOL_BUILDINGS" EntitySet="SCHOOL_BUILDINGS" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SCHOOL_BU__MODIF__3E52440B" Association="Somee_CrimeDatabaseModel.FK__SCHOOL_BU__MODIF__3E52440B">
+            <End Role="USERS" EntitySet="USERS" />
+            <End Role="SCHOOL_BUILDINGS" EntitySet="SCHOOL_BUILDINGS" />
+          </AssociationSet>
+          <AssociationSet Name="FK__SCHOOL_BU__SCHOO__3C69FB99" Association="Somee_CrimeDatabaseModel.FK__SCHOOL_BU__SCHOO__3C69FB99">
+            <End Role="SCHOOLS" EntitySet="SCHOOLS" />
+            <End Role="SCHOOL_BUILDINGS" EntitySet="SCHOOL_BUILDINGS" />
+          </AssociationSet>
+          <AssociationSet Name="FK__WEATHER_I__SCHOO__2B3F6F97" Association="Somee_CrimeDatabaseModel.FK__WEATHER_I__SCHOO__2B3F6F97">
+            <End Role="SCHOOLS" EntitySet="SCHOOLS" />
+            <End Role="WEATHER_INFO" EntitySet="WEATHER_INFO" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="EVENT_DATA">
+          <Key>
+            <PropertyRef Name="EVENT_ID" />
+          </Key>
+          <Property Name="EVENT_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EVENT_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="EVENT_END_DATE" Type="DateTime" />
+          <Property Name="LOCATION_LAT" Type="Decimal" Nullable="false" Precision="9" Scale="6" />
+          <Property Name="LOCATION_LONG" Type="Decimal" Nullable="false" Precision="9" Scale="6" />
+          <Property Name="LOCATION_END_LAT" Type="Decimal" Precision="9" Scale="6" />
+          <Property Name="LOCATION_END_LONG" Type="Decimal" Precision="9" Scale="6" />
+          <Property Name="SCHOOL_ID" Type="Int32" />
+          <Property Name="ARREST_IND" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="VICITIM_SEX" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="VICTIM_AGE" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="VICTIM_STUDENT_IND" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="OFFENDER_SEX" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="OFFENDER_AGE" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="OFFENDER_STUDENT_IND" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CREATED_BY" Type="Int32" Nullable="false" />
+          <Property Name="CREATED_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="MODIFIED_BY" Type="Int32" />
+          <Property Name="MODIFIED_DATE" Type="DateTime" />
+          <NavigationProperty Name="USERS" Relationship="Somee_CrimeDatabaseModel.FK__EVENT_DAT__CREAT__164452B1" FromRole="EVENT_DATA" ToRole="USERS" />
+          <NavigationProperty Name="EVENT_DATA_TYPES" Relationship="Somee_CrimeDatabaseModel.FK__EVENT_DAT__EVENT__4316F928" FromRole="EVENT_DATA" ToRole="EVENT_DATA_TYPES" />
+          <NavigationProperty Name="USERS1" Relationship="Somee_CrimeDatabaseModel.FK__EVENT_DAT__MODIF__173876EA" FromRole="EVENT_DATA" ToRole="USERS" />
+          <NavigationProperty Name="SCHOOLS" Relationship="Somee_CrimeDatabaseModel.FK__EVENT_DAT__SCHOO__15502E78" FromRole="EVENT_DATA" ToRole="SCHOOLS" />
+        </EntityType>
+        <EntityType Name="EVENT_DATA_TYPES">
+          <Key>
+            <PropertyRef Name="EVENT_ID" />
+            <PropertyRef Name="EVENT_TYPE_ID" />
+          </Key>
+          <Property Name="EVENT_ID" Type="Int32" Nullable="false" />
+          <Property Name="EVENT_TYPE_ID" Type="Int32" Nullable="false" />
+          <Property Name="CREATED_BY" Type="Int32" Nullable="false" />
+          <Property Name="CREATED_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="MODIFIED_BY" Type="Int32" />
+          <Property Name="MODIFIED_DATE" Type="DateTime" />
+          <NavigationProperty Name="EVENT_DATA" Relationship="Somee_CrimeDatabaseModel.FK__EVENT_DAT__EVENT__4316F928" FromRole="EVENT_DATA_TYPES" ToRole="EVENT_DATA" />
+          <NavigationProperty Name="USERS" Relationship="Somee_CrimeDatabaseModel.FK__EVENT_DAT__CREAT__44FF419A" FromRole="EVENT_DATA_TYPES" ToRole="USERS" />
+          <NavigationProperty Name="EVENT_TYPES" Relationship="Somee_CrimeDatabaseModel.FK__EVENT_DAT__EVENT__440B1D61" FromRole="EVENT_DATA_TYPES" ToRole="EVENT_TYPES" />
+          <NavigationProperty Name="USERS1" Relationship="Somee_CrimeDatabaseModel.FK__EVENT_DAT__MODIF__45F365D3" FromRole="EVENT_DATA_TYPES" ToRole="USERS" />
+        </EntityType>
+        <EntityType Name="EVENT_TYPES">
+          <Key>
+            <PropertyRef Name="EVENT_TYPE_ID" />
+          </Key>
+          <Property Name="EVENT_TYPE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EVENT_TYPE_NAME" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="ACTIVE_IND" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CREATED_BY" Type="Int32" Nullable="false" />
+          <Property Name="CREATED_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="MODIFIED_BY" Type="Int32" />
+          <Property Name="MODIFIED_DATE" Type="DateTime" />
+          <NavigationProperty Name="EVENT_DATA_TYPES" Relationship="Somee_CrimeDatabaseModel.FK__EVENT_DAT__EVENT__440B1D61" FromRole="EVENT_TYPES" ToRole="EVENT_DATA_TYPES" />
+          <NavigationProperty Name="USERS" Relationship="Somee_CrimeDatabaseModel.FK__EVENT_TYP__CREAT__08EA5793" FromRole="EVENT_TYPES" ToRole="USERS" />
+          <NavigationProperty Name="USERS1" Relationship="Somee_CrimeDatabaseModel.FK__EVENT_TYP__MODIF__09DE7BCC" FromRole="EVENT_TYPES" ToRole="USERS" />
+        </EntityType>
+        <EntityType Name="SCHEDULE">
+          <Key>
+            <PropertyRef Name="SCHEDULE_ID" />
+          </Key>
+          <Property Name="SCHEDULE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SCHOOL_ID" Type="Int32" Nullable="false" />
+          <Property Name="SCHEDULE_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="NAME" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="HOLIDAY_IND" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="SCHOOL_INSESSION_IND" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="EXAM_IND" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CREATED_BY" Type="Int32" Nullable="false" />
+          <Property Name="CREATED_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="MODIFIED_BY" Type="Int32" />
+          <Property Name="MODIFIED_DATE" Type="DateTime" />
+          <NavigationProperty Name="USERS" Relationship="Somee_CrimeDatabaseModel.FK__SCHEDULE__CREATE__1CF15040" FromRole="SCHEDULE" ToRole="USERS" />
+          <NavigationProperty Name="USERS1" Relationship="Somee_CrimeDatabaseModel.FK__SCHEDULE__MODIFI__1DE57479" FromRole="SCHEDULE" ToRole="USERS" />
+          <NavigationProperty Name="SCHOOLS" Relationship="Somee_CrimeDatabaseModel.FK__SCHEDULE__SCHOOL__1BFD2C07" FromRole="SCHEDULE" ToRole="SCHOOLS" />
+        </EntityType>
+        <EntityType Name="SCHOOL_BUILDINGS">
+          <Key>
+            <PropertyRef Name="SCHOOL_BUILDINGS_ID" />
+          </Key>
+          <Property Name="SCHOOL_BUILDINGS_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SCHOOL_ID" Type="Int32" Nullable="false" />
+          <Property Name="BUILDING_NAME" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="LAT_START" Type="Decimal" Nullable="false" Precision="9" Scale="6" />
+          <Property Name="LAT_END" Type="Decimal" Precision="9" Scale="6" />
+          <Property Name="LONG_START" Type="Decimal" Nullable="false" Precision="9" Scale="6" />
+          <Property Name="LONG_END" Type="Decimal" Precision="9" Scale="6" />
+          <Property Name="CREATED_BY" Type="Int32" Nullable="false" />
+          <Property Name="CREATED_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="MODIFIED_BY" Type="Int32" />
+          <Property Name="MODIFIED_DATE" Type="DateTime" />
+          <NavigationProperty Name="USERS" Relationship="Somee_CrimeDatabaseModel.FK__SCHOOL_BU__CREAT__3D5E1FD2" FromRole="SCHOOL_BUILDINGS" ToRole="USERS" />
+          <NavigationProperty Name="USERS1" Relationship="Somee_CrimeDatabaseModel.FK__SCHOOL_BU__MODIF__3E52440B" FromRole="SCHOOL_BUILDINGS" ToRole="USERS" />
+          <NavigationProperty Name="SCHOOLS" Relationship="Somee_CrimeDatabaseModel.FK__SCHOOL_BU__SCHOO__3C69FB99" FromRole="SCHOOL_BUILDINGS" ToRole="SCHOOLS" />
+        </EntityType>
+        <EntityType Name="SCHOOLS">
+          <Key>
+            <PropertyRef Name="SCHOOL_ID" />
+          </Key>
+          <Property Name="SCHOOL_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SCHOOL_NAME" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="CITY" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="STATE" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="ABBREVIATION" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="EVENT_DATA" Relationship="Somee_CrimeDatabaseModel.FK__EVENT_DAT__SCHOO__15502E78" FromRole="SCHOOLS" ToRole="EVENT_DATA" />
+          <NavigationProperty Name="SCHEDULE" Relationship="Somee_CrimeDatabaseModel.FK__SCHEDULE__SCHOOL__1BFD2C07" FromRole="SCHOOLS" ToRole="SCHEDULE" />
+          <NavigationProperty Name="SCHOOL_BUILDINGS" Relationship="Somee_CrimeDatabaseModel.FK__SCHOOL_BU__SCHOO__3C69FB99" FromRole="SCHOOLS" ToRole="SCHOOL_BUILDINGS" />
+          <NavigationProperty Name="WEATHER_INFO" Relationship="Somee_CrimeDatabaseModel.FK__WEATHER_I__SCHOO__2B3F6F97" FromRole="SCHOOLS" ToRole="WEATHER_INFO" />
+        </EntityType>
+        <EntityType Name="USERS">
+          <Key>
+            <PropertyRef Name="USER_ID" />
+          </Key>
+          <Property Name="USER_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="USER_TYPE" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="NAME" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="PASSWORD_ENC" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="ACTIVE_IND" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="CREATED_BY" Type="Int32" Nullable="false" />
+          <Property Name="CREATED_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="MODIFIED_BY" Type="Int32" />
+          <Property Name="MODIFIED_DATE" Type="DateTime" />
+          <NavigationProperty Name="EVENT_DATA" Relationship="Somee_CrimeDatabaseModel.FK__EVENT_DAT__CREAT__164452B1" FromRole="USERS" ToRole="EVENT_DATA" />
+          <NavigationProperty Name="EVENT_DATA1" Relationship="Somee_CrimeDatabaseModel.FK__EVENT_DAT__MODIF__173876EA" FromRole="USERS" ToRole="EVENT_DATA" />
+          <NavigationProperty Name="EVENT_DATA_TYPES" Relationship="Somee_CrimeDatabaseModel.FK__EVENT_DAT__CREAT__44FF419A" FromRole="USERS" ToRole="EVENT_DATA_TYPES" />
+          <NavigationProperty Name="EVENT_DATA_TYPES1" Relationship="Somee_CrimeDatabaseModel.FK__EVENT_DAT__MODIF__45F365D3" FromRole="USERS" ToRole="EVENT_DATA_TYPES" />
+          <NavigationProperty Name="EVENT_TYPES" Relationship="Somee_CrimeDatabaseModel.FK__EVENT_TYP__CREAT__08EA5793" FromRole="USERS" ToRole="EVENT_TYPES" />
+          <NavigationProperty Name="EVENT_TYPES1" Relationship="Somee_CrimeDatabaseModel.FK__EVENT_TYP__MODIF__09DE7BCC" FromRole="USERS" ToRole="EVENT_TYPES" />
+          <NavigationProperty Name="SCHEDULE" Relationship="Somee_CrimeDatabaseModel.FK__SCHEDULE__CREATE__1CF15040" FromRole="USERS" ToRole="SCHEDULE" />
+          <NavigationProperty Name="SCHEDULE1" Relationship="Somee_CrimeDatabaseModel.FK__SCHEDULE__MODIFI__1DE57479" FromRole="USERS" ToRole="SCHEDULE" />
+          <NavigationProperty Name="SCHOOL_BUILDINGS" Relationship="Somee_CrimeDatabaseModel.FK__SCHOOL_BU__CREAT__3D5E1FD2" FromRole="USERS" ToRole="SCHOOL_BUILDINGS" />
+          <NavigationProperty Name="SCHOOL_BUILDINGS1" Relationship="Somee_CrimeDatabaseModel.FK__SCHOOL_BU__MODIF__3E52440B" FromRole="USERS" ToRole="SCHOOL_BUILDINGS" />
+        </EntityType>
+        <EntityType Name="WEATHER_INFO">
+          <Key>
+            <PropertyRef Name="SCHOOL_ID" />
+            <PropertyRef Name="WEATHER_START_DATE" />
+            <PropertyRef Name="WEATHER_END_DATE" />
+          </Key>
+          <Property Name="SCHOOL_ID" Type="Int32" Nullable="false" />
+          <Property Name="WEATHER_START_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="WEATHER_END_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="TEMPERATURE" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="SUNNY_IND" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="RAINY_IND" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="SCHOOLS" Relationship="Somee_CrimeDatabaseModel.FK__WEATHER_I__SCHOO__2B3F6F97" FromRole="WEATHER_INFO" ToRole="SCHOOLS" />
+        </EntityType>
+        <Association Name="FK__EVENT_DAT__CREAT__164452B1">
+          <End Role="USERS" Type="Somee_CrimeDatabaseModel.USERS" Multiplicity="1" />
+          <End Role="EVENT_DATA" Type="Somee_CrimeDatabaseModel.EVENT_DATA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="EVENT_DATA">
+              <PropertyRef Name="CREATED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EVENT_DAT__EVENT__4316F928">
+          <End Role="EVENT_DATA" Type="Somee_CrimeDatabaseModel.EVENT_DATA" Multiplicity="1" />
+          <End Role="EVENT_DATA_TYPES" Type="Somee_CrimeDatabaseModel.EVENT_DATA_TYPES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EVENT_DATA">
+              <PropertyRef Name="EVENT_ID" />
+            </Principal>
+            <Dependent Role="EVENT_DATA_TYPES">
+              <PropertyRef Name="EVENT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EVENT_DAT__MODIF__173876EA">
+          <End Role="USERS" Type="Somee_CrimeDatabaseModel.USERS" Multiplicity="0..1" />
+          <End Role="EVENT_DATA" Type="Somee_CrimeDatabaseModel.EVENT_DATA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="EVENT_DATA">
+              <PropertyRef Name="MODIFIED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EVENT_DAT__SCHOO__15502E78">
+          <End Role="SCHOOLS" Type="Somee_CrimeDatabaseModel.SCHOOLS" Multiplicity="0..1" />
+          <End Role="EVENT_DATA" Type="Somee_CrimeDatabaseModel.EVENT_DATA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SCHOOLS">
+              <PropertyRef Name="SCHOOL_ID" />
+            </Principal>
+            <Dependent Role="EVENT_DATA">
+              <PropertyRef Name="SCHOOL_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EVENT_DAT__CREAT__44FF419A">
+          <End Role="USERS" Type="Somee_CrimeDatabaseModel.USERS" Multiplicity="1" />
+          <End Role="EVENT_DATA_TYPES" Type="Somee_CrimeDatabaseModel.EVENT_DATA_TYPES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="EVENT_DATA_TYPES">
+              <PropertyRef Name="CREATED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EVENT_DAT__EVENT__440B1D61">
+          <End Role="EVENT_TYPES" Type="Somee_CrimeDatabaseModel.EVENT_TYPES" Multiplicity="1" />
+          <End Role="EVENT_DATA_TYPES" Type="Somee_CrimeDatabaseModel.EVENT_DATA_TYPES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EVENT_TYPES">
+              <PropertyRef Name="EVENT_TYPE_ID" />
+            </Principal>
+            <Dependent Role="EVENT_DATA_TYPES">
+              <PropertyRef Name="EVENT_TYPE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EVENT_DAT__MODIF__45F365D3">
+          <End Role="USERS" Type="Somee_CrimeDatabaseModel.USERS" Multiplicity="0..1" />
+          <End Role="EVENT_DATA_TYPES" Type="Somee_CrimeDatabaseModel.EVENT_DATA_TYPES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="EVENT_DATA_TYPES">
+              <PropertyRef Name="MODIFIED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EVENT_TYP__CREAT__08EA5793">
+          <End Role="USERS" Type="Somee_CrimeDatabaseModel.USERS" Multiplicity="1" />
+          <End Role="EVENT_TYPES" Type="Somee_CrimeDatabaseModel.EVENT_TYPES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="EVENT_TYPES">
+              <PropertyRef Name="CREATED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EVENT_TYP__MODIF__09DE7BCC">
+          <End Role="USERS" Type="Somee_CrimeDatabaseModel.USERS" Multiplicity="0..1" />
+          <End Role="EVENT_TYPES" Type="Somee_CrimeDatabaseModel.EVENT_TYPES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="EVENT_TYPES">
+              <PropertyRef Name="MODIFIED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SCHEDULE__CREATE__1CF15040">
+          <End Role="USERS" Type="Somee_CrimeDatabaseModel.USERS" Multiplicity="1" />
+          <End Role="SCHEDULE" Type="Somee_CrimeDatabaseModel.SCHEDULE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="SCHEDULE">
+              <PropertyRef Name="CREATED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SCHEDULE__MODIFI__1DE57479">
+          <End Role="USERS" Type="Somee_CrimeDatabaseModel.USERS" Multiplicity="0..1" />
+          <End Role="SCHEDULE" Type="Somee_CrimeDatabaseModel.SCHEDULE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="SCHEDULE">
+              <PropertyRef Name="MODIFIED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SCHEDULE__SCHOOL__1BFD2C07">
+          <End Role="SCHOOLS" Type="Somee_CrimeDatabaseModel.SCHOOLS" Multiplicity="1" />
+          <End Role="SCHEDULE" Type="Somee_CrimeDatabaseModel.SCHEDULE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SCHOOLS">
+              <PropertyRef Name="SCHOOL_ID" />
+            </Principal>
+            <Dependent Role="SCHEDULE">
+              <PropertyRef Name="SCHOOL_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SCHOOL_BU__CREAT__3D5E1FD2">
+          <End Role="USERS" Type="Somee_CrimeDatabaseModel.USERS" Multiplicity="1" />
+          <End Role="SCHOOL_BUILDINGS" Type="Somee_CrimeDatabaseModel.SCHOOL_BUILDINGS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="SCHOOL_BUILDINGS">
+              <PropertyRef Name="CREATED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SCHOOL_BU__MODIF__3E52440B">
+          <End Role="USERS" Type="Somee_CrimeDatabaseModel.USERS" Multiplicity="0..1" />
+          <End Role="SCHOOL_BUILDINGS" Type="Somee_CrimeDatabaseModel.SCHOOL_BUILDINGS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="USERS">
+              <PropertyRef Name="USER_ID" />
+            </Principal>
+            <Dependent Role="SCHOOL_BUILDINGS">
+              <PropertyRef Name="MODIFIED_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__SCHOOL_BU__SCHOO__3C69FB99">
+          <End Role="SCHOOLS" Type="Somee_CrimeDatabaseModel.SCHOOLS" Multiplicity="1" />
+          <End Role="SCHOOL_BUILDINGS" Type="Somee_CrimeDatabaseModel.SCHOOL_BUILDINGS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SCHOOLS">
+              <PropertyRef Name="SCHOOL_ID" />
+            </Principal>
+            <Dependent Role="SCHOOL_BUILDINGS">
+              <PropertyRef Name="SCHOOL_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__WEATHER_I__SCHOO__2B3F6F97">
+          <End Role="SCHOOLS" Type="Somee_CrimeDatabaseModel.SCHOOLS" Multiplicity="1" />
+          <End Role="WEATHER_INFO" Type="Somee_CrimeDatabaseModel.WEATHER_INFO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SCHOOLS">
+              <PropertyRef Name="SCHOOL_ID" />
+            </Principal>
+            <Dependent Role="WEATHER_INFO">
+              <PropertyRef Name="SCHOOL_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Somee_CrimeDatabaseModelStoreContainer" CdmEntityContainer="Somee_CrimeDatabaseEntities">
+          <EntitySetMapping Name="EVENT_DATA">
+            <EntityTypeMapping TypeName="Somee_CrimeDatabaseModel.EVENT_DATA">
+              <MappingFragment StoreEntitySet="EVENT_DATA">
+                <ScalarProperty Name="EVENT_ID" ColumnName="EVENT_ID" />
+                <ScalarProperty Name="EVENT_DATE" ColumnName="EVENT_DATE" />
+                <ScalarProperty Name="EVENT_END_DATE" ColumnName="EVENT_END_DATE" />
+                <ScalarProperty Name="LOCATION_LAT" ColumnName="LOCATION_LAT" />
+                <ScalarProperty Name="LOCATION_LONG" ColumnName="LOCATION_LONG" />
+                <ScalarProperty Name="LOCATION_END_LAT" ColumnName="LOCATION_END_LAT" />
+                <ScalarProperty Name="LOCATION_END_LONG" ColumnName="LOCATION_END_LONG" />
+                <ScalarProperty Name="SCHOOL_ID" ColumnName="SCHOOL_ID" />
+                <ScalarProperty Name="ARREST_IND" ColumnName="ARREST_IND" />
+                <ScalarProperty Name="VICITIM_SEX" ColumnName="VICITIM_SEX" />
+                <ScalarProperty Name="VICTIM_AGE" ColumnName="VICTIM_AGE" />
+                <ScalarProperty Name="VICTIM_STUDENT_IND" ColumnName="VICTIM_STUDENT_IND" />
+                <ScalarProperty Name="OFFENDER_SEX" ColumnName="OFFENDER_SEX" />
+                <ScalarProperty Name="OFFENDER_AGE" ColumnName="OFFENDER_AGE" />
+                <ScalarProperty Name="OFFENDER_STUDENT_IND" ColumnName="OFFENDER_STUDENT_IND" />
+                <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+                <ScalarProperty Name="CREATED_DATE" ColumnName="CREATED_DATE" />
+                <ScalarProperty Name="MODIFIED_BY" ColumnName="MODIFIED_BY" />
+                <ScalarProperty Name="MODIFIED_DATE" ColumnName="MODIFIED_DATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EVENT_DATA_TYPES">
+            <EntityTypeMapping TypeName="Somee_CrimeDatabaseModel.EVENT_DATA_TYPES">
+              <MappingFragment StoreEntitySet="EVENT_DATA_TYPES">
+                <ScalarProperty Name="EVENT_ID" ColumnName="EVENT_ID" />
+                <ScalarProperty Name="EVENT_TYPE_ID" ColumnName="EVENT_TYPE_ID" />
+                <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+                <ScalarProperty Name="CREATED_DATE" ColumnName="CREATED_DATE" />
+                <ScalarProperty Name="MODIFIED_BY" ColumnName="MODIFIED_BY" />
+                <ScalarProperty Name="MODIFIED_DATE" ColumnName="MODIFIED_DATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EVENT_TYPES">
+            <EntityTypeMapping TypeName="Somee_CrimeDatabaseModel.EVENT_TYPES">
+              <MappingFragment StoreEntitySet="EVENT_TYPES">
+                <ScalarProperty Name="EVENT_TYPE_ID" ColumnName="EVENT_TYPE_ID" />
+                <ScalarProperty Name="EVENT_TYPE_NAME" ColumnName="EVENT_TYPE_NAME" />
+                <ScalarProperty Name="ACTIVE_IND" ColumnName="ACTIVE_IND" />
+                <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+                <ScalarProperty Name="CREATED_DATE" ColumnName="CREATED_DATE" />
+                <ScalarProperty Name="MODIFIED_BY" ColumnName="MODIFIED_BY" />
+                <ScalarProperty Name="MODIFIED_DATE" ColumnName="MODIFIED_DATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SCHEDULE">
+            <EntityTypeMapping TypeName="Somee_CrimeDatabaseModel.SCHEDULE">
+              <MappingFragment StoreEntitySet="SCHEDULE">
+                <ScalarProperty Name="SCHEDULE_ID" ColumnName="SCHEDULE_ID" />
+                <ScalarProperty Name="SCHOOL_ID" ColumnName="SCHOOL_ID" />
+                <ScalarProperty Name="SCHEDULE_DATE" ColumnName="SCHEDULE_DATE" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="HOLIDAY_IND" ColumnName="HOLIDAY_IND" />
+                <ScalarProperty Name="SCHOOL_INSESSION_IND" ColumnName="SCHOOL_INSESSION_IND" />
+                <ScalarProperty Name="EXAM_IND" ColumnName="EXAM_IND" />
+                <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+                <ScalarProperty Name="CREATED_DATE" ColumnName="CREATED_DATE" />
+                <ScalarProperty Name="MODIFIED_BY" ColumnName="MODIFIED_BY" />
+                <ScalarProperty Name="MODIFIED_DATE" ColumnName="MODIFIED_DATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SCHOOL_BUILDINGS">
+            <EntityTypeMapping TypeName="Somee_CrimeDatabaseModel.SCHOOL_BUILDINGS">
+              <MappingFragment StoreEntitySet="SCHOOL_BUILDINGS">
+                <ScalarProperty Name="SCHOOL_BUILDINGS_ID" ColumnName="SCHOOL_BUILDINGS_ID" />
+                <ScalarProperty Name="SCHOOL_ID" ColumnName="SCHOOL_ID" />
+                <ScalarProperty Name="BUILDING_NAME" ColumnName="BUILDING_NAME" />
+                <ScalarProperty Name="LAT_START" ColumnName="LAT_START" />
+                <ScalarProperty Name="LAT_END" ColumnName="LAT_END" />
+                <ScalarProperty Name="LONG_START" ColumnName="LONG_START" />
+                <ScalarProperty Name="LONG_END" ColumnName="LONG_END" />
+                <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+                <ScalarProperty Name="CREATED_DATE" ColumnName="CREATED_DATE" />
+                <ScalarProperty Name="MODIFIED_BY" ColumnName="MODIFIED_BY" />
+                <ScalarProperty Name="MODIFIED_DATE" ColumnName="MODIFIED_DATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SCHOOLS">
+            <EntityTypeMapping TypeName="Somee_CrimeDatabaseModel.SCHOOLS">
+              <MappingFragment StoreEntitySet="SCHOOLS">
+                <ScalarProperty Name="SCHOOL_ID" ColumnName="SCHOOL_ID" />
+                <ScalarProperty Name="SCHOOL_NAME" ColumnName="SCHOOL_NAME" />
+                <ScalarProperty Name="CITY" ColumnName="CITY" />
+                <ScalarProperty Name="STATE" ColumnName="STATE" />
+                <ScalarProperty Name="ABBREVIATION" ColumnName="ABBREVIATION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="USERS">
+            <EntityTypeMapping TypeName="Somee_CrimeDatabaseModel.USERS">
+              <MappingFragment StoreEntitySet="USERS">
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+                <ScalarProperty Name="USER_TYPE" ColumnName="USER_TYPE" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="PASSWORD_ENC" ColumnName="PASSWORD_ENC" />
+                <ScalarProperty Name="ACTIVE_IND" ColumnName="ACTIVE_IND" />
+                <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+                <ScalarProperty Name="CREATED_DATE" ColumnName="CREATED_DATE" />
+                <ScalarProperty Name="MODIFIED_BY" ColumnName="MODIFIED_BY" />
+                <ScalarProperty Name="MODIFIED_DATE" ColumnName="MODIFIED_DATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WEATHER_INFO">
+            <EntityTypeMapping TypeName="Somee_CrimeDatabaseModel.WEATHER_INFO">
+              <MappingFragment StoreEntitySet="WEATHER_INFO">
+                <ScalarProperty Name="SCHOOL_ID" ColumnName="SCHOOL_ID" />
+                <ScalarProperty Name="WEATHER_START_DATE" ColumnName="WEATHER_START_DATE" />
+                <ScalarProperty Name="WEATHER_END_DATE" ColumnName="WEATHER_END_DATE" />
+                <ScalarProperty Name="TEMPERATURE" ColumnName="TEMPERATURE" />
+                <ScalarProperty Name="SUNNY_IND" ColumnName="SUNNY_IND" />
+                <ScalarProperty Name="RAINY_IND" ColumnName="RAINY_IND" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="CrimeDatabase_model" ZoomLevel="66">
+        <EntityTypeShape EntityType="Somee_CrimeDatabaseModel.EVENT_DATA" Width="1.5" PointX="3" PointY="8.25" Height="5.4417122395833317" IsExpanded="true" />
+        <EntityTypeShape EntityType="Somee_CrimeDatabaseModel.EVENT_DATA_TYPES" Width="1.5" PointX="5.25" PointY="13.875" Height="2.9417936197916656" IsExpanded="true" />
+        <EntityTypeShape EntityType="Somee_CrimeDatabaseModel.EVENT_TYPES" Width="1.5" PointX="3" PointY="15.625" Height="2.9417936197916674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Somee_CrimeDatabaseModel.SCHEDULE" Width="1.5" PointX="6" PointY="9.125" Height="3.7109993489583317" IsExpanded="true" />
+        <EntityTypeShape EntityType="Somee_CrimeDatabaseModel.SCHOOL_BUILDINGS" Width="1.5" PointX="6" PointY="4.125" Height="3.7109993489583335" IsExpanded="true" />
+        <EntityTypeShape EntityType="Somee_CrimeDatabaseModel.SCHOOLS" Width="1.5" PointX="3.75" PointY="4.5" Height="2.7494921874999996" IsExpanded="true" />
+        <EntityTypeShape EntityType="Somee_CrimeDatabaseModel.USERS" Width="1.5" PointX="0.75" PointY="8.625" Height="4.6725065104166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="Somee_CrimeDatabaseModel.WEATHER_INFO" Width="1.5" PointX="6" PointY="0.75" Height="2.3648893229166674" IsExpanded="true" />
+        <AssociationConnector Association="Somee_CrimeDatabaseModel.FK__EVENT_DAT__CREAT__164452B1" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="10.961253255208334" />
+          <ConnectorPoint PointX="2.4166666666666665" PointY="10.961253255208334" />
+          <ConnectorPoint PointX="2.5833333333333335" PointY="10.961253255208334" />
+          <ConnectorPoint PointX="2.6666666666666665" PointY="10.961253255208334" />
+          <ConnectorPoint PointX="2.8333333333333335" PointY="10.961253255208334" />
+          <ConnectorPoint PointX="3" PointY="10.961253255208334" />
+        </AssociationConnector>
+        <AssociationConnector Association="Somee_CrimeDatabaseModel.FK__EVENT_DAT__EVENT__4316F928" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="8.65625" />
+          <ConnectorPoint PointX="5.59375" PointY="8.65625" />
+          <ConnectorPoint PointX="5.59375" PointY="13.875" />
+        </AssociationConnector>
+        <AssociationConnector Association="Somee_CrimeDatabaseModel.FK__EVENT_DAT__MODIF__173876EA" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="9.7306266276041669" />
+          <ConnectorPoint PointX="2.4166666666666665" PointY="9.7306266276041669" />
+          <ConnectorPoint PointX="2.5833333333333335" PointY="9.7306266276041669" />
+          <ConnectorPoint PointX="2.6666666666666665" PointY="9.7306266276041669" />
+          <ConnectorPoint PointX="2.8333333333333335" PointY="9.7306266276041669" />
+          <ConnectorPoint PointX="3" PointY="9.7306266276041669" />
+        </AssociationConnector>
+        <AssociationConnector Association="Somee_CrimeDatabaseModel.FK__EVENT_DAT__SCHOO__15502E78" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.125" PointY="7.2494921875" />
+          <ConnectorPoint PointX="4.125" PointY="8.25" />
+        </AssociationConnector>
+        <AssociationConnector Association="Somee_CrimeDatabaseModel.FK__EVENT_DAT__CREAT__44FF419A" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="13.297506510416667" />
+          <ConnectorPoint PointX="1.5" PointY="14.71875" />
+          <ConnectorPoint PointX="2.0260454166666664" PointY="14.71875" />
+          <ConnectorPoint PointX="2.1927120833333333" PointY="14.71875" />
+          <ConnectorPoint PointX="5.25" PointY="14.71875" />
+        </AssociationConnector>
+        <AssociationConnector Association="Somee_CrimeDatabaseModel.FK__EVENT_DAT__EVENT__440B1D61" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="16.220896809895834" />
+          <ConnectorPoint PointX="5.25" PointY="16.220896809895834" />
+        </AssociationConnector>
+        <AssociationConnector Association="Somee_CrimeDatabaseModel.FK__EVENT_DAT__MODIF__45F365D3" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.9062525" PointY="13.297506510416667" />
+          <ConnectorPoint PointX="1.9062525" PointY="14.2656225" />
+          <ConnectorPoint PointX="2.0260454166666664" PointY="14.2656225" />
+          <ConnectorPoint PointX="2.1927120833333333" PointY="14.2656225" />
+          <ConnectorPoint PointX="5.25" PointY="14.2656225" />
+        </AssociationConnector>
+        <AssociationConnector Association="Somee_CrimeDatabaseModel.FK__EVENT_TYP__CREAT__08EA5793" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.0937475" PointY="13.297506510416667" />
+          <ConnectorPoint PointX="1.0937475" PointY="17.095896809895834" />
+          <ConnectorPoint PointX="3" PointY="17.095896809895834" />
+        </AssociationConnector>
+        <AssociationConnector Association="Somee_CrimeDatabaseModel.FK__EVENT_TYP__MODIF__09DE7BCC" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.10937875" PointY="13.297506510416667" />
+          <ConnectorPoint PointX="2.10937875" PointY="16.329195904947916" />
+          <ConnectorPoint PointX="3" PointY="16.329195904947916" />
+        </AssociationConnector>
+        <AssociationConnector Association="Somee_CrimeDatabaseModel.FK__SCHEDULE__CREATE__1CF15040" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="8.625" />
+          <ConnectorPoint PointX="1.5" PointY="8.375" />
+          <ConnectorPoint PointX="1.8229186666666666" PointY="8.375" />
+          <ConnectorPoint PointX="1.9895853333333331" PointY="8.375" />
+          <ConnectorPoint PointX="2.0260451666666666" PointY="8.375" />
+          <ConnectorPoint PointX="2.1927118333333335" PointY="8.375" />
+          <ConnectorPoint PointX="2.4166666666666665" PointY="8.375" />
+          <ConnectorPoint PointX="2.5833333333333335" PointY="8.375" />
+          <ConnectorPoint PointX="2.75" PointY="8.375" />
+          <ConnectorPoint PointX="2.75" PointY="13.941712239583332" />
+          <ConnectorPoint PointX="4.666666666666667" PointY="13.941712239583332" />
+          <ConnectorPoint PointX="4.833333333333333" PointY="13.941712239583332" />
+          <ConnectorPoint PointX="5" PointY="13.941712239583332" />
+          <ConnectorPoint PointX="5" PointY="10.980499674479166" />
+          <ConnectorPoint PointX="5.510416666666667" PointY="10.980499674479166" />
+          <ConnectorPoint PointX="5.677083333333333" PointY="10.980499674479166" />
+          <ConnectorPoint PointX="5.729166666666667" PointY="10.980499674479166" />
+          <ConnectorPoint PointX="5.895833333333333" PointY="10.980499674479166" />
+          <ConnectorPoint PointX="6" PointY="10.980499674479166" />
+        </AssociationConnector>
+        <AssociationConnector Association="Somee_CrimeDatabaseModel.FK__SCHEDULE__MODIFI__1DE57479" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.9062519999999998" PointY="8.625" />
+          <ConnectorPoint PointX="1.9062519999999998" PointY="8.125" />
+          <ConnectorPoint PointX="2.0260451666666666" PointY="8.125" />
+          <ConnectorPoint PointX="2.1927118333333335" PointY="8.125" />
+          <ConnectorPoint PointX="2.5" PointY="8.125" />
+          <ConnectorPoint PointX="2.5" PointY="14.066712239583332" />
+          <ConnectorPoint PointX="4.75" PointY="14.066712239583332" />
+          <ConnectorPoint PointX="4.75" PointY="10.021497837239583" />
+          <ConnectorPoint PointX="5.510416666666667" PointY="10.021497837239583" />
+          <ConnectorPoint PointX="5.677083333333333" PointY="10.021497837239583" />
+          <ConnectorPoint PointX="5.729166666666667" PointY="10.021497837239583" />
+          <ConnectorPoint PointX="5.895833333333333" PointY="10.021497837239583" />
+          <ConnectorPoint PointX="6" PointY="10.021497837239583" />
+        </AssociationConnector>
+        <AssociationConnector Association="Somee_CrimeDatabaseModel.FK__SCHEDULE__SCHOOL__1BFD2C07" ManuallyRouted="false">
+          <ConnectorPoint PointX="5.25" PointY="7.1871834951923068" />
+          <ConnectorPoint PointX="5.8125" PointY="7.7496834951923068" />
+          <ConnectorPoint PointX="5.8125" PointY="11.939501511718749" />
+          <ConnectorPoint PointX="6" PointY="11.939501511718749" />
+        </AssociationConnector>
+        <AssociationConnector Association="Somee_CrimeDatabaseModel.FK__SCHOOL_BU__CREAT__3D5E1FD2" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.0937475" PointY="8.625" />
+          <ConnectorPoint PointX="1.0937475" PointY="7.5739957682291665" />
+          <ConnectorPoint PointX="2.0260451666666666" PointY="7.5739957682291656" />
+          <ConnectorPoint PointX="2.1927118333333335" PointY="7.5739957682291665" />
+          <ConnectorPoint PointX="4.041666666666667" PointY="7.5739957682291656" />
+          <ConnectorPoint PointX="4.208333333333333" PointY="7.5739957682291665" />
+          <ConnectorPoint PointX="5.5534789397035267" PointY="7.5739957682291656" />
+          <ConnectorPoint PointX="5.7201456063701928" PointY="7.5739957682291665" />
+          <ConnectorPoint PointX="6" PointY="7.5739957682291665" />
+        </AssociationConnector>
+        <AssociationConnector Association="Somee_CrimeDatabaseModel.FK__SCHOOL_BU__MODIF__3E52440B" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.1093785" PointY="8.625" />
+          <ConnectorPoint PointX="2.1093785" PointY="4.28125" />
+          <ConnectorPoint PointX="4.416666666666667" PointY="4.2812499999999991" />
+          <ConnectorPoint PointX="4.583333333333333" PointY="4.28125" />
+          <ConnectorPoint PointX="6" PointY="4.28125" />
+        </AssociationConnector>
+        <AssociationConnector Association="Somee_CrimeDatabaseModel.FK__SCHOOL_BU__SCHOO__3C69FB99" ManuallyRouted="false">
+          <ConnectorPoint PointX="5.25" PointY="5.8123392475961531" />
+          <ConnectorPoint PointX="6" PointY="5.8123392475961531" />
+        </AssociationConnector>
+        <AssociationConnector Association="Somee_CrimeDatabaseModel.FK__WEATHER_I__SCHOO__2B3F6F97" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="4.5" />
+          <ConnectorPoint PointX="4.5" PointY="1.9324446614583337" />
+          <ConnectorPoint PointX="6" PointY="1.9324446614583337" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
