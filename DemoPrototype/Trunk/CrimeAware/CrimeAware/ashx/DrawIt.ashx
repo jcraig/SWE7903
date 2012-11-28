@@ -11,7 +11,7 @@ public class DrawIt : IHttpHandler
   string    strWidth, strHeight, strBackground, strXaxis, strYaxis, strCaption, strBars, strRectangles;
   string    strChartParms, strChartType, strURL;
   string[]  strChartTypes;
-  int       ii, ij, im, intWidth, intHeight, intLeft, intTop, intRight, intBottom;
+  int       ii, ij, intWidth, intHeight, intLeft, intTop, intRight, intBottom;
   int[]     intCoords = new int[4];
   Bitmap    oBmp;
   Color     oColor;

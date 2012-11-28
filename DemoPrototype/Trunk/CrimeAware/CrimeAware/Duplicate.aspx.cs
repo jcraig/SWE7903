@@ -14,12 +14,6 @@ public partial class Duplicate : System.Web.UI.Page
     private DB_Client SQL_session = new DB_Client();
     private MessageBox mb = new MessageBox();
     
-
-    protected void Page_PreRender(object sender, System.EventArgs e)
-    {
-        Label1.Text = "View: " + (MultiView1.ActiveViewIndex + 1).ToString() + " of " + MultiView1.Views.Count.ToString();
-    }
-
     protected void Page_Load(object sender, EventArgs e)
     {
         GoogleMapForASPNet2.GoogleMapObject.APIKey = ConfigurationManager.AppSettings["AIzaSyAFdfLkydY34KobaHfiOGzLDbnG-niDhMU"];
@@ -199,9 +193,47 @@ public partial class Duplicate : System.Web.UI.Page
 
     protected void GO_btn_Click(object sender, EventArgs e)
     {
+        UpdateCurrentView();
+    }
+
+    private void UpdateCurrentView()
+    {
+
+        switch (MultiView1.ActiveViewIndex)
+        {
+            case 0:
+                UpdateMap();
+                break;
+            case 1:
+                UpdateChart();
+                break;
+            case 2:
+                UpdateCompare();
+                break;
+        }
+    }
+
+    private void UpdateCompare()
+    {
+        createChart();
+    }
+
+    private void UpdateChart()
+    {
+        createChart();
+    }
+
+    private void UpdateMap()
+    {
+        Map_SetSize();
         centerMap();
-        DrawPolygon();  
+        DrawPolygon();
         populatePins2();
+    }
+
+    private void Map_SetType()
+    {
+        GoogleMapForASPNet2.GoogleMapObject.MapType = GoogleMapType.HYBRID_MAP;
     }
 
     void NextImage(object sender, System.EventArgs e)
@@ -211,24 +243,21 @@ public partial class Duplicate : System.Web.UI.Page
 
     protected void map_btn_Click(object sender, EventArgs e)
     {
-
         MultiView1.ActiveViewIndex = 0;
-
-        centerMap();
-       
+        UpdateCurrentView();
     }
 
     protected void stat_btn_Click(object sender, EventArgs e)
     {
         MultiView1.ActiveViewIndex = 1;
-
-        createChart();
+        UpdateCurrentView();
     }
 
     
     protected void compare_btn_Click(object sender, EventArgs e)
     {
         MultiView1.ActiveViewIndex = 2;
+        UpdateCurrentView();
     }
 
     protected void db_test_btn_Click(object sender, EventArgs e)
@@ -288,23 +317,23 @@ public partial class Duplicate : System.Web.UI.Page
         string report = SQL_session.getSchool_loc("SELECT * FROM SCHOOLS WHERE SCHOOL_ID = '" + (campus1_drop.SelectedIndex + 1) + "' ", "LAT_START", "LAT_END", "LONG_START", "LONG_END");
     }
 
-    protected void db_test2_btn_Click(object sender, EventArgs e)
-    {
-        string join_report = "empty";
-        join_report = SQL_session.fetch_2params("SELECT * FROM EVENT_DATA ed JOIN EVENT_DATA_TYPES edt ON ed.EVENT_ID = edt.EVENT_ID JOIN EVENT_TYPES et ON et.EVENT_TYPE_ID = edt.EVENT_TYPE_ID JOIN SCHOOLS s ON ed.LOCATION_LAT BETWEEN s.LAT_START AND s.LAT_END AND ed.LOCATION_LONG BETWEEN s.LONG_START AND s.LONG_END WHERE s.SCHOOL_ID = 1 AND edt.EVENT_TYPE_ID = '" + crime_drop.SelectedValue + "'", "LOCATION_LAT", "LOCATION_LONG");
+    //protected void db_test2_btn_Click(object sender, EventArgs e)
+    //{
+    //    string join_report = "empty";
+    //    join_report = SQL_session.fetch_2params("SELECT * FROM EVENT_DATA ed JOIN EVENT_DATA_TYPES edt ON ed.EVENT_ID = edt.EVENT_ID JOIN EVENT_TYPES et ON et.EVENT_TYPE_ID = edt.EVENT_TYPE_ID JOIN SCHOOLS s ON ed.LOCATION_LAT BETWEEN s.LAT_START AND s.LAT_END AND ed.LOCATION_LONG BETWEEN s.LONG_START AND s.LONG_END WHERE s.SCHOOL_ID = 1 AND edt.EVENT_TYPE_ID = '" + crime_drop.SelectedValue + "'", "LOCATION_LAT", "LOCATION_LONG");
 
-        mb.ShowMessageBox("Query result is: " + join_report);
-    }
+    //    mb.ShowMessageBox("Query result is: " + join_report);
+    //}
 
     private void showLoc_populatePushpins(Double lat, Double longi)
     {       
 
         //Specify width and height for map. You can specify either in pixels or in percentage relative to it's container.
-        GoogleMapForASPNet2.GoogleMapObject.Width = "700px"; // You can also specify percentage(e.g. 80%) here
-        GoogleMapForASPNet2.GoogleMapObject.Height = "500px";
+        GoogleMapForASPNet2.GoogleMapObject.Width = "100%"; // You can also specify percentage(e.g. 80%) here
+        GoogleMapForASPNet2.GoogleMapObject.Height = "100%";
 
         //Specify initial Zoom level.
-        GoogleMapForASPNet2.GoogleMapObject.ZoomLevel = 14;
+        GoogleMapForASPNet2.GoogleMapObject.ZoomLevel = 20;
 
         //Specify Center Point for map. Map will be centered on this point.
         //GoogleMapForASPNet2.GoogleMapObject.CenterPoint = new GooglePoint("1", 43.69, -79.4042);
@@ -414,16 +443,20 @@ public partial class Duplicate : System.Web.UI.Page
         double longi_end;
         double.TryParse(loc_array[3], out longi_end);
 
-        //Specify width and height for map. You can specify either in pixels or in percentage relative to it's container.
-        GoogleMapForASPNet2.GoogleMapObject.Width = "700px"; // You can also specify percentage(e.g. 80%) here
-        GoogleMapForASPNet2.GoogleMapObject.Height = "500px";
-
-        //Specify initial Zoom level.
-        GoogleMapForASPNet2.GoogleMapObject.ZoomLevel = 14;
 
         //Specify Center Point for map. Map will be centered on this point.
         //GoogleMapForASPNet2.GoogleMapObject.CenterPoint = new GooglePoint("1", 43.69, -79.4042);
         GoogleMapForASPNet2.GoogleMapObject.CenterPoint = new GooglePoint("1", ((lat_start+lat_end)/2), ((longi_start+longi_end)/2));
+    }
+
+    private void Map_SetSize()
+    {
+        //Specify width and height for map. You can specify either in pixels or in percentage relative to it's container.
+        GoogleMapForASPNet2.GoogleMapObject.Width = "100%"; // You can also specify percentage(e.g. 80%) here
+        GoogleMapForASPNet2.GoogleMapObject.Height = "100%";
+
+        //Specify initial Zoom level.
+        GoogleMapForASPNet2.GoogleMapObject.ZoomLevel = 15;
     }
 
 
@@ -525,7 +558,7 @@ public partial class Duplicate : System.Web.UI.Page
         }
     }
 
-
+    
 
     private static string StringJoin(List<string> list, string joiner)
     {
@@ -570,79 +603,11 @@ public partial class Duplicate : System.Web.UI.Page
             + " JOIN SCHOOLS s ON ed.LOCATION_LAT BETWEEN s.LAT_START AND s.LAT_END AND ed.LOCATION_LONG BETWEEN s.LONG_START AND s.LONG_END LEFT JOIN WEATHER_INFO wi ON ed.EVENT_DATE BETWEEN wi.WEATHER_START_DATE AND wi.WEATHER_END_DATE "
                 + "AND wi.SCHOOL_ID = s.SCHOOL_ID WHERE s.SCHOOL_ID = '" + (campus1_drop.SelectedIndex + 1) + "' ";
         
-        string fetch_weather="", fetch_dateRange="", weather_fetch_COMPLETE="";
+        string fetch_weather="";
 
         fetch_weather = Filter_BuildQuery_ByWeather(fetch_weather);
 
         // if (Date selected)  -- do stuff   
-       
-        if (arrest_box.Checked)
-        {
-            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '14' " + fetch_dateRange + fetch_weather;
-            Place_Pins(weather_fetch_COMPLETE, "icons/Arrest.png", "This was an arrest!", "arrest");
-        }
-
-        if (arson_box.Checked)
-        {
-            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '1' " + fetch_dateRange + fetch_weather;
-            Place_Pins(weather_fetch_COMPLETE, "icons/FireTruck.png", "This was a case of arsen !", "arsen");
-        }
-
-        if (assault_box.Checked)
-        {
-            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '2' " + fetch_dateRange + fetch_weather;
-            Place_Pins(weather_fetch_COMPLETE, "icons/Assault.png", "This was an assault !", "assault");
-        }
-
-        if (rape_box.Checked)
-        {
-            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '8' " + fetch_dateRange + fetch_weather;
-            Place_Pins(weather_fetch_COMPLETE, "icons/storm.png", "This was a rape !", "rape");
-        }
-
-        if (robbery_box.Checked)
-        {
-            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '9' " + fetch_dateRange + fetch_weather;
-            Place_Pins(weather_fetch_COMPLETE, "icons/Robbery.png", "This was a robbery !", "robbery");
-        }
-
-        if (shooting_box.Checked)
-        {
-            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '10' " + fetch_dateRange + fetch_weather;
-            Place_Pins(weather_fetch_COMPLETE, "icons/Shooting.png", "This was some kind of shooting!", "shooting");
-        }
-
-        if (theft_box.Checked)
-        {
-            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '10' " + fetch_dateRange + fetch_weather;
-            Place_Pins(weather_fetch_COMPLETE, "icons/Theft.png", "This was theft!", "theft");
-        }
-
-        if (other_box.Checked)
-        {
-            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '3' " + fetch_dateRange + fetch_weather;
-            Place_Pins(weather_fetch_COMPLETE, "icons/pushpin-yellow.png", "Disorderly conduct went down here!", "dc");
-
-            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '4' " + fetch_dateRange + fetch_weather;
-            Place_Pins(weather_fetch_COMPLETE, "icons/pushpin-yellow.png", "A drug case!", "drug");
-
-            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '6' " + fetch_dateRange + fetch_weather;
-            Place_Pins(weather_fetch_COMPLETE, "icons/pushpin-yellow.png", "Some other crime occured here!", "other");
-
-            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '11' " + fetch_dateRange + fetch_weather;
-            Place_Pins(weather_fetch_COMPLETE, "icons/pushpin-yellow.png", "This was a suicide!", "suicide");
-
-            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '13' " + fetch_dateRange + fetch_weather;
-            Place_Pins(weather_fetch_COMPLETE, "icons/Vandalism.png", "Vandalism occured here", "vandalism");
-        }
-
-        if (murder_box.Checked)
-        {
-            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '5' " + fetch_dateRange + fetch_weather;
-            Place_Pins(weather_fetch_COMPLETE, "icons/homicide1.gif", "Site of a homicide!", "homicide");
-        }
-
-        mb.ShowMessageBox("fetch string result is " + SQL_session.fetch_2params(weather_fetch_COMPLETE, "LOCATION_LAT", "LOCATION_LONG"));
 
     } // end weather_btn_Click
 
