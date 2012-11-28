@@ -1,0 +1,13 @@
+﻿Rand Williams
+11/27/2012
+TODO
+- Use Session for storing information (server side or client side..)
+- MAP
+	- Shape area duplicated in Map Control
+- FILTER
+	- Get values for Filter using Data (Databind)
+
+DONE
+- Changed Charting control from ashx HttpHandler to System.Web.UI.DataVisualization.Charting
+- Filter School dropdown values use Data (Databind)
+- Condensed Populate Pin code to 1 loop

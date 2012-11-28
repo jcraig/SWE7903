@@ -17,7 +17,7 @@
     }
     #Tabtop_margin_div2
     {
-        height: 129px;
+        height: 8px;
     }
         #main_div
         {
@@ -108,11 +108,7 @@
                     <br />
                     <br />
 &nbsp;
-                    <asp:DropDownList ID="campus1_drop" runat="server" Height="26px" Width="156px">
-                        <asp:ListItem>SPSU</asp:ListItem>
-                        <asp:ListItem>Georgia Tech</asp:ListItem>
-                        <asp:ListItem>UGA</asp:ListItem>
-                    </asp:DropDownList>
+                    <asp:DropDownList ID="campus1_drop" runat="server" Height="26px" Width="156px" />
                     <br />
                     <br />
                     <br />
@@ -124,40 +120,14 @@
                     &nbsp;&nbsp;&nbsp;<asp:Label ID="from_lbl" runat="server" Font-Bold="True" Font-Size="Small" 
                         ForeColor="#333333" Text="from -&gt;"></asp:Label>
                     &nbsp;&nbsp;<asp:DropDownList ID="from_drop" runat="server" Height="26px" 
-                        Width="144px">
-                        <asp:ListItem>January</asp:ListItem>
-                        <asp:ListItem>February</asp:ListItem>
-                        <asp:ListItem>March</asp:ListItem>
-                        <asp:ListItem>April</asp:ListItem>
-                        <asp:ListItem>May</asp:ListItem>
-                        <asp:ListItem>June</asp:ListItem>
-                        <asp:ListItem>July</asp:ListItem>
-                        <asp:ListItem>August</asp:ListItem>
-                        <asp:ListItem>September</asp:ListItem>
-                        <asp:ListItem>October</asp:ListItem>
-                        <asp:ListItem>November</asp:ListItem>
-                        <asp:ListItem>December</asp:ListItem>
-                    </asp:DropDownList>
+                        Width="144px" />
                     <br />
                     <br />
                     &nbsp;&nbsp;
                     <asp:Label ID="to_lbl" runat="server" Font-Bold="True" Font-Size="Small" 
                         ForeColor="#666666" Text="to          -&gt;"></asp:Label>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:DropDownList ID="to_drop" runat="server" Height="26px" Width="143px">
-                     <asp:ListItem>January</asp:ListItem>
-                        <asp:ListItem>February</asp:ListItem>
-                        <asp:ListItem>March</asp:ListItem>
-                        <asp:ListItem>April</asp:ListItem>
-                        <asp:ListItem>May</asp:ListItem>
-                        <asp:ListItem>June</asp:ListItem>
-                        <asp:ListItem>July</asp:ListItem>
-                        <asp:ListItem>August</asp:ListItem>
-                        <asp:ListItem>September</asp:ListItem>
-                        <asp:ListItem>October</asp:ListItem>
-                        <asp:ListItem>November</asp:ListItem>
-                        <asp:ListItem>December</asp:ListItem>
-                    </asp:DropDownList>
+                    <asp:DropDownList ID="to_drop" runat="server" Height="26px" Width="143px"/>
                     <br />
                     <br />
                     <br />                    
@@ -174,22 +144,10 @@
                         </div>
                      <div style="height: 24px; margin-left: 8px; margin-top:5px">
                     <asp:DropDownList ID="percipitation_drop" runat="server" Height="20px" Width="100px">
-                        <asp:ListItem>Any</asp:ListItem>
-                        <asp:ListItem>Rainy</asp:ListItem>
-                        <asp:ListItem>Sunny</asp:ListItem>
-                        <asp:ListItem>Cloudy</asp:ListItem>
+
                     </asp:DropDownList>
                          &nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:DropDownList ID="temp_drop" runat="server" Height="20px" Width="100px">
-                            <asp:ListItem>Any</asp:ListItem>
-                            <asp:ListItem Value="-50 AND 19">19 &amp; below</asp:ListItem>
-                            <asp:ListItem Value="20 AND 32">20-32</asp:ListItem>
-                            <asp:ListItem Value="33 AND 45">33 - 45</asp:ListItem>
-                            <asp:ListItem Value="46 AND 60">46 - 60</asp:ListItem>
-                            <asp:ListItem Value="61 AND 75">61 - 75</asp:ListItem>
-                            <asp:ListItem Value="76 AND 85">76 - 85</asp:ListItem>
-                            <asp:ListItem Value="86 AND 130">86 &amp; up</asp:ListItem>
-                         </asp:DropDownList>
+                        <asp:DropDownList ID="temp_drop" runat="server" Height="20px" Width="100px" />
                     </div>
                     <br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -200,8 +158,12 @@
                     &nbsp;
                     <asp:Label ID="crimeType_lbl" runat="server" Font-Names="Eras Demi ITC" 
                         Font-Size="Medium" ForeColor="Black" Text="Crime Type:"></asp:Label>
+                        <asp:CheckBoxList ID="crimeType_clb" runat="server" 
+                            RepeatColumns="3" RepeatDirection="Horizontal" />
                     <br />
                     <br />
+                    <!-- HIDDEN CrimeType_CheckBoxes_Area -->
+                    <div id="CrimeType_CheckBoxes_Area" style="display:none;" >
                     <div style="height: 24px" >
                     <div style="float:left; width:80px; height:24px">
                         &nbsp;&nbsp;
@@ -234,13 +196,14 @@
                     <asp:CheckBox ID="theft_box" runat="server" ForeColor="Black" Text=" Theft" />
                     </div>
                     <div style="float:left; width:80px; height:24px">
-                    <asp:CheckBox ID="other_box" runat="server" ForeColor="Black" 
-                            Text="Other" />
+                    <asp:CheckBox ID="other_box" runat="server" ForeColor="Black" Text="Other" />
                     </div>
                     <div style="float:left; width:80px; height:24px">
                     <asp:CheckBox ID="murder_box" runat="server" ForeColor="Black" Text=" Murder" />
                     </div>
                     </div>
+                    </div> 
+                    <!-- HIDDEN CrimeType_CheckBoxes_Area -->
 
                     <div style="height: 24px; margin-top:8px;" >
                     <div style="float:left; width:80px; height:24px">
@@ -284,7 +247,12 @@
                     <uc1:GoogleMapForASPNet ID="GoogleMapForASPNet2" runat="server" visible="true"/>
                     </asp:View>
                     <asp:View ID="View2" runat="server">
-                   <img ID="img01" alt="chart of crime percentages" runat="server" src="ashx/DrawIt.ashx?width=350&height=250&xaxis=pushes&yaxis=pulls&background=powderblue&piechart=20,30,10,10,25,5;&titles=one,two,three,four,five,six,seven,eight,nine,ten;&" />
+                        <asp:chart id="Chart1" runat="server" Height="300px" Width="400px">
+                            <titles><asp:Title ShadowOffset="3" Name="Title1" /></titles>  
+                            <legends><asp:Legend Alignment="Center" Docking="Bottom" IsTextAutoFit="False" Name="Default" LegendStyle="Row" /></legends>
+                            <series><asp:Series Name="Default" />  </series>  
+                            <chartareas><asp:ChartArea Name="ChartArea1" BorderWidth="0" />  </chartareas>
+                        </asp:chart>
                     </asp:View>
                     <asp:View ID="View3" runat="server">               
                     <img ID="img4" alt="chart of crime percentages" runat="server" src="ashx/DrawIt.ashx?width=320&height=250&xaxis=pushes&yaxis=pulls&background=powderblue&piechart=20,30,10,10,25,5;&titles=one,two,three,four,five,six,seven,eight,nine,ten;&" />

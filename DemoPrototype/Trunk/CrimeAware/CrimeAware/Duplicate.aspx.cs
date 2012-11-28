@@ -5,6 +5,9 @@ using System.Web.UI;
 using System.Configuration;
 using System.Web.UI.WebControls;
 using System.Collections.Generic;
+using System.Web.UI.DataVisualization.Charting;
+using System.Drawing;
+using System.Data;
 
 public partial class Duplicate : System.Web.UI.Page
 {
@@ -15,7 +18,7 @@ public partial class Duplicate : System.Web.UI.Page
     protected void Page_PreRender(object sender, System.EventArgs e)
     {
         Label1.Text = "View: " + (MultiView1.ActiveViewIndex + 1).ToString() + " of " + MultiView1.Views.Count.ToString();
-    }  
+    }
 
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -33,60 +36,172 @@ public partial class Duplicate : System.Web.UI.Page
 
         if (!Page.IsPostBack)
         {
-            MultiView1.ActiveViewIndex = 0;
+            Initialize__();
         }  
     }
+
+    private void Initialize__()
+    {
+        Populate_FilterChoices(); // Also sets default values, such as Campus1
+
+        MultiView1.ActiveViewIndex = 0;
+
+        GO_btn_Click(this, null); // (Re)Draw the screen. Uses Defaulted values
+    }
+
+    private void Populate_FilterChoices()
+    {
+        Populate_CampusDropDown();
+        Populate_DateRange();
+        Populate_Weather();
+        Populate_CrimeType();
+    }
+
+    private void Populate_CrimeType()
+    {
+        Dictionary<string, string> data = Get_CrimeType();
+        crimeType_clb.RepeatColumns = 3;
+        crimeType_clb.RepeatDirection = RepeatDirection.Horizontal;
+        crimeType_clb.DataSource = data;
+        crimeType_clb.DataTextField = "Key";
+        crimeType_clb.DataValueField = "Value";
+        crimeType_clb.DataBind();
+    }
+
+    public Dictionary<string, string> Data_CrimeType
+    { get { return Get_CrimeType(); } }
+    private Dictionary<string, string> _CrimeType;
+    private Dictionary<string, string> Get_CrimeType()
+    {
+        if (_CrimeType != null) return _CrimeType;
+        Dictionary<string, string> data = new Dictionary<string, string>();
+        data.Add("Arson", "1");
+        data.Add("Assault", "2");
+        data.Add("Conduct", "3");
+        data.Add("Drugs", "4");
+        data.Add("Murder", "5");
+        data.Add("Other", "6");
+        data.Add("Seven", "7");
+        data.Add("Rape", "8");
+        data.Add("Robbery", "9");
+        data.Add("Shooting", "10");
+        data.Add("Suicide", "11");
+        data.Add("Theft", "12");
+        data.Add("Vandalism", "13");
+        data.Add("Arrest", "14");
+        _CrimeType = data;
+        return _CrimeType;
+    }
+
+    public Dictionary<string, string> Data_CrimeTypeIcons
+    { get { return Get_CrimeTypeIcons(); } }
+    private Dictionary<string, string> _CrimeTypeIcons;
+    private Dictionary<string, string> Get_CrimeTypeIcons()
+    {
+        if (_CrimeTypeIcons != null) return _CrimeTypeIcons;
+        Dictionary<string, string> data = new Dictionary<string, string>();
+        data.Add("Arson", "icons/FireTruck.png");
+        data.Add("Assault", "icons/Assault.png");
+        data.Add("Other", "icons/pushpin-yellow.png");
+        data.Add("Murder", "icons/homicide1.gif");
+        data.Add("Rape", "icons/storm.png");
+        data.Add("Robbery", "icons/Robbery.png");
+        data.Add("Shooting", "icons/Shooting.png");
+        data.Add("Theft", "icons/Theft.png");
+        data.Add("Arrest", "icons/Arrest.png");
+        data.Add("Disorderly Conduct", "icons/Unknown.png");
+        data.Add("Drugs", "icons/Unknown.png");
+        data.Add("Suicide", "icons/Unknown.png");
+        data.Add("Vandalism", "icons/Unknown.png");
+        data.Add("Public Intoxication", "icons/pushpin-yellow.png");               
+        _CrimeTypeIcons = data;
+        return _CrimeTypeIcons;
+    }
+
+
+
+    private string[] Get_CrimeType_Names()
+    {
+        return Data_CrimeType.Keys.ToArray();
+    }
+
+    private void Populate_Weather()
+    {
+        Populate_Precipitation();
+        Populate_Temperature();
+    }
+
+    private void Populate_Temperature()
+    {
+        Dictionary<string, string> data = Get_Temperature();
+        temp_drop.DataSource = data;
+        temp_drop.DataTextField = "Key";
+        temp_drop.DataValueField = "Value";
+        temp_drop.DataBind();
+    }
+
+    private Dictionary<string, string> Get_Temperature()
+    {
+        Dictionary<string, string> data = new Dictionary<string, string>();
+        data.Add("Any", "Any");
+        data.Add("19 & below", "-100 AND 19");
+        data.Add("20 - 32", "20 AND 32");
+        data.Add("33 - 45", "33 AND 45");
+        data.Add("46 - 60", "46 AND 60");
+        data.Add("61 - 75", "61 AND 75");
+        data.Add("76 - 85", "76 AND 85");
+        data.Add("86 & up", "86 AND 130");
+        return data;
+    }
+
+    private void Populate_Precipitation()
+    {
+        string[] data = Get_Precipitation();
+        percipitation_drop.DataSource = data;
+        percipitation_drop.DataBind();
+    }
+
+    private string[] Get_Precipitation()
+    {
+        string[] data = { "Any", "Rainy", "Sunny", "Cloudy" };
+        return data;
+    }
+
+    private void Populate_DateRange()
+    {
+        string[] data = Get_Months();
+
+        from_drop.DataSource = data;
+        from_drop.DataBind();
+
+        to_drop.DataSource = data;
+        to_drop.DataBind();
+    }
+
+    private static string[] Get_Months()
+    {
+        string[] data = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
+        return data;
+    }
+
+    private void Populate_CampusDropDown()
+    {
+        string[] data = Get_Schools();
+        campus1_drop.DataSource = data;
+        campus1_drop.DataBind();
+    }
+
+    private static string[] Get_Schools()
+    {
+        string[] data = { "SPSU", "Georgia Tech", "UGA" };
+        return data;
+    }
+
     protected void GO_btn_Click(object sender, EventArgs e)
     {
-        int selectedCampus_index = campus1_drop.SelectedIndex;
-         
-        //MultiView1.ActiveViewIndex = selectedCampus_index;
-
         centerMap();
-
         DrawPolygon();  
-      
-        populatePins();
-
-        //if (robbery_box.Checked)
-        //{
-        //    //string[] loc_array;
-
-        //    string join_report = "empty";
-        //    join_report = SQL_session.fetch_2params("SELECT * FROM EVENT_DATA ed JOIN EVENT_DATA_TYPES edt ON ed.EVENT_ID = edt.EVENT_ID JOIN EVENT_TYPES et ON et.EVENT_TYPE_ID = edt.EVENT_TYPE_ID JOIN SCHOOLS s ON ed.LOCATION_LAT BETWEEN s.LAT_START AND s.LAT_END AND ed.LOCATION_LONG BETWEEN s.LONG_START AND s.LONG_END WHERE s.SCHOOL_ID = 1 AND edt.EVENT_TYPE_ID = 9", "LOCATION_LAT", "LOCATION_LONG");
-
-        //    string[] robbery_array = join_report.Split('&');
-
-        //    double lat, longi;
-            
-
-        //    int robbery_counter = 0;
-        //    GooglePoint[] robbery_point = new GooglePoint[robbery_array.Length / 2];
-
-        //    for (int i = 0; i < robbery_array.Length; i++)
-        //    {
-        //        double.TryParse(robbery_array[i], out lat);
-        //        double.TryParse(robbery_array[i + 1], out longi);
-
-        //        robbery_point[robbery_counter] = new GooglePoint();
-        //        robbery_point[robbery_counter].ID = "robbery" + (robbery_counter + 1);
-        //        robbery_point[robbery_counter].Latitude = lat;
-        //        robbery_point[robbery_counter].Longitude = longi;
-        //        robbery_point[robbery_counter].InfoHTML = "This was a robbery";
-        //        robbery_point[robbery_counter].IconImage = "icons/Robbery.png";
-        //        GoogleMapForASPNet2.GoogleMapObject.Points.Add(robbery_point[robbery_counter]);
-
-        //        i++;
-        //        robbery_counter++;
-        //    }
-        //} // end if (robbery_box.Checked)
-        //else
-        //{
-        //    GoogleMapForASPNet2.GoogleMapObject.Points.Clear();
-        //}
-
-
-        // showLoc_populatePushpins( ((lat_start+lat_end)/2), ((longi_start+longi_end)/2));
+        populatePins2();
     }
 
     void NextImage(object sender, System.EventArgs e)
@@ -106,7 +221,10 @@ public partial class Duplicate : System.Web.UI.Page
     protected void stat_btn_Click(object sender, EventArgs e)
     {
         MultiView1.ActiveViewIndex = 1;
+
+        createChart();
     }
+
     
     protected void compare_btn_Click(object sender, EventArgs e)
     {
@@ -308,8 +426,11 @@ public partial class Duplicate : System.Web.UI.Page
         GoogleMapForASPNet2.GoogleMapObject.CenterPoint = new GooglePoint("1", ((lat_start+lat_end)/2), ((longi_start+longi_end)/2));
     }
 
+
     private void DrawPolygon()
     {
+        GoogleMapForASPNet2.GoogleMapObject.Polygons.Clear();
+
         string report = SQL_session.fetch_polyPoints("SELECT * FROM SCHOOLS WHERE SCHOOL_ID = '" + (campus1_drop.SelectedIndex + 1) + "' ", "G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9");
         string[] loc_array = report.Split('&');
 
@@ -351,348 +472,91 @@ public partial class Duplicate : System.Web.UI.Page
         GoogleMapForASPNet2.GoogleMapObject.Polygons.Add(PG1);
     } // end DrawPOlygon
 
-    private void populatePins()
-    {
-        string fetch_string = "SELECT * FROM EVENT_DATA ed JOIN EVENT_DATA_TYPES edt ON ed.EVENT_ID = edt.EVENT_ID JOIN EVENT_TYPES et ON et.EVENT_TYPE_ID = edt.EVENT_TYPE_ID JOIN SCHOOLS s ON ed.LOCATION_LAT BETWEEN s.LAT_START AND s.LAT_END AND ed.LOCATION_LONG BETWEEN s.LONG_START AND s.LONG_END WHERE s.SCHOOL_ID = '" + (campus1_drop.SelectedIndex + 1) + "'";
 
+    private void createChart()
+    {
+        List<double> yValues = new List<double>();
+        List<String> xValues = new List<string>();
+
+        DataTable dt = Filter_GetDataTable();
+
+        foreach (string crimetype_id in GetSelected_EventTypeIds())
+        {
+            string event_type_name = Data_CrimeType.First((i) => { return i.Value == crimetype_id; }).Key;
+
+            int count = 0;
+            foreach (DataRow r in dt.Rows)
+            {
+                if (Convert.ToString(r["EVENT_TYPE_NAME"]) == event_type_name)
+                { count++; }
+            }
+
+            if (count > 0)
+            {
+                xValues.Add(event_type_name + "[" + count + "]");
+                yValues.Add(count);
+            }
+        }
+
+        Chart1.Series["Default"].Points.DataBindXY(xValues, yValues);
+        Chart1.Series["Default"].ChartType = SeriesChartType.Pie;
+        Chart1.Series["Default"]["PieLabelStyle"] = "Enabled";        
+        Chart1.Legends[0].Enabled = true;
+    }
+
+
+    private void populatePins2()
+    {
         GoogleMapForASPNet2.GoogleMapObject.Points.Clear();
 
-        // #1
-        if (arson_box.Checked)
+        DataTable dt = Filter_GetDataTable();
+        int i = 0;
+        foreach (DataRow r in dt.Rows)
         {
-            string join_report = "empty";
-            join_report = SQL_session.fetch_2params(fetch_string + "AND edt.EVENT_TYPE_ID = 1", "LOCATION_LAT", "LOCATION_LONG");
+            string event_type_name = Convert.ToString(r["EVENT_TYPE_NAME"]);
+            GooglePoint p = new GooglePoint();
+            p.ID = event_type_name + i;
+            p.Latitude  = Convert.ToDouble(r["LOCATION_LAT"]);
+            p.Longitude = Convert.ToDouble(r["LOCATION_LONG"]);
+            p.InfoHTML = "This was a case of " + event_type_name;
+            p.IconImage = Data_CrimeTypeIcons[event_type_name];
 
-            string[] arson_array = join_report.Split('&');
+            GoogleMapForASPNet2.GoogleMapObject.Points.Add(p);
+        }
+    }
 
-            double arson_lat, arson_longi;
 
-            int arson_counter = 0;
-            GooglePoint[] arson_point = new GooglePoint[arson_array.Length / 2];
 
-            if (arson_array.Length > 1)
-            {
-                for (int i = 0; i < arson_array.Length - 1; i++)
-                {
-                    double.TryParse(arson_array[i], out arson_lat);
-                    double.TryParse(arson_array[i + 1], out arson_longi);
-
-                    arson_point[arson_counter] = new GooglePoint();
-                    arson_point[arson_counter].ID = "arson" + (arson_counter + 1);
-                    arson_point[arson_counter].Latitude = arson_lat;
-                    arson_point[arson_counter].Longitude = arson_longi;
-                    arson_point[arson_counter].InfoHTML = "This was a case of arsen";
-                    arson_point[arson_counter].IconImage = "icons/FireTruck.png";
-                    GoogleMapForASPNet2.GoogleMapObject.Points.Add(arson_point[arson_counter]);
-
-                    i++;
-                    arson_counter++;
-                }  // end for loop
-            }
-        } // end if (arson_box.Checked)
-
-        // #2
-        if (arrest_box.Checked)
+    private static string StringJoin(List<string> list, string joiner)
+    {
+        string result = "";
+        int i = 0;
+        foreach (string s in list)
         {
-            string join_report = "empty";
-            join_report = SQL_session.fetch_2params(fetch_string + "AND edt.EVENT_TYPE_ID = 14", "LOCATION_LAT", "LOCATION_LONG");
+            result += s;
+            result += (i < list.Count - 1) ? joiner : "";
+            i++;
+        }
+        return result;
+    }
 
-            string[] arrest_array = join_report.Split('&');
-
-            double arrest_lat, arrest_longi;
-
-            int arrest_counter = 0;
-            GooglePoint[] arrest_point = new GooglePoint[arrest_array.Length / 2];
-
-            // #1
-            if (arrest_array.Length > 1) 
-            {
-                for (int i = 0; i < arrest_array.Length - 1; i++)
-                {
-                    double.TryParse(arrest_array[i], out arrest_lat);
-                    double.TryParse(arrest_array[i + 1], out arrest_longi);
-
-                    arrest_point[arrest_counter] = new GooglePoint();
-                    arrest_point[arrest_counter].ID = "arrest" + (arrest_counter + 1);
-                    arrest_point[arrest_counter].Latitude = arrest_lat;
-                    arrest_point[arrest_counter].Longitude = arrest_longi;
-                    arrest_point[arrest_counter].InfoHTML = "This was a case of arrest!";
-                    arrest_point[arrest_counter].IconImage = "icons/Arrest.png";
-                    GoogleMapForASPNet2.GoogleMapObject.Points.Add(arrest_point[arrest_counter]);
-
-                    i++;
-                    arrest_counter++;
-                }  // end for loop
-            }
-        } // end if (arson_box.Checked)
-
-        // #3
-        if (assault_box.Checked)
-        {
-            string join_report = "empty";
-            join_report = SQL_session.fetch_2params(fetch_string + " AND edt.EVENT_TYPE_ID = 2", "LOCATION_LAT", "LOCATION_LONG");
-
-            string[] assault_array = join_report.Split('&');
-
-            double assault_lat, assault_longi;
-
-            int assault_counter = 0;
-            GooglePoint[] assault_point = new GooglePoint[assault_array.Length / 2];
-
-            if (assault_array.Length > 1)
-            {
-                for (int i = 0; i < assault_array.Length - 1; i++)
-                {
-                    double.TryParse(assault_array[i], out assault_lat);
-                    double.TryParse(assault_array[i + 1], out assault_longi);
-
-                    assault_point[assault_counter] = new GooglePoint();
-                    assault_point[assault_counter].ID = "assault" + (assault_counter + 1);
-                    assault_point[assault_counter].Latitude = assault_lat;
-                    assault_point[assault_counter].Longitude = assault_longi;
-                    assault_point[assault_counter].InfoHTML = "This was an assault";
-                    assault_point[assault_counter].IconImage = "icons/Assault.png";
-                    GoogleMapForASPNet2.GoogleMapObject.Points.Add(assault_point[assault_counter]);
-
-                    i++;
-                    assault_counter++;
-                }// end for loop
-            }
-        } // end if (assault_box.Checked)
-
-        // #4
-        if (murder_box.Checked)
-        {
-            string join_report = "empty";
-            join_report = SQL_session.fetch_2params(fetch_string + "AND edt.EVENT_TYPE_ID = 5", "LOCATION_LAT", "LOCATION_LONG");
-
-            string[] murder_array = join_report.Split('&');
-
-            double murder_lat, murder_longi;
-
-            int murder_counter = 0;
-            GooglePoint[] murder_point = new GooglePoint[murder_array.Length / 2];
-
-            if (murder_array.Length > 1)
-            {
-                for (int i = 0; i < murder_array.Length - 1; i++)
-                {
-                    double.TryParse(murder_array[i], out murder_lat);
-                    double.TryParse(murder_array[i + 1], out murder_longi);
-
-                    murder_point[murder_counter] = new GooglePoint();
-                    murder_point[murder_counter].ID = "homicide" + (murder_counter + 1);
-                    murder_point[murder_counter].Latitude = murder_lat;
-                    murder_point[murder_counter].Longitude = murder_longi;
-                    murder_point[murder_counter].InfoHTML = "This was homicide";
-                    murder_point[murder_counter].IconImage = "icons/homicide1.gif";
-                    GoogleMapForASPNet2.GoogleMapObject.Points.Add(murder_point[murder_counter]);
-
-                    i++;
-                    murder_counter++;
-                }  // end for loop
-            }
-        } // end if (murder_box.Checked)
-
-        // #5
-        if (other_box.Checked)
-        {
-            string join_report = "empty";
-            join_report = SQL_session.fetch_2params(fetch_string + " AND edt.EVENT_TYPE_ID = 3", "LOCATION_LAT", "LOCATION_LONG");
-            join_report += SQL_session.fetch_2params(fetch_string + " AND edt.EVENT_TYPE_ID = 4", "LOCATION_LAT", "LOCATION_LONG");
-            join_report += SQL_session.fetch_2params(fetch_string + " AND edt.EVENT_TYPE_ID = 6", "LOCATION_LAT", "LOCATION_LONG");
-            join_report += SQL_session.fetch_2params(fetch_string + " AND edt.EVENT_TYPE_ID = 11", "LOCATION_LAT", "LOCATION_LONG");
-            join_report += SQL_session.fetch_2params(fetch_string + " AND edt.EVENT_TYPE_ID = 13", "LOCATION_LAT", "LOCATION_LONG");
+    private List<string> GetSelected_EventTypeIds()
+    {
+        List<string> event_type_ids;
+        event_type_ids = new List<string>();
+        foreach (ListItem li in crimeType_clb.Items) { if (li.Selected) event_type_ids.Add(li.Value); }
+        return event_type_ids;
+    } 
 
 
-            string[] other_array = join_report.Split('&');
-
-            double other_lat, other_longi;
-
-            int other_counter = 0;
-            GooglePoint[] other_point = new GooglePoint[other_array.Length / 2];
-
-            if (other_array.Length > 1)
-            {
-                for (int i = 0; i < other_array.Length - 1; i++)
-                {
-                    double.TryParse(other_array[i], out other_lat);
-                    double.TryParse(other_array[i + 1], out other_longi);
-
-                    other_point[other_counter] = new GooglePoint();
-                    other_point[other_counter].ID = "other" + (other_counter + 1);
-                    other_point[other_counter].Latitude = other_lat;
-                    other_point[other_counter].Longitude = other_longi;
-                    other_point[other_counter].InfoHTML = "This was some other crime !";
-                    other_point[other_counter].IconImage = "icons/pushpin-yellow.png";
-                    GoogleMapForASPNet2.GoogleMapObject.Points.Add(other_point[other_counter]);
-
-                    i++;
-                    other_counter++;
-                }// end for loop
-            }
-        } // end if (other_box.Checked)
-
-        // #6
-        if (rape_box.Checked)
-        {
-            string join_report = "empty";
-            join_report = SQL_session.fetch_2params(fetch_string + " AND edt.EVENT_TYPE_ID = 8", "LOCATION_LAT", "LOCATION_LONG");
-
-            string[] rape_array = join_report.Split('&');
-
-            double rape_lat, rape_longi;
-
-            int rape_counter = 0;
-            GooglePoint[] rape_point = new GooglePoint[rape_array.Length / 2];
-
-            if (rape_array.Length > 1)
-            {
-                for (int i = 0; i < rape_array.Length - 1; i++)
-                {
-                    double.TryParse(rape_array[i], out rape_lat);
-                    double.TryParse(rape_array[i + 1], out rape_longi);
-
-                    rape_point[rape_counter] = new GooglePoint();
-                    rape_point[rape_counter].ID = "rape" + (rape_counter + 1);
-                    rape_point[rape_counter].Latitude = rape_lat;
-                    rape_point[rape_counter].Longitude = rape_longi;
-                    rape_point[rape_counter].InfoHTML = "This was a rape!";
-                    rape_point[rape_counter].IconImage = "icons/storm.png";
-                    GoogleMapForASPNet2.GoogleMapObject.Points.Add(rape_point[rape_counter]);
-
-                    i++;
-                    rape_counter++;
-                } // end for loop
-            }
-        } // end if (rape_box.Checked)
-
-        // #7
-        if (robbery_box.Checked)
-        {            
-            string join_report = "empty";
-            join_report = SQL_session.fetch_2params(fetch_string + " AND edt.EVENT_TYPE_ID = 9", "LOCATION_LAT", "LOCATION_LONG");
-
-            string[] robbery_array = join_report.Split('&');
-
-            double rob_lat, rob_longi;
-
-            int robbery_counter = 0;
-            GooglePoint[] robbery_point = new GooglePoint[robbery_array.Length / 2];
-
-            if (robbery_array.Length > 1)
-            {
-                for (int i = 0; i < robbery_array.Length - 1; i++)
-                {
-                    double.TryParse(robbery_array[i], out rob_lat);
-                    double.TryParse(robbery_array[i + 1], out rob_longi);
-
-                    robbery_point[robbery_counter] = new GooglePoint();
-                    robbery_point[robbery_counter].ID = "robbery" + (robbery_counter + 1);
-                    robbery_point[robbery_counter].Latitude = rob_lat;
-                    robbery_point[robbery_counter].Longitude = rob_longi;
-                    robbery_point[robbery_counter].InfoHTML = "This was a robbery";
-                    robbery_point[robbery_counter].IconImage = "icons/Robbery.png";
-                    GoogleMapForASPNet2.GoogleMapObject.Points.Add(robbery_point[robbery_counter]);
-
-                    i++;
-                    robbery_counter++;
-                } // end for loop
-            }
-        } // end if (robbery_box.Checked)
-
-        // #8
-        if (shooting_box.Checked)
-        {
-            string join_report = "empty";
-            join_report = SQL_session.fetch_2params(fetch_string + " AND edt.EVENT_TYPE_ID = 10", "LOCATION_LAT", "LOCATION_LONG");
-
-            string[] shooting_array = join_report.Split('&');
-
-            double shooting_lat, shooting_longi;
-
-            int shooting_counter = 0;
-            GooglePoint[] shooting_point = new GooglePoint[shooting_array.Length / 2];
-
-            if (shooting_array.Length > 1)
-            {
-                for (int i = 0; i < shooting_array.Length - 1; i++)
-                {
-                    double.TryParse(shooting_array[i], out shooting_lat);
-                    double.TryParse(shooting_array[i + 1], out shooting_longi);
-
-                    shooting_point[shooting_counter] = new GooglePoint();
-                    shooting_point[shooting_counter].ID = "shooting" + (shooting_counter + 1);
-                    shooting_point[shooting_counter].Latitude = shooting_lat;
-                    shooting_point[shooting_counter].Longitude = shooting_longi;
-                    shooting_point[shooting_counter].InfoHTML = "This was a shooting !";
-                    shooting_point[shooting_counter].IconImage = "icons/Shooting.png";
-                    GoogleMapForASPNet2.GoogleMapObject.Points.Add(shooting_point[shooting_counter]);
-
-                    i++;
-                    shooting_counter++;
-                }// end for loop
-            }
-        } // end if (shooting_box.Checked)
-
-        // #9
-        if (theft_box.Checked)
-        {
-            string join_report = "empty";
-            join_report = SQL_session.fetch_2params(fetch_string + " AND edt.EVENT_TYPE_ID = 12", "LOCATION_LAT", "LOCATION_LONG");
-
-            string[] theft_array = join_report.Split('&');
-
-            double theft_lat, theft_longi;
-
-            int theft_counter = 0;
-            GooglePoint[] theft_point = new GooglePoint[theft_array.Length / 2];
-
-            if (theft_array.Length > 1 )
-            {
-                for (int i = 0; i < theft_array.Length - 1; i++)
-                {
-                    double.TryParse(theft_array[i], out theft_lat);
-                    double.TryParse(theft_array[i + 1], out theft_longi);
-
-                    theft_point[theft_counter] = new GooglePoint();
-                    theft_point[theft_counter].ID = "theft" + (theft_counter + 1);
-                    theft_point[theft_counter].Latitude = theft_lat;
-                    theft_point[theft_counter].Longitude = theft_longi;
-                    theft_point[theft_counter].InfoHTML = "This was some thieving !";
-                    theft_point[theft_counter].IconImage = "icons/Theft.png";
-                    GoogleMapForASPNet2.GoogleMapObject.Points.Add(theft_point[theft_counter]);
-
-                    i++;
-                    theft_counter++;
-                }// end for loop
-            }
-        } // end if (theft_box.Checked)
-
-    } // end populatePins()
     protected void all_btn_Click(object sender, EventArgs e)
     {
-        arrest_box.Checked = true;
-        arson_box.Checked = true;
-        assault_box.Checked = true;
-        rape_box.Checked = true;
-        robbery_box.Checked = true;
-        shooting_box.Checked = true;
-        theft_box.Checked = true;
-        other_box.Checked = true;
-        murder_box.Checked = true;
+        foreach (ListItem i in crimeType_clb.Items) { i.Selected = true; }
     }
+
     protected void clear_btn_Click(object sender, EventArgs e)
     {
-        arrest_box.Checked = false;
-        arson_box.Checked = false;
-        assault_box.Checked = false;
-        rape_box.Checked = false;
-        robbery_box.Checked = false;
-        shooting_box.Checked = false;
-        theft_box.Checked = false;
-        other_box.Checked = false;
-        murder_box.Checked = false;
+        crimeType_clb.ClearSelection();
     }
 
     protected void weather_btn_Click(object sender, EventArgs e)
@@ -704,111 +568,154 @@ public partial class Duplicate : System.Web.UI.Page
 
         string weather_fetch_BASE = "SELECT * FROM EVENT_DATA ed JOIN EVENT_DATA_TYPES edt ON ed.EVENT_ID = edt.EVENT_ID JOIN EVENT_TYPES et ON et.EVENT_TYPE_ID = edt.EVENT_TYPE_ID"
             + " JOIN SCHOOLS s ON ed.LOCATION_LAT BETWEEN s.LAT_START AND s.LAT_END AND ed.LOCATION_LONG BETWEEN s.LONG_START AND s.LONG_END LEFT JOIN WEATHER_INFO wi ON ed.EVENT_DATE BETWEEN wi.WEATHER_START_DATE AND wi.WEATHER_END_DATE "
-                + "AND wi.SCHOOL_ID = s.SCHOOL_ID WHERE s.SCHOOL_ID = '" + (campus1_drop.SelectedIndex + 1) + "' AND edt.EVENT_TYPE_ID =";
+                + "AND wi.SCHOOL_ID = s.SCHOOL_ID WHERE s.SCHOOL_ID = '" + (campus1_drop.SelectedIndex + 1) + "' ";
         
         string fetch_weather="", fetch_dateRange="", weather_fetch_COMPLETE="";
 
-        if (percipitation_drop.SelectedIndex > 0 )
-        {
-            if (percipitation_drop.SelectedIndex == 1)
-                fetch_weather += " AND wi.RAINY_IND = 'T' ";
-            if (percipitation_drop.SelectedIndex == 2)
-                fetch_weather += " AND wi.SUNNY_IND = 'T' ";
-            if (percipitation_drop.SelectedIndex ==3)
-                fetch_weather += " AND wi.CLOUDY_IND = 'T' ";
-        }
-
-        if (temp_drop.SelectedIndex > 0)
-        {
-            if (temp_drop.SelectedIndex == 1)
-                fetch_weather += " AND wi.TEMPERATURE BETWEEN -100 AND 19 ";
-            if (temp_drop.SelectedIndex == 2)
-                fetch_weather += " AND wi.TEMPERATURE BETWEEN 20 AND 32 ";
-            if (temp_drop.SelectedIndex == 3)
-                fetch_weather += " AND wi.TEMPERATURE BETWEEN 33 AND 45 ";
-            if (temp_drop.SelectedIndex == 4)
-                fetch_weather += " AND wi.TEMPERATURE BETWEEN 46 AND 60 ";
-            if (temp_drop.SelectedIndex == 5)
-                fetch_weather += " AND wi.TEMPERATURE BETWEEN 61 AND 75 ";
-            if (temp_drop.SelectedIndex == 6)
-                fetch_weather += " AND wi.TEMPERATURE BETWEEN 76 AND 85 ";
-            if (temp_drop.SelectedIndex == 7)
-                fetch_weather += " AND wi.TEMPERATURE BETWEEN 86 AND 120 ";
-        }
-
-
+        fetch_weather = Filter_BuildQuery_ByWeather(fetch_weather);
 
         // if (Date selected)  -- do stuff   
        
         if (arrest_box.Checked)
-        {           
-            weather_fetch_COMPLETE = weather_fetch_BASE + "'14' " + fetch_dateRange + fetch_weather;
+        {
+            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '14' " + fetch_dateRange + fetch_weather;
             Place_Pins(weather_fetch_COMPLETE, "icons/Arrest.png", "This was an arrest!", "arrest");
         }
 
         if (arson_box.Checked)
         {
-            weather_fetch_COMPLETE = weather_fetch_BASE + "'1' " + fetch_dateRange + fetch_weather;
+            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '1' " + fetch_dateRange + fetch_weather;
             Place_Pins(weather_fetch_COMPLETE, "icons/FireTruck.png", "This was a case of arsen !", "arsen");
         }
 
         if (assault_box.Checked)
         {
-            weather_fetch_COMPLETE = weather_fetch_BASE + "'2' " + fetch_dateRange + fetch_weather;
+            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '2' " + fetch_dateRange + fetch_weather;
             Place_Pins(weather_fetch_COMPLETE, "icons/Assault.png", "This was an assault !", "assault");
         }
 
         if (rape_box.Checked)
         {
-            weather_fetch_COMPLETE = weather_fetch_BASE + "'8' " + fetch_dateRange + fetch_weather;
+            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '8' " + fetch_dateRange + fetch_weather;
             Place_Pins(weather_fetch_COMPLETE, "icons/storm.png", "This was a rape !", "rape");
         }
 
         if (robbery_box.Checked)
         {
-            weather_fetch_COMPLETE = weather_fetch_BASE + "'9' " + fetch_dateRange + fetch_weather;
+            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '9' " + fetch_dateRange + fetch_weather;
             Place_Pins(weather_fetch_COMPLETE, "icons/Robbery.png", "This was a robbery !", "robbery");
         }
 
         if (shooting_box.Checked)
         {
-            weather_fetch_COMPLETE = weather_fetch_BASE + "'10' " + fetch_dateRange + fetch_weather;
+            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '10' " + fetch_dateRange + fetch_weather;
             Place_Pins(weather_fetch_COMPLETE, "icons/Shooting.png", "This was some kind of shooting!", "shooting");
         }
 
         if (theft_box.Checked)
         {
-            weather_fetch_COMPLETE = weather_fetch_BASE + "'10' " + fetch_dateRange + fetch_weather;
+            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '10' " + fetch_dateRange + fetch_weather;
             Place_Pins(weather_fetch_COMPLETE, "icons/Theft.png", "This was theft!", "theft");
         }
 
         if (other_box.Checked)
         {
-            weather_fetch_COMPLETE = weather_fetch_BASE + "'3' " + fetch_dateRange + fetch_weather;
+            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '3' " + fetch_dateRange + fetch_weather;
             Place_Pins(weather_fetch_COMPLETE, "icons/pushpin-yellow.png", "Disorderly conduct went down here!", "dc");
 
-            weather_fetch_COMPLETE = weather_fetch_BASE + "'4' " + fetch_dateRange + fetch_weather;
+            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '4' " + fetch_dateRange + fetch_weather;
             Place_Pins(weather_fetch_COMPLETE, "icons/pushpin-yellow.png", "A drug case!", "drug");
 
-            weather_fetch_COMPLETE = weather_fetch_BASE + "'6' " + fetch_dateRange + fetch_weather;
+            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '6' " + fetch_dateRange + fetch_weather;
             Place_Pins(weather_fetch_COMPLETE, "icons/pushpin-yellow.png", "Some other crime occured here!", "other");
 
-            weather_fetch_COMPLETE = weather_fetch_BASE + "'11' " + fetch_dateRange + fetch_weather;
+            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '11' " + fetch_dateRange + fetch_weather;
             Place_Pins(weather_fetch_COMPLETE, "icons/pushpin-yellow.png", "This was a suicide!", "suicide");
 
-            weather_fetch_COMPLETE = weather_fetch_BASE + "'13' " + fetch_dateRange + fetch_weather;
+            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '13' " + fetch_dateRange + fetch_weather;
             Place_Pins(weather_fetch_COMPLETE, "icons/Vandalism.png", "Vandalism occured here", "vandalism");
         }
 
         if (murder_box.Checked)
         {
-            weather_fetch_COMPLETE = weather_fetch_BASE + "'5' " + fetch_dateRange + fetch_weather;
+            weather_fetch_COMPLETE = weather_fetch_BASE + " AND edt.EVENT_TYPE_ID = '5' " + fetch_dateRange + fetch_weather;
             Place_Pins(weather_fetch_COMPLETE, "icons/homicide1.gif", "Site of a homicide!", "homicide");
         }
 
         mb.ShowMessageBox("fetch string result is " + SQL_session.fetch_2params(weather_fetch_COMPLETE, "LOCATION_LAT", "LOCATION_LONG"));
 
     } // end weather_btn_Click
+
+
+
+    private DataTable Filter_GetDataTable()
+    {
+        string fetch_string
+            = "SELECT * "
+            + "FROM EVENT_DATA ed "
+            + "JOIN EVENT_DATA_TYPES edt ON ed.EVENT_ID = edt.EVENT_ID "
+            + "JOIN EVENT_TYPES et ON et.EVENT_TYPE_ID = edt.EVENT_TYPE_ID "
+            + "JOIN SCHOOLS s ON ed.LOCATION_LAT BETWEEN s.LAT_START AND s.LAT_END AND ed.LOCATION_LONG BETWEEN s.LONG_START AND s.LONG_END "
+            + "WHERE "
+            + Filter_BuildQuery_ByCampus("s")
+            + " AND " + Filter_BuildQuery_ByCrimeType("edt");
+        // + " AND " + Filter_BuildQuery_ByWeather("wi");
+        return SQL_session.fetch_datatable(fetch_string);
+    }
+
+
+    private string Filter_BuildQuery_ByCampus(string table_name)
+    {
+        string result = "(" + table_name + ".SCHOOL_ID = '" + (campus1_drop.SelectedIndex + 1) + "')";
+        return result;
+    }
+
+
+    private string Filter_BuildQuery_ByCrimeType(string table_name)
+    {
+        string event_type_ids = StringJoin(GetSelected_EventTypeIds(), ",");
+        string result = "(" + table_name + ".EVENT_TYPE_ID IN (" + event_type_ids + "))";
+        return result;
+    }
+
+    private string Filter_BuildQuery_ByWeather(string table_name)
+    {
+        string result = "(TRUE)";
+        // result += Filter_BuildQuery_ByPrecipitation(table_name);
+        result = "(" + Filter_BuildQuery_ByTemperature(table_name) + ")";
+        return result;
+    }
+
+    private string Filter_BuildQuery_ByPrecipitation(string table_name)
+    {
+        string result = "(TRUE)";
+        if (percipitation_drop.SelectedIndex > 0)
+        {
+            if (percipitation_drop.SelectedIndex == 1)
+            {
+                result += "(" + table_name + ".RAINY_IND = 'T')";
+            }
+            if (percipitation_drop.SelectedIndex == 2)
+            {
+                result += "(" + table_name + ".SUNNY_IND = 'T')";
+            }
+            if (percipitation_drop.SelectedIndex == 3)
+            {
+                result += "(" + table_name + ".CLOUDY_IND = 'T')";
+            }
+        }
+        return result;
+    }
+
+    private string Filter_BuildQuery_ByTemperature(string table_name)
+    {
+        string result = "(TRUE)";
+        if (temp_drop.SelectedValue != "Any")
+        {
+            result += "(" + table_name + ".TEMPERATURE BETWEEN " + temp_drop.SelectedValue + ")";
+        }
+        return result;
+    }
 
     private void Place_Pins(String fetch_string, String image, String tooltip_message, String crime_ID)
     {        
