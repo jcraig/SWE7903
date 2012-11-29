@@ -480,6 +480,13 @@ public partial class Duplicate : System.Web.UI.Page
 
     private void createChart()
     {
+        ChartTools.DataBind_ByEventType_Count(
+            Filter_GetDataTable(),
+            GetSelected_EventTypeIds(),
+            Data_CrimeType,
+            Chart1);
+        return;
+
         List<double> yValues = new List<double>();
         List<String> xValues = new List<string>();
 
