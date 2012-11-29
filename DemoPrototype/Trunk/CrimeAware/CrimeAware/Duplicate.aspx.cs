@@ -584,10 +584,22 @@ public partial class Duplicate : System.Web.UI.Page
 
     protected void all_btn_Click(object sender, EventArgs e)
     {
-        foreach (ListItem i in crimeType_clb.Items) { i.Selected = true; }
+        Filter_ByCrimeType_SelectAll();
+        UpdateCurrentView();
     }
 
     protected void clear_btn_Click(object sender, EventArgs e)
+    {
+        Filter_ByCrimeType_SelectNone();
+        UpdateCurrentView();
+    }
+
+    private void Filter_ByCrimeType_SelectAll()
+    {
+        foreach (ListItem i in crimeType_clb.Items) { i.Selected = true; }
+    }
+
+    private void Filter_ByCrimeType_SelectNone()
     {
         crimeType_clb.ClearSelection();
     }
@@ -714,4 +726,9 @@ public partial class Duplicate : System.Web.UI.Page
                 }// end for loop
             }
     } // end void Place_Pins(String fetch_string, String crime_tripe, String image)
+
+    protected void crimeType_clb_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        UpdateCurrentView();
+    }
 }

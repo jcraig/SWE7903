@@ -70,7 +70,10 @@
 
                         <asp:Label ID="crimeType_lbl" runat="server" Font-Names="Eras Demi ITC" Font-Size="Medium"
                             ForeColor="Black" Text="Crime Type:"></asp:Label>
-                        <asp:CheckBoxList ID="crimeType_clb" runat="server" RepeatColumns="3" RepeatDirection="Horizontal" />
+                        <asp:CheckBoxList ID="crimeType_clb" runat="server" RepeatColumns="3" 
+                            RepeatDirection="Horizontal" 
+                            onselectedindexchanged="crimeType_clb_SelectedIndexChanged" AutoPostBack="True"
+                             />
                         <asp:Button ID="all_btn" runat="server" Text="All" OnClick="all_btn_Click" />
                         <asp:Button ID="clear_btn" runat="server" Text="Clear" OnClick="clear_btn_Click" />
 
