@@ -52,8 +52,7 @@
          f_load_image(1);
      }
     
-    </script>
-       
+    </script>       
 
    <asp:Panel ID="Panel1" runat="server" Height="861px"  >  
     <div id="Tabtop_margin_div2" >  </div>  
@@ -100,7 +99,7 @@
           
                 <div id="main_div" 
            style="float:left; width:1400px; background-image: none;">
-                <div id="filters_div"                        
+                <div id="filters_div" runat="server"                       
                         style="float:left; width: 242px; height: 591px; border-left-style: dashed; border-left-width: 1px; border-right-style: none; border-right-width: 1px; border-top-style: dashed; border-top-width: 1px; border-bottom-style: dashed; border-bottom-width: 1px;">
                     <br />
                     &nbsp;&nbsp;<asp:Label ID="Label3" runat="server" Font-Bold="True" 
@@ -110,7 +109,8 @@
                     <br />
                     <br />
 &nbsp;
-                    <asp:DropDownList ID="campus1_drop" runat="server" Height="26px" Width="156px" />
+                    <asp:DropDownList ID="campus1_drop" runat="server" Height="26px" Width="156px" 
+                        AutoPostBack="True" />
                     <br />
                     <br />
                     <br />
@@ -121,15 +121,16 @@
                     <br />
                      <div style=" width:237px; height:30px">
                     <div style="float:right; width:124px; height:30px"> 
-                        <asp:Button ID="calendar_btn" 
+                        <asp:Button ID="calendar_btn"
                             runat="server" Text="Calendar Drop" onclick="calendar_btn_Click" 
-                            Height="32px" Width="116px" />
+                            Height="32px" Width="116px" AutoPostBack="False" />
                     </div>
                          <asp:Button ID="close_btn" runat="server" Height="29px" 
                              onclick="close_btn_Click" Text="Close" Visible="False" Width="83px" />
                     </div>
+                    <asp:Panel ID="calendar_panel" runat="server" style="float:left; width:242px; height:30px">
                     <div id="calendar_div" runat="server" style="float:left; width:242px; height:30px"></div>
-                   
+                   </asp:Panel>
                     <br />
                     <br />
                    
@@ -255,8 +256,12 @@
                         <asp:chart id="Chart1" runat="server" Height="300px" Width="400px">
                             <titles><asp:Title ShadowOffset="3" Name="Title1" /></titles>  
                             <legends><asp:Legend Alignment="Center" Docking="Bottom" IsTextAutoFit="False" Name="Default" LegendStyle="Row" /></legends>
-                            <series><asp:Series Name="Default" />  </series>  
-                            <chartareas><asp:ChartArea Name="ChartArea1" BorderWidth="0" />  </chartareas>
+                            <series>
+                            <asp:Series Name="Default" />
+                            </series>
+                            <chartareas>
+                            <asp:ChartArea BorderWidth="0" Name="ChartArea1" />
+                            </chartareas>
                         </asp:chart>
                     </asp:View>
                     <asp:View ID="View3" runat="server">               

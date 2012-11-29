@@ -22,6 +22,11 @@ public partial class Duplicate : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        Calendar pop_calendar = (Calendar)calendar_panel.FindControl("dueCalendar");
+
+        if (Session["calendar"] != null && pop_calendar == null)
+            showCalendar();
+
         GoogleMapForASPNet2.GoogleMapObject.APIKey = ConfigurationManager.AppSettings["AIzaSyAFdfLkydY34KobaHfiOGzLDbnG-niDhMU"];
 
         // this logic causes server side postback when navigating fromWelcome page in order to avoid a crash caused by client side Javascript url redirect failure to locate images
@@ -750,22 +755,40 @@ public partial class Duplicate : System.Web.UI.Page
             }
     } // end void Place_Pins(String fetch_string, String crime_tripe, String image)
     protected void calendar_btn_Click(object sender, EventArgs e)
+    {           
+        showCalendar();
+
+        Session["calendar"] = "yes";
+        filters_div.Style.Add("border-bottom-style", "none");
+    }
+
+    private void showCalendar()
     {
-        close_btn.Visible = true;
         calendar_btn.Visible = false;
+        close_btn.Visible = true;   
         calendarCtl = LoadControl("~/Calendar.ascx");
         calendarCtl.ID = "dueCalendar";
-        calendar_div.Style.Add("height", "640px");
+
+        calendar_div.Style.Add("height", "540px");
+        calendar_panel.Style.Add("height", "540px");
         //repeaters_div.Style.Add("height", "355px");
         //WO_Panel.Style.Add("height", "355px");
         calendar_div.Controls.Add(calendarCtl);
+        calendarCtl.Visible = true;        
     }
+
     protected void close_btn_Click(object sender, EventArgs e)
     {
+        Calendar pop_calendar = (Calendar)calendar_panel.FindControl("dueCalendar");
+        mb.ShowMessageBox("start date is " + pop_calendar.getStart_date() + " end date is " + pop_calendar.getEnd_date());
+
         calendar_div.Style.Add("height", "40px");
+        calendar_panel.Style.Add("height", "40px");
         calendar_div.Controls.Remove(calendarCtl);
 
         close_btn.Visible = false;
         calendar_btn.Visible = true;
+
+        Session["calendar"] = null;        
     }
 }
