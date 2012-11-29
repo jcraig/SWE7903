@@ -116,10 +116,13 @@ public class DB_Client
     public DataTable fetch_datatable(String fetch)
     {
         DataTable result = new DataTable("Result");
-        GetData(fetch, (reader, counter) => { result.Load(reader); });
+        GetData(fetch,
+            (reader, counter) =>
+            {
+                result.Load(reader);
+            });
         return result;
     }
-
 
     public string fetch_polyPoints(String fetch, String g1, String g2, String g3, String g4, String g5, String g6, String g7, String g8, String g9)
     {

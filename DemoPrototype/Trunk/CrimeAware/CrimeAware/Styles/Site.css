@@ -11,34 +11,6 @@ h1,h2
 {
 }
 
-.button
-{
--webkit-box-align: center;
-text-align: center;
-cursor: default;
-color: buttontext;
-padding: 2px 6px 3px;
-border: none;
-outline: 1px solid #444;
-border-image: initial;
-background-color: transparent;
-box-sizing: border-box;
-}
-
-input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button, button
-{
--webkit-box-align: center;
-text-align: center;
-cursor: default;
-color: buttontext;
-padding: 2px 6px 3px;
-border: none;
-outline: 1px solid #444;
-border-image: initial;
-background-color: transparent;
-box-sizing: border-box;
-}
-
 body
 {
 	font-family: Arial, sans-serif;
@@ -46,13 +18,6 @@ body
 	color: #666;
 	background-color: #fff;
     	text-align: left;
-    	position: absolute;
-    	top: 0px;
-    	left: 0px;
-    	right: 0px;
-    	bottom: 0px;
-    	min-width: 800px;
-    	min-height: 600px;
 }
 
 a:link  
@@ -73,7 +38,7 @@ a, a:hover
 a, a:visited 
 {
     text-decoration: underline;
-    color:  #daa520;
+    color:  #daa520;;
 }
 
 a, a:active 
@@ -136,16 +101,8 @@ blockquote, pre
 
 #outer
 {
-    position: absolute;
-    top:0px;
-    left:0px;
-    right:0px;
-    bottom:0px;
-    overflow:visible;
 	padding: 0em;
 	margin: 0em;
-    	min-width:800px;
-    	min-height: 600px;
 }
 
 .addToCart
@@ -165,53 +122,24 @@ blockquote, pre
 {
 	position: relative;
 	background: #daa520 url('images/headerbackground.gif') repeat-x left bottom;
-	height: 9em;
+	height: 170px;
+	padding-left: 2em;
+    top: 2px;
     left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
 }
 
-#header_LeftFloat1
+#header h1
 {
-    position: relative;
-    float:left;
-    height: 12em; 
-    margin-left:1em;
-    margin-top:1em;
-}
-
-#header_LeftFloat1 img
-{ 
-    position: relative;
-    z-index:1;
-}
-
-#header_LeftFloat2
-{
-    float: left; 
-    height: 7em; 
-    width: 470px;
-    margin-left: 0.25em;
-    margin-top:1em;
-}
-
-#header_Banner_Title
-{
-    position: relative;
-    font-size: 7em;
-    font-style: italic;
-    font-weight: bold;
-    color: #FFFFFF;
-}
-
-#header_RightFloat
-{
-    float: right; 
-    height: 50px; 
-    width: 134px;
-    margin-right: 1em;
-    margin-top: 1em;
+	position: relative;
+	top: 121px;
+	font-size: xx-large;
+	font-family: "Trebuchet MS";
+	text-decoration: blink;
+	font-style: italic;
+	color: #EBEBED;
+    left: 1px;
+    height: 35px;
+    width: 235px;
 }
 
 #header h1 a
@@ -228,27 +156,16 @@ blockquote, pre
 	color: #daa520;
 }
 
-.clear
-{
-    float: none;
-}
-
 #subheader
 {
 	position: relative;
 	background: black;
 	height: 35px;
+	padding-left: 20px;
+	padding-top: 10px;
     top: 0px;
-    left:0px;
-    right:0px;
-}
-
-#subheader_RightFloat
-{
-    margin-top: 1em;
-    float: right;
-    margin-right: 1em;
-    z-index:10;
+    left: -5px;
+    width: 1630px;
 }
 
 #thick_subheader
@@ -320,28 +237,11 @@ blockquote, pre
 	text-decoration: underline;
 }
 
-#centerColumn2
-{
-    height: 15px;
-}
-
-#mainContent2
-{
-    position:absolute;
-    bottom:0px;
-    right:0px;
-    left:0px;
-    top:0px;
-}
 
 #content
 {
-    position:fixed;
-    top:13em;
-    bottom:4em;
-    left:0em;
-    right:0em;
 	background: transparent;
+	line-height: 1.5em;
 }
 
 
@@ -434,7 +334,7 @@ blockquote, pre
 	background-color: #aaa;
 	float: left;
 	margin: 0em -19em 0em -19em;
-	
+	width: 100%;
 }
 
 #centerColumn
@@ -496,13 +396,11 @@ text-decoration: none;
 
 #footer
 {
-	position: fixed;
-	height: 2em;
-	bottom:0px;
-	left:0px;
-	right:0px;
-	outline: dashed 1px #dfdfdf;
-	padding: 1em 0em 1em 0em;
+	position: relative;
+	z-index: 1;
+	border-top: dashed 1px #dfdfdf;
+	padding: 1em 0em 2em 0em;
+	margin: 1em 2em 0em 2em;
 	text-align: center;
 }
 
@@ -511,58 +409,6 @@ text-decoration: none;
 	clear: both;
 }
 
-/* -- */
-.dash-border
-{
-    outline: 1px dashed #171717;
-}
-
-
-        .mini
-        {
-            font-family: Small Fonts, Smalls;
-            font-size: 7pt;
-            text-align: left;
-        }
-        .minir
-        {
-            font-family: Small Fonts, Smalls;
-            font-size: 7pt;
-            text-align: right;
-        }
-        .avg
-        {
-            font-family: Arial, Verdana, Sans-Serif;
-            font-size: 8pt;
-            text-align: left;
-        }
-        .red
-        {
-            font-family: Arial, Verdana, Sans-Serif;
-            font-size: 8pt;
-            color: #FF0000;
-            font-weight: 800;
-        }
-        #Tabtop_margin_div
-        {
-            height: 49px;
-        }
-        #Tabtop_margin_div2
-        {
-            height: 8px;
-        }
-        #main_div
-        {
-            height: 610px;
-        }
-        #tabs_div
-        {
-            height: 32px;
-        }
-        #tabButtons_div
-        {
-        }
-        
 /* ================================
     CSS STYLES FOR THE COMMERCE STARTER KIT 
     v1.0, 10/2002
@@ -573,7 +419,7 @@ text-decoration: none;
 /* */
 .HomeHead
 {
-    color: #daa520;
+    color: #daa520
     font-family: Verdana, Arial;
     font-size: 20px;
     font-weight: bold;
@@ -691,7 +537,7 @@ A.MostPopularItemText:hover
 .CartListItem
 {
     background-color: #ffffff;
-    border-color: #696969;
+    border-color #696969;
     border-width: 1px;
     border-style: solid;
     color: black;
@@ -704,7 +550,7 @@ A.MostPopularItemText:hover
 .CartListItemAlt
 {
     background-color: #f2f2f2;
-    border-color: #696969;
+    border-color #696969;
     border-width: 1px;
     border-style: solid;
     color: black;
