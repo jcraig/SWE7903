@@ -5,6 +5,8 @@
 
 <%@ Register src="GoogleMapForASPNet.ascx" tagname="GoogleMapForASPNet" tagprefix="uc1" %>
 
+<%@ Register Src="Calendar.ascx" TagName="calendar" TagPrefix="dateViewer"  %>
+
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
     <style type="text/css">
  .mini   {font-family: Small Fonts, Smalls;        font-size: 7pt; text-align: left;}
@@ -117,36 +119,39 @@
                         Font-Size="Medium" ForeColor="Black" Text="Date Range - 2012"></asp:Label>
                     <br />
                     <br />
-                    &nbsp;&nbsp;&nbsp;<asp:Label ID="from_lbl" runat="server" Font-Bold="True" Font-Size="Small" 
-                        ForeColor="#333333" Text="from -&gt;"></asp:Label>
-                    &nbsp;&nbsp;<asp:DropDownList ID="from_drop" runat="server" Height="26px" 
-                        Width="144px" />
+                     <div style=" width:237px; height:30px">
+                    <div style="float:right; width:124px; height:30px"> 
+                        <asp:Button ID="calendar_btn" 
+                            runat="server" Text="Calendar Drop" onclick="calendar_btn_Click" 
+                            Height="32px" Width="116px" />
+                    </div>
+                         <asp:Button ID="close_btn" runat="server" Height="29px" 
+                             onclick="close_btn_Click" Text="Close" Visible="False" Width="83px" />
+                    </div>
+                    <div id="calendar_div" runat="server" style="float:left; width:242px; height:30px"></div>
+                   
                     <br />
                     <br />
-                    &nbsp;&nbsp;
-                    <asp:Label ID="to_lbl" runat="server" Font-Bold="True" Font-Size="Small" 
-                        ForeColor="#666666" Text="to          -&gt;"></asp:Label>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:DropDownList ID="to_drop" runat="server" Height="26px" Width="143px"/>
-                    <br />
-                    <br />
-                    <br />                    
+                   
                     <div style="height: 20px; margin-left: 8px">
-                    <div style="float:right; width:176px; height:20px">
-                    <asp:Label ID="weather_lbl" runat="server" Font-Names="MV Boli" Font-Size="Large" ForeColor="Black" Text="Weather:" Font-Bold="True"></asp:Label> 
+                        <div style="float:right; width:176px; height:20px">
+                            <asp:Label ID="weather_lbl" runat="server" Font-Bold="True" 
+                                Font-Names="MV Boli" Font-Size="Large" ForeColor="Black" Text="Weather:"></asp:Label>
                         </div>
+                    </div>
+                    <div style="margin-left: 8px">
+                        <div style="float:right; width:118px; height:14px">
+                            <asp:Label ID="temp_lbl" runat="server" Font-Names="Eras Demi ITC" 
+                                Font-Size="Small" ForeColor="#292929" Text="Temperature"></asp:Label>
                         </div>
-                        <div style="margin-left: 8px"> 
-                        <div style="float:right; width:118px; height:14px"> 
-                            <asp:Label ID="temp_lbl" runat="server" Font-Names="Eras Demi ITC" Font-Size="Small" ForeColor="#292929"  Text="Temperature"></asp:Label>
-                            </div>
-                            <asp:Label ID="percipitation_lbl" runat="server" Font-Names="Eras Demi ITC" Font-Size="Small" ForeColor="#292929" Text="Percipitation"></asp:Label>
-                        </div>
-                     <div style="height: 24px; margin-left: 8px; margin-top:5px">
-                    <asp:DropDownList ID="percipitation_drop" runat="server" Height="20px" Width="100px">
-
-                    </asp:DropDownList>
-                         &nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="percipitation_lbl" runat="server" Font-Names="Eras Demi ITC" 
+                            Font-Size="Small" ForeColor="#292929" Text="Percipitation"></asp:Label>
+                    </div>
+                    <div style="height: 24px; margin-left: 8px; margin-top:5px">
+                        <asp:DropDownList ID="percipitation_drop" runat="server" Height="20px" 
+                            Width="100px">
+                        </asp:DropDownList>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:DropDownList ID="temp_drop" runat="server" Height="20px" Width="100px" />
                     </div>
                     <br />

@@ -13,7 +13,7 @@ public partial class Duplicate : System.Web.UI.Page
 {
     private DB_Client SQL_session = new DB_Client();
     private MessageBox mb = new MessageBox();
-    
+    private Control calendarCtl;
 
     protected void Page_PreRender(object sender, System.EventArgs e)
     {
@@ -171,11 +171,11 @@ public partial class Duplicate : System.Web.UI.Page
     {
         string[] data = Get_Months();
 
-        from_drop.DataSource = data;
-        from_drop.DataBind();
+        //from_drop.DataSource = data;
+        //from_drop.DataBind();
 
-        to_drop.DataSource = data;
-        to_drop.DataBind();
+        //to_drop.DataSource = data;
+        //to_drop.DataBind();
     }
 
     private static string[] Get_Months()
@@ -749,4 +749,23 @@ public partial class Duplicate : System.Web.UI.Page
                 }// end for loop
             }
     } // end void Place_Pins(String fetch_string, String crime_tripe, String image)
+    protected void calendar_btn_Click(object sender, EventArgs e)
+    {
+        close_btn.Visible = true;
+        calendar_btn.Visible = false;
+        calendarCtl = LoadControl("~/Calendar.ascx");
+        calendarCtl.ID = "dueCalendar";
+        calendar_div.Style.Add("height", "640px");
+        //repeaters_div.Style.Add("height", "355px");
+        //WO_Panel.Style.Add("height", "355px");
+        calendar_div.Controls.Add(calendarCtl);
+    }
+    protected void close_btn_Click(object sender, EventArgs e)
+    {
+        calendar_div.Style.Add("height", "40px");
+        calendar_div.Controls.Remove(calendarCtl);
+
+        close_btn.Visible = false;
+        calendar_btn.Visible = true;
+    }
 }
